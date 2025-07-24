@@ -1,6 +1,7 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import Banner from "@/styles/images/nail-banner.webp";
 
 export default function FirstView() {
   return (
@@ -11,26 +12,30 @@ export default function FirstView() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative z-10 space-y-8">
             <div className="inline-block bg-primary/10 px-4 py-2 rounded-full">
-              <span className="text-primary font-medium tracking-wider text-sm">奄美大島の伝統が導いた、新発想</span>
+              <span className="text-primary font-medium tracking-wider text-sm">
+                プロフェッショナルネイルサービス
+              </span>
             </div>
 
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight text-gray-900">
-              <span className="block">伝統の発酵の力で、</span>
-              <span className="block text-primary">カラダの中から</span>
-              <span className="block">美しく健やかに。</span>
+              <span className="block">あなたの指先から</span>
+              <span className="block text-primary">美しさを引き出す</span>
+              <span className="block">ネイルアート</span>
             </h1>
 
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl">
-              奄美大島に古くから伝わる発酵飲料『ミキ』と、 栄養価の高いヤギミルクを掛け合わせた、
-              革新的なウェルネスドリンク。
+              最新のトレンドと高品質な素材を使用した、プロフェッショナルなネイルサービスをご提供。
               <span className="block mt-2">
-                100%オーガニック原料から生まれた Fermy が、 あなたの健康的な毎日をサポートします。
+                お客様一人ひとりに合わせたデザインで、日常からスペシャルな日まで、あなたの魅力を引き立てます。
               </span>
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 rounded-full">
-                商品を見る
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-white px-8 rounded-full"
+              >
+                予約する
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button
@@ -38,22 +43,24 @@ export default function FirstView() {
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-white rounded-full"
               >
-                詳しく知る
+                デザインを見る
               </Button>
             </div>
 
             <div className="grid grid-cols-3 gap-8 pt-8">
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">96%</div>
-                <p className="text-sm text-gray-600 leading-snug">の方が体感を実感</p>
+                <div className="text-3xl font-bold text-primary mb-2">100+</div>
+                <p className="text-sm text-gray-600 leading-snug">デザイン</p>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">100%</div>
-                <p className="text-sm text-gray-600 leading-snug">オーガニック原料</p>
+                <div className="text-3xl font-bold text-primary mb-2">5年+</div>
+                <p className="text-sm text-gray-600 leading-snug">プロ経験</p>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">89%</div>
-                <p className="text-sm text-gray-600 leading-snug">リピート率</p>
+                <div className="text-3xl font-bold text-primary mb-2">98%</div>
+                <p className="text-sm text-gray-600 leading-snug">
+                  お客様満足度
+                </p>
               </div>
             </div>
           </div>
@@ -61,10 +68,10 @@ export default function FirstView() {
           <div className="relative">
             <div className="relative aspect-square max-w-md mx-auto">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NbQp5FxeGuiKOmwMpVkqvFO28tXwIY.png"
-                alt="Fermy Bottle"
+                src={Banner}
+                alt="ネイルアートサンプル"
                 fill
-                className="object-contain transform hover:scale-105 transition-transform duration-500"
+                className="object-cover rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-500"
                 priority
               />
             </div>
@@ -75,10 +82,10 @@ export default function FirstView() {
 
             {/* Product badges */}
             <div className="absolute top-8 right-8 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg">
-              <span className="text-primary font-medium">特許取得製法</span>
+              <span className="text-primary font-medium">トレンドデザイン</span>
             </div>
             <div className="absolute bottom-8 left-8 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg">
-              <span className="text-primary font-medium">無添加・砂糖不使用</span>
+              <span className="text-primary font-medium">高品質ジェル使用</span>
             </div>
           </div>
         </div>
@@ -92,5 +99,5 @@ export default function FirstView() {
         </div>
       </div>
     </section>
-  )
+  );
 }

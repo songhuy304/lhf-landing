@@ -1,5 +1,5 @@
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function NailIntro() {
   return (
@@ -8,7 +8,9 @@ export default function NailIntro() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative z-10 space-y-8">
             <div className="inline-block bg-primary/10 px-4 py-2 rounded-full">
-              <span className="text-primary font-medium tracking-wider text-sm">プロフェッショナルネイルアート</span>
+              <span className="text-primary font-medium tracking-wider text-sm">
+                プロフェッショナルネイルアート
+              </span>
             </div>
 
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight text-gray-900">
@@ -27,7 +29,10 @@ export default function NailIntro() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 rounded-full">
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-white px-8 rounded-full"
+              >
                 ギャラリーを見る
               </Button>
               <Button
@@ -58,5 +63,5 @@ export default function NailIntro() {
         </div>
       </div>
     </section>
-  )
+  );
 }
