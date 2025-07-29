@@ -1,0 +1,33 @@
+{
+  "Root": {
+    "home": "ホーム",
+    "about": "会社概要",
+    "contact": "お問い合わせ",
+    "signIn": "ログイン",
+    "signUp": "新規登録",
+    "resetPassword": "パスワードをリセット",
+    "Logout": "ログアウト",
+    "close": "閉じる"
+  },
+  "HomePage": {
+    "title": "こんにちは世界！",
+    "about": "会社概要ページへ",
+    "title-section": "ホスピタリティ業界向けの不動産でステーブルコインを再発明"
+  },
+  "FirstView": {
+    "professional": "プロフェッショナルネイルサービス",
+    "title1": "あなたの指先から",
+    "title2": "美しさを引き出す",
+    "title3": "ネイルアート",
+    "description1": "最新のトレンドと高品質な素材を使用した、プロフェッショナルなネイルサービスをご提供。",
+    "description2": "お客様一人ひとりに合わせたデザインで、日常からスペシャルな日まで、あなたの魅力を引き立てます。",
+    "book": "予約する",
+    "viewDesigns": "デザインを見る",
+    "designs": "デザイン",
+    "experience": "プロ経験",
+    "satisfaction": "お客様満足度",
+    "trendDesign": "トレンドデザイン",
+    "highQuality": "高品質ジェル使用",
+    "scroll": "スクロール"
+  }
+}
