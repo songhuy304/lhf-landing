@@ -58,30 +58,41 @@ export default function Header() {
             </button>
             <div className="flex flex-col md:flex-row items-center justify-center h-full md:h-auto space-y-8 md:space-y-0 md:space-x-8">
               <Link
-                href="#about"
+                href="/"
                 className="text-gray-800 hover:text-primary transition-colors duration-300 font-serif"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {t("about")}
+                {t("home")}
+              </Link>
+              <Link
+                href="/recruitment"
+                className="text-gray-800 hover:text-primary transition-colors duration-300 font-serif"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {t("recruitment")}
+              </Link>
+              <Link
+                href="/retail"
+                className="text-gray-800 hover:text-primary transition-colors duration-300 font-serif"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {t("retail")}
               </Link>
               <Link
                 href="/nail"
                 className="text-gray-800 hover:text-primary transition-colors duration-300 font-serif"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {t("home")}
+                {t("nail")}
               </Link>
-              <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-                <Button
-                  variant="outline"
-                  className="border-primary text-primary hover:bg-primary hover:text-white bg-transparent"
-                >
-                  {t("contact")}
-                </Button>
-                <Button className="bg-primary hover:bg-primary/90 text-white">
-                  {t("signUp")}
-                </Button>
-              </div>
+              <Link
+                href="/about"
+                className="text-gray-800 hover:text-primary transition-colors duration-300 font-serif"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {t("about")}
+              </Link>
+
               <LanguageSwitcher />
             </div>
           </nav>

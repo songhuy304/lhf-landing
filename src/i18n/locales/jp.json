@@ -7,7 +7,11 @@
     "signUp": "新規登録",
     "resetPassword": "パスワードをリセット",
     "Logout": "ログアウト",
-    "close": "閉じる"
+    "close": "閉じる",
+    "recruitment": "人材紹介",
+    "retail": "小売",
+    "nail": "ネイル",
+    "companyInfo": "会社情報"
   },
   "HomePage": {
     "title": "こんにちは世界！",

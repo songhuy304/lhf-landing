@@ -2,8 +2,10 @@
 
 import { Locale } from "@/i18n/config";
 import { setUserLocale } from "@/i18n/locale";
+import { LanguagesIcon } from "lucide-react";
 import { useLocale } from "next-intl";
 import { startTransition } from "react";
+import { Button } from "./ui";
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
@@ -16,23 +18,13 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className="flex gap-2">
-      <button
-        onClick={() => handleChangeLanguage("jp")}
-        className={`px-2 py-1 rounded ${
-          locale === "jp" ? "bg-blue-500 text-white" : "bg-gray-200"
-        }`}
-      >
-        日本語
-      </button>
-      <button
-        onClick={() => handleChangeLanguage("en")}
-        className={`px-2 py-1 rounded ${
-          locale === "en" ? "bg-blue-500 text-white" : "bg-gray-200"
-        }`}
-      >
-        English
-      </button>
-    </div>
+    <Button
+      variant="ghost"
+      size="icon"
+      className="text-gray-800"
+      onClick={() => handleChangeLanguage(locale === "jp" ? "en" : "jp")}
+    >
+      <LanguagesIcon />
+    </Button>
   );
 }

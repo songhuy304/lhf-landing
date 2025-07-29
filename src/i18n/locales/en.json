@@ -7,7 +7,11 @@
     "signUp": "Sign Up",
     "resetPassword": "Reset Password",
     "Logout": "Logout",
-    "close": "Close"
+    "close": "Close",
+    "recruitment": "Recruitment",
+    "retail": "Retail",
+    "nail": "Nail Services",
+    "companyInfo": "Company Information"
   },
   "HomePage": {
     "title": "Hello World!",
