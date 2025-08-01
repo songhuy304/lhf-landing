@@ -21,7 +21,7 @@ export default function LanguageSwitcher() {
     <Button
       variant="ghost"
       size="icon"
-      className="text-gray-800"
+      className="text-primary"
       onClick={() => handleChangeLanguage(locale === "jp" ? "en" : "jp")}
     >
       <LanguagesIcon />

@@ -1,15 +1,19 @@
 "use client";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 const HeroSection = () => {
+  const t = useTranslations("FirstView");
   return (
     <section className="min-h-screen relative overflow-hidden flex items-center justify-center">
       <div className="absolute w-[200px] h-[200px] bg-[#eb26fd] rounded-full  blur-[200px] top-1/3 left-[57%] -translate-x-1/2 -translate-y-1/2 -z-10" />
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 container mx-auto px-4">
         <div className="max-w-md">
-          <span className="block mb-4 text-xs md:text-sm text-indigo-500 font-medium">
-            Better every day
-          </span>
+          <div className="inline-block bg-primary/10 px-4 rounded-full mb-4">
+            <span className="text-primary font-medium text-xs leading-normal">
+              {t("professional")}
+            </span>
+          </div>
           <h3 className="text-4xl md:text-6xl font-semibold">
             Let&apos;s change it up a bit
           </h3>

@@ -14,7 +14,7 @@ const data = [
 ];
 export const FeatureSection = () => {
   return (
-    <section id="feature" className="pt-24 bg-white relative overflow-hidden">
+    <section id="feature" className="relative overflow-hidden">
       <div className="container mx-auto px-4">
         <TitleHeading des="最新のトレンドと高品質な素材を使用した、プロフェッショナルなネイルサービスをご提供。">
           美しさと技術が出会い、

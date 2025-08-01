@@ -12,6 +12,14 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = useTranslations("Root");
 
+  const menuItems = [
+    { href: "/", label: "home" },
+    { href: "/recruitment", label: "recruitment" },
+    { href: "/retail", label: "retail" },
+    { href: "/nail", label: "nail" },
+    { href: "/about", label: "about" },
+  ];
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -50,48 +58,24 @@ export default function Header() {
             md:flex md:items-center md:space-x-8
           `}
           >
-            <button
+            <Button
+              variant="ghost"
               className="md:hidden absolute top-6 right-6 text-gray-800"
               onClick={() => setIsMenuOpen(false)}
             >
               <X className="h-6 w-6" />
-            </button>
+            </Button>
             <div className="flex flex-col md:flex-row items-center justify-center h-full md:h-auto space-y-8 md:space-y-0 md:space-x-8">
-              <Link
-                href="/"
-                className="text-gray-800 hover:text-primary transition-colors duration-300 font-serif"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t("home")}
-              </Link>
-              <Link
-                href="/recruitment"
-                className="text-gray-800 hover:text-primary transition-colors duration-300 font-serif"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t("recruitment")}
-              </Link>
-              <Link
-                href="/retail"
-                className="text-gray-800 hover:text-primary transition-colors duration-300 font-serif"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t("retail")}
-              </Link>
-              <Link
-                href="/nail"
-                className="text-gray-800 hover:text-primary transition-colors duration-300 font-serif"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t("nail")}
-              </Link>
-              <Link
-                href="/about"
-                className="text-gray-800 hover:text-primary transition-colors duration-300 font-serif"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t("about")}
-              </Link>
+              {menuItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-primary hover:text-primary/80 transition-colors duration-300 font-medium"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {t(item.label)}
+                </Link>
+              ))}
 
               <LanguageSwitcher />
             </div>
