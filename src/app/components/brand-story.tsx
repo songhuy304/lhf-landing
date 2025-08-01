@@ -1,24 +1,14 @@
 import Image from "next/image";
 import company from "@/styles/images/company.jpg";
+import { TitleHeading } from "@/components/title-section";
 
 export default function BrandStory() {
   return (
     <section id="about" className="pt-24 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="max-w-xl mx-auto text-center mb-16">
-          <span className="text-green-800 font-medium tracking-wider">
-            ABOUT US
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-4 mb-6">
-            美しさと技術が出会い、
-            <br />
-            新しいネイルアートが生まれる。
-          </h2>
-          <p className="text-gray-600 leading-relaxed">
-            お客様一人ひとりの個性を大切にし、最新のトレンドと確かな技術で、
-            あなただけの美しいネイルアートをお届けします。
-          </p>
-        </div>
+        <TitleHeading des="最新のトレンドと高品質な素材を使用した、プロフェッショナルなネイルサービスをご提供。">
+          美しさと技術が出会い、
+        </TitleHeading>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative aspect-[3/3] rounded-2xl overflow-hidden">

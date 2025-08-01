@@ -24,7 +24,7 @@ export default function FirstView() {
 
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight text-gray-900">
               <span className="block">{t("title1")}</span>
-              <span className="block text-primary">{t("title2")}</span>
+              <span className="text-primary block">{t("title2")}</span>
               <span className="block">{t("title3")}</span>
             </h1>
 

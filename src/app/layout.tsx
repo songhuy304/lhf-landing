@@ -30,7 +30,7 @@ export default async function RootLayout({
       className={`${notoSerif.variable} ${notoSans.variable}`}
       suppressHydrationWarning
     >
-      <body className="font-sans">
+      <body className="font-serif">
         <NextIntlClientProvider>
           <Header />
           {children}
