@@ -69,7 +69,7 @@ export default function NailGallery() {
               breakpoints: {
                 320: { slidesPerView: 1, slidesPerGroup: 1 },
                 768: { slidesPerView: 2, slidesPerGroup: 2 },
-                1024: { slidesPerView: 3, slidesPerGroup: 2 },
+                1024: { slidesPerView: 4, slidesPerGroup: 2 },
               },
             }}
           >

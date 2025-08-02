@@ -5,7 +5,7 @@ import { setUserLocale } from "@/i18n/locale";
 import { LanguagesIcon } from "lucide-react";
 import { useLocale } from "next-intl";
 import { startTransition } from "react";
-import { Button } from "./ui";
+import { Button } from "@/components/ui";
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
@@ -22,7 +22,7 @@ export default function LanguageSwitcher() {
       variant="ghost"
       size="icon"
       className="text-primary"
-      onClick={() => handleChangeLanguage(locale === "jp" ? "en" : "jp")}
+      onClick={() => handleChangeLanguage(locale === "jp" ? "vi" : "jp")}
     >
       <LanguagesIcon />
     </Button>

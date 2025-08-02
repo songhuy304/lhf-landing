@@ -1,3 +1,4 @@
+"use client";
 import { Instagram, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -21,7 +22,7 @@ export default function SocialMedia() {
             Xをフォロー
           </Button>
         </div>
-        <p className="text-gray-600 mb-4">#FermyNail でシェアしてください！</p>
+        <p className="text-gray-600 mb-4">#LHF でシェアしてください！</p>
         <div className="max-w-2xl mx-auto">
           <input
             type="email"

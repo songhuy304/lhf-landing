@@ -1,7 +1,11 @@
 "use client";
+
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
+import { Button } from "@/components/ui";
+import { ArrowRight } from "lucide-react";
+
 const HeroSection = () => {
   const t = useTranslations("FirstView");
   return (
@@ -14,19 +18,38 @@ const HeroSection = () => {
               {t("professional")}
             </span>
           </div>
-          <h3 className="text-4xl md:text-6xl font-semibold">
-            Let&apos;s change it up a bit
-          </h3>
-          <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nobis
-            in error repellat voluptatibus ad.
+          <h1 className="text-xl md:text-4xl lg:text-5xl leading-tight text-gray-900">
+            <span className="block">{t("title1")}</span>
+            <span className="text-primary block">{t("title2")}</span>
+            <span className="block">{t("title3")}</span>
+          </h1>
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed mt-2">
+            {t("description1")}
           </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 mt-8">
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-white px-8 rounded-full"
+            >
+              {t("book")}
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-primary text-primary hover:bg-primary hover:text-white rounded-full"
+            >
+              {t("viewDesigns")}
+            </Button>
+          </div>
         </div>
         <ShuffleGrid />
       </div>
     </section>
   );
 };
+
 const shuffle = (array: (typeof squareData)[0][]) => {
   let currentIndex = array.length,
     randomIndex;
@@ -40,6 +63,7 @@ const shuffle = (array: (typeof squareData)[0][]) => {
   }
   return array;
 };
+
 const squareData = [
   {
     id: 1,
@@ -106,35 +130,66 @@ const squareData = [
     src: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1820&q=80",
   },
 ];
-const generateSquares = () => {
-  return shuffle(squareData).map((sq) => (
-    <motion.div
-      key={sq.id}
-      layout
-      transition={{ duration: 1.5, type: "spring" }}
-      className="w-full h-full"
-      style={{
-        backgroundImage: `url(${sq.src})`,
-        backgroundSize: "cover",
-      }}
-    ></motion.div>
-  ));
-};
+
 const ShuffleGrid = () => {
   const timeoutRef = useRef<any>(null);
-  const [squares, setSquares] = useState(generateSquares());
+  const [squares, setSquares] = useState<React.ReactNode[]>([]);
+  const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
-    shuffleSquares();
+    setIsClient(true);
+    const initialSquares = generateSquares();
+    setSquares(initialSquares);
+
+    // Chỉ thiết lập timeout sau khi đã hydrate
+    timeoutRef.current = setTimeout(shuffleSquares, 3000);
+
     return () => clearTimeout(timeoutRef.current);
   }, []);
+
+  const generateSquares = () => {
+    return shuffle([...squareData]).map((sq) => (
+      <motion.div
+        key={sq.id}
+        layout
+        transition={{ duration: 1.5, type: "spring" }}
+        className="w-full h-full"
+        style={{
+          backgroundImage: `url(${sq.src})`,
+          backgroundSize: "cover",
+        }}
+      ></motion.div>
+    ));
+  };
+
   const shuffleSquares = () => {
     setSquares(generateSquares());
     timeoutRef.current = setTimeout(shuffleSquares, 3000);
   };
+
+  // Hiển thị grid trống ban đầu cho server render
+  if (!isClient) {
+    return (
+      <div className="grid grid-cols-4 grid-rows-4 h-[450px] gap-1">
+        {squareData.map((sq) => (
+          <div
+            key={sq.id}
+            className="w-full h-full"
+            style={{
+              backgroundImage: `url(${sq.src})`,
+              backgroundSize: "cover",
+            }}
+          ></div>
+        ))}
+      </div>
+    );
+  }
+
   return (
     <div className="grid grid-cols-4 grid-rows-4 h-[450px] gap-1">
       {squares.map((sq) => sq)}
     </div>
   );
 };
+
 export default HeroSection;

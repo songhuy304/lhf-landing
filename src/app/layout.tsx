@@ -1,4 +1,5 @@
-import Header from "@/app/components/header";
+import Header from "@/components/theme/header";
+import Footer from "@/components/theme/footer";
 import "@/styles/globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
@@ -33,7 +34,8 @@ export default async function RootLayout({
       <body className="font-serif">
         <NextIntlClientProvider>
           <Header />
-          {children}
+          <main className="min-h-screen pb-16">{children}</main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

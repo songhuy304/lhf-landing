@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Link from "next/link";
+import Logo from "@/components/ui/logo";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,7 +32,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? "bg-white/45 backdrop-blur-xl shadow-sm" : "bg-transparent"
+        isScrolled ? "bg-white/85 backdrop-blur-xl shadow-sm" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 py-4">
@@ -41,10 +42,7 @@ export default function Header() {
               href="/"
               className="text-3xl font-bold font-serif relative group"
             >
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-blue-500 transition-all duration-300 group-hover:from-blue-500 group-hover:to-green-600">
-                Fermy
-              </span>
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-green-600 to-blue-500 transition-all duration-300 group-hover:w-full"></span>
+              <Logo />
             </Link>
           </div>
 
