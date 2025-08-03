@@ -24,7 +24,8 @@
     "retail": "小売",
     "brandStoryTitle": "企業と人材を繋ぐ架け橋",
     "brandStoryDes": "ダイナミック – モダン – グローバルコネクション",
-    "brandStoryHeading": "技術と献身によるサービス品質の実現",
+    "brandStoryHeading": "技術によって支えられたサービス品質の実現 —",
+    "brandStoryHeading2": "献身",
     "brandStoryContent": "経験豊富で高度な専門知識を持つチームにより、美容ケアから国際人材紹介、専門的な翻訳・通訳まで多様なサービスを提供しています。各サービスは細心の注意を払って実施され、最新のトレンドを取り入れ、お客様に最適な体験を提供することをお約束します。",
     "brandStoryPoint1": "専門資格を持つスタッフチーム",
     "brandStoryPoint2": "厳格に管理された衛生・運営プロセス",
@@ -37,7 +38,15 @@
     "companyHours": "営業時間",
     "companyHoursValue": "お問い合わせ: 0586-80-2277",
     "companyWebsite": "ウェブサイト",
-    "companyWebsiteValue": "lhf.co.jp"
+    "companyWebsiteValue": "lhf.co.jp",
+    "monday": "月曜日",
+    "friday": "金曜日",
+    "saturday": "土曜日",
+    "sunday": "日曜日",
+    "closed": "休業",
+    "termsOfService": "利用規約",
+    "privacyPolicy": "プライバシーポリシー",
+    "allRightsReserved": "All rights reserved"
   },
   "Meta": {
     "title": "株式会社LHF",

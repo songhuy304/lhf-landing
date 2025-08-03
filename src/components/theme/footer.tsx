@@ -123,13 +123,18 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               <li className="text-gray-600">
-                <span className="font-medium">Thứ 2 - Thứ 6:</span> 9:00 - 18:00
+                <span className="font-medium">
+                  {homeT("monday")} - {homeT("friday")}:
+                </span>{" "}
+                9:00 - 18:00
               </li>
               <li className="text-gray-600">
-                <span className="font-medium">Thứ 7:</span> 9:00 - 17:00
+                <span className="font-medium">{homeT("saturday")}:</span> 9:00 -
+                17:00
               </li>
               <li className="text-gray-600">
-                <span className="font-medium">Chủ nhật:</span> Đóng cửa
+                <span className="font-medium">{homeT("sunday")}:</span>{" "}
+                {homeT("closed")}
               </li>
             </ul>
           </div>
@@ -138,7 +143,8 @@ export default function Footer() {
         <div className="border-t border-gray-200 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm">
-              © {new Date().getFullYear()} LHF Co., Ltd. All rights reserved.
+              © {new Date().getFullYear()} LHF Co., Ltd.{" "}
+              {homeT("allRightsReserved")}.
             </p>
             <div className="mt-4 md:mt-0">
               <ul className="flex space-x-6">
@@ -147,7 +153,7 @@ export default function Footer() {
                     href="#"
                     className="text-gray-500 hover:text-primary text-sm"
                   >
-                    Điều khoản dịch vụ
+                    {homeT("termsOfService")}
                   </a>
                 </li>
                 <li>
@@ -155,7 +161,7 @@ export default function Footer() {
                     href="#"
                     className="text-gray-500 hover:text-primary text-sm"
                   >
-                    Chính sách bảo mật
+                    {homeT("privacyPolicy")}
                   </a>
                 </li>
               </ul>

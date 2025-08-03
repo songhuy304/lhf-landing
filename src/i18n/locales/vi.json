@@ -24,7 +24,8 @@
     "retail": "Bán lẻ",
     "brandStoryTitle": "Cầu nối giữa doanh nghiệp và người tài",
     "brandStoryDes": "Năng động – Hiện đại – Kết nối quốc tế",
-    "brandStoryHeading": "Hiện thực hóa chất lượng dịch vụ bằng tay nghề & sự tận tâm",
+    "brandStoryHeading": "Hiện thực hóa chất lượng dịch vụ bằng tay nghề và",
+    "brandStoryHeading2": "sự tận tâm",
     "brandStoryContent": "Với đội ngũ giàu kinh nghiệm và chuyên môn cao, chúng tôi cung cấp đa dạng dịch vụ từ chăm sóc sắc đẹp, giới thiệu nhân lực quốc tế, đến biên – phiên dịch chuyên nghiệp. Từng dịch vụ đều được thực hiện với sự kỹ lưỡng, cập nhật xu hướng mới và cam kết mang lại trải nghiệm tối ưu cho khách hàng.",
     "brandStoryPoint1": "Đội ngũ nhân sự có chứng chỉ chuyên môn",
     "brandStoryPoint2": "Quy trình vệ sinh và vận hành được quản lý nghiêm ngặt",
@@ -37,7 +38,15 @@
     "companyHours": "Giờ làm việc",
     "companyHoursValue": "Liên hệ: 0586-80-2277",
     "companyWebsite": "Website",
-    "companyWebsiteValue": "lhf.co.jp"
+    "companyWebsiteValue": "lhf.co.jp",
+    "monday": "Thứ 2",
+    "friday": "Thứ 6",
+    "saturday": "Thứ 7",
+    "sunday": "Chủ nhật",
+    "closed": "Đóng cửa",
+    "termsOfService": "Điều khoản dịch vụ",
+    "privacyPolicy": "Chính sách bảo mật",
+    "allRightsReserved": "Tất cả các quyền được bảo lưu"
   },
   "Meta": {
     "title": "Công ty TNHH LHF",
