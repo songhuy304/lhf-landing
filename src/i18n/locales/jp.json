@@ -14,8 +14,6 @@
     "companyInfo": "会社情報"
   },
   "HomePage": {
-    "title": "こんにちは世界！",
-    "about": "会社概要ページへ",
     "title-section": "ホスピタリティ業界向けの不動産でステーブルコインを再発明",
     "featureTitle": "主なサービス",
     "featureSubTitle": "プロフェッショナルサービス",
@@ -24,7 +22,7 @@
     "nail": "ネイル",
     "recruitment": "人材紹介",
     "retail": "小売",
-    "brandStoryTitle": "LHF – 企業と人材を繋ぐ架け橋",
+    "brandStoryTitle": "企業と人材を繋ぐ架け橋",
     "brandStoryDes": "ダイナミック – モダン – グローバルコネクション",
     "brandStoryHeading": "技術と献身によるサービス品質の実現",
     "brandStoryContent": "経験豊富で高度な専門知識を持つチームにより、美容ケアから国際人材紹介、専門的な翻訳・通訳まで多様なサービスを提供しています。各サービスは細心の注意を払って実施され、最新のトレンドを取り入れ、お客様に最適な体験を提供することをお約束します。",
@@ -41,20 +39,8 @@
     "companyWebsite": "ウェブサイト",
     "companyWebsiteValue": "lhf.co.jp"
   },
-  "FirstView": {
-    "professional": "毎日良くなる",
-    "title1": "あなたの指先から",
-    "title2": "美しさを引き出す",
-    "title3": "ネイルアート",
-    "description1": "最新のトレンドと高品質な素材を使用した、プロフェッショナルなネイルサービスをご提供。",
-    "description2": "お客様一人ひとりに合わせたデザインで、日常からスペシャルな日まで、あなたの魅力を引き立てます。",
-    "book": "予約する",
-    "viewDesigns": "デザインを見る",
-    "designs": "デザイン",
-    "experience": "プロ経験",
-    "satisfaction": "お客様満足度",
-    "trendDesign": "トレンドデザイン",
-    "highQuality": "高品質ジェル使用",
-    "scroll": "スクロール"
+  "Meta": {
+    "title": "株式会社LHF",
+    "description": "LHF株式会社は、美容ケア、人材紹介、小売の分野で高品質なサービスを提供しています。"
   }
 }

@@ -1,10 +1,13 @@
 import Header from "@/components/theme/header";
 import Footer from "@/components/theme/footer";
 import "@/styles/globals.css";
+import "aos/dist/aos.css";
 import { NextIntlClientProvider } from "next-intl";
-import { getLocale } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
 import type React from "react";
+import InitAos from "@/components/theme/aos";
+import { Metadata } from "next";
 
 const notoSerif = Noto_Serif_JP({
   subsets: ["latin"],
@@ -17,6 +20,24 @@ const notoSans = Noto_Sans_JP({
   variable: "--font-sans",
   display: "swap",
 });
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("Meta");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    icons: {
+      icon: [{ url: "/favicon.png" }],
+    },
+    alternates: {
+      languages: {
+        vi: "/vi",
+        ja: "/ja",
+      },
+    },
+  };
+}
 
 export default async function RootLayout({
   children,
@@ -33,6 +54,7 @@ export default async function RootLayout({
     >
       <body className="font-serif">
         <NextIntlClientProvider>
+          <InitAos />
           <Header />
           <main className="min-h-screen pb-16">{children}</main>
           <Footer />

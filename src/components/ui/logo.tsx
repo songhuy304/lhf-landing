@@ -4,7 +4,7 @@ import React from "react";
 const Logo = () => {
   return (
     <div className="">
-      <Image src="/logo.png" alt="logo" width={160} height={100} />
+      <Image src="/logo.svg" alt="logo" width={100} height={60} />
     </div>
   );
 };
