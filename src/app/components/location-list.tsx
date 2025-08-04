@@ -14,7 +14,11 @@ export default function LocationsList() {
           {t("locationListTitle")}
         </TitleHeading>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <LocationItem
             type={location("hq")}
             title={location("hqTitle")}

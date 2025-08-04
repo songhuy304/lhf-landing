@@ -1,15 +1,12 @@
-import { Autoplay, FreeMode, Navigation, Pagination } from "swiper/modules";
+import {
+  Autoplay,
+  FreeMode,
+  Navigation,
+  Pagination,
+  Grid,
+} from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SwiperOptions } from "swiper/types";
-
-// @ts-ignore
-import "swiper/css";
-// @ts-ignore
-import "swiper/css/navigation";
-// @ts-ignore
-import "swiper/css/pagination";
-// @ts-ignore
-import "swiper/css/free-mode";
 
 import { cn } from "@/lib/utils";
 import React, { ReactNode, useId, useRef } from "react";
@@ -61,7 +58,7 @@ const Carousel = ({
       ></div>
 
       <Swiper
-        modules={[Navigation, Pagination, FreeMode, Autoplay]}
+        modules={[Navigation, Pagination, FreeMode, Autoplay, Grid]}
         watchOverflow={false}
         navigation={{
           prevEl: prevRef.current,

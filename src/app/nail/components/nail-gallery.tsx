@@ -40,6 +40,36 @@ export default function NailGallery() {
       description: "個性的なアートで自分らしさを表現",
       image: img1,
     },
+    {
+      title: "アートネイル",
+      description: "個性的なアートで自分らしさを表現",
+      image: img1,
+    },
+    {
+      title: "アートネイル",
+      description: "個性的なアートで自分らしさを表現",
+      image: img1,
+    },
+    {
+      title: "アートネイル",
+      description: "個性的なアートで自分らしさを表現",
+      image: img1,
+    },
+    {
+      title: "アートネイル",
+      description: "個性的なアートで自分らしさを表現",
+      image: img1,
+    },
+    {
+      title: "アートネイル",
+      description: "個性的なアートで自分らしさを表現",
+      image: img1,
+    },
+    {
+      title: "アートネイル",
+      description: "個性的なアートで自分らしさを表現",
+      image: img1,
+    },
   ];
 
   return (
@@ -63,13 +93,13 @@ export default function NailGallery() {
               loop: true,
               speed: 1000,
               autoplay: {
-                delay: 2500,
+                delay: 3500,
                 disableOnInteraction: false,
               },
               breakpoints: {
                 320: { slidesPerView: 1, slidesPerGroup: 1 },
-                768: { slidesPerView: 2, slidesPerGroup: 2 },
-                1024: { slidesPerView: 4, slidesPerGroup: 2 },
+                768: { slidesPerView: 2, slidesPerGroup: 1 },
+                1024: { slidesPerView: 5, slidesPerGroup: 1 },
               },
             }}
           >

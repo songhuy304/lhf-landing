@@ -2,6 +2,12 @@ import Header from "@/components/theme/header";
 import Footer from "@/components/theme/footer";
 import "@/styles/globals.css";
 import "aos/dist/aos.css";
+// @ts-ignore
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/grid";
+import "swiper/css/pagination";
+import "swiper/css/free-mode";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
