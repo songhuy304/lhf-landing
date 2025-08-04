@@ -48,7 +48,8 @@
     "privacyPolicy": "プライバシーポリシー",
     "allRightsReserved": "All rights reserved",
     "locationListTitle": "店舗・オフィス一覧",
-    "locationListDes": "私たちのネイルサロン、販売店舗、オフィスは各地に展開しています。どの拠点でも、統一された高品質なサービスをご提供します。"
+    "locationListDes": "私たちのネイルサロン、販売店舗、オフィスは各地に展開しています。どの拠点でも、統一された高品質なサービスをご提供します。",
+    "viewOnMap": "地図を見る"
   },
   "Meta": {
     "title": "株式会社LHF",
@@ -56,16 +57,23 @@
   },
   "Location": {
     "hq": "本社",
+    "hqTitle": "LHF 本社",
     "hqAddress": "愛知県一宮市島村字下老光寺 105-2 2階",
     "hqPostal": "〒 491-0121",
-    "office": "管理事務所",
-    "officeAddress": "愛知県一宮市長島町２丁目９番地",
+
+    "office": "一宮オフィス",
+    "officeTitle": "LHF 一宮オフィス",
+    "officeAddress": "愛知県一宮市長島町2丁目9番地",
     "officePostal": "〒 491-0071",
-    "salon": "一宮サロン",
+
+    "salon": "ネイル",
+    "salonTitle": "LHF 一宮ネイルサロン",
     "salonAddress": "愛知県一宮市栄3丁目5-18 STOCK BLDG 2階",
     "salonPostal": "〒 491-0858",
-    "store": "ベトナム食材店",
-    "storeAddress": "岡山県総社市中央1-6総社ビル2階",
+
+    "store": "小売",
+    "storeTitle": "ベトナム食品店",
+    "storeAddress": "岡山県総社市中央1-6 総社ビル2階",
     "storePostal": "〒 719-1131"
   }
 }

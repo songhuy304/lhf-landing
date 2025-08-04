@@ -1,8 +1,8 @@
 import { TitleHeading } from "@/components/title-section";
-import { useTranslations } from "next-intl";
-import { ContactInfo } from "@/data";
-import { Phone } from "lucide-react";
 import { Button } from "@/components/ui";
+import Chip from "@/components/ui/chip";
+import { MapPin } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function LocationsList() {
   const t = useTranslations("HomePage");
@@ -15,25 +15,41 @@ export default function LocationsList() {
         </TitleHeading>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <LocationCard
-            title={location("hq")}
+          <LocationItem
+            type={location("hq")}
+            title={location("hqTitle")}
             address={location("hqAddress")}
-            postal={location("hqPostal")}
+            postalCode={location("hqPostal")}
+            mapUrl={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+              location("hqAddress")
+            )}`}
           />
-          <LocationCard
-            title={location("office")}
+          <LocationItem
+            type={location("office")}
+            title={location("officeTitle")}
             address={location("officeAddress")}
-            postal={location("officePostal")}
+            postalCode={location("officePostal")}
+            mapUrl={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+              location("officeAddress")
+            )}`}
           />
-          <LocationCard
-            title={location("salon")}
+          <LocationItem
+            type={location("salon")}
+            title={location("salonTitle")}
             address={location("salonAddress")}
-            postal={location("salonPostal")}
+            postalCode={location("salonPostal")}
+            mapUrl={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+              location("salonAddress")
+            )}`}
           />
-          <LocationCard
-            title={location("store")}
+          <LocationItem
+            type={location("store")}
+            title={location("storeTitle")}
             address={location("storeAddress")}
-            postal={location("storePostal")}
+            postalCode={location("storePostal")}
+            mapUrl={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+              location("storeAddress")
+            )}`}
           />
         </div>
       </div>
@@ -41,29 +57,37 @@ export default function LocationsList() {
   );
 }
 
-function LocationCard({
-  title,
-  address,
-  postal,
-}: {
+interface LocationItemProps {
+  type: string;
   title: string;
   address: string;
-  postal: string;
-}) {
+  postalCode: string;
+  mapUrl: string;
+}
+
+const LocationItem = ({
+  type,
+  title,
+  address,
+  postalCode,
+  mapUrl,
+}: LocationItemProps) => {
+  const t = useTranslations("HomePage");
+
   return (
-    <div className="bg-white rounded-lg min-h-56 border p-6 transition-transform hover:scale-105">
-      <div className="flex justify-between items-start mb-2">
-        <h3 className="text-xl font-semibold">{title}</h3>
-        <span className="text-sm text-gray-500">{postal}</span>
+    <div className="w-full h-full bg-gray-50 rounded-md p-4 flex flex-col">
+      <Chip label={type} />
+      <h3 className="text-lg font-bold mt-3">{title}</h3>
+      <p className="text-sm text-gray-500 mt-2 flex-grow">{address}</p>
+
+      <div className="mt-4">
+        <a href={mapUrl} target="_blank" rel="noopener noreferrer">
+          <Button variant="outline" className="w-full">
+            <MapPin className="mr-2 h-4 w-4" />
+            {t("viewOnMap")}
+          </Button>
+        </a>
       </div>
-      <p className="text-gray-700 mb-3">{address}</p>
-      <div className="flex items-start gap-3">
-        <Phone className="text-gray-700 h-5 w-5 mt-1 flex-shrink-0" />
-        <span>{ContactInfo.phone}</span>
-      </div>
-      <Button variant="outline" className="w-full">
-        Xem trên Google Maps
-      </Button>
     </div>
   );
-}
+};

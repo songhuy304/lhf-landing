@@ -21,7 +21,10 @@ export default function BrandStory() {
 
         <div className="flex md:flex-row flex-col">
           {/* Overview Section */}
-          <div className="mb-8 md:mb-0 w-1/2 pr-12" data-aos="fade-right">
+          <div
+            className="mb-8 md:mb-0 w-full md:w-1/2 md:pr-12"
+            data-aos="fade-right"
+          >
             <div className="flex items-center gap-2 mb-6">
               <h3 className="text-2xl font-bold text-gray-900">
                 {t("brandStoryHeading")}{" "}
@@ -53,7 +56,7 @@ export default function BrandStory() {
 
           {/* Company Info Section */}
           <div
-            className="md:border-l md:pl-12 border-gray-200 w-1/2"
+            className="md:border-l md:pl-12 border-gray-200 w-full md:w-1/2"
             data-aos="fade-left"
           >
             <div className="flex items-center gap-2 mb-6">

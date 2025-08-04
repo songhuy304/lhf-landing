@@ -48,7 +48,8 @@
     "privacyPolicy": "Chính sách bảo mật",
     "allRightsReserved": "Tất cả các quyền được bảo lưu",
     "locationListTitle": "Hệ thống chi nhánh & cửa hàng",
-    "locationListDes": "Khám phá các văn phòng, tiệm nail và cửa hàng bán lẻ của chúng tôi tại nhiều địa điểm khác nhau. Mỗi chi nhánh đều mang đến dịch vụ chuyên nghiệp và trải nghiệm nhất quán."
+    "locationListDes": "Khám phá các văn phòng, tiệm nail và cửa hàng bán lẻ của chúng tôi tại nhiều địa điểm khác nhau. Mỗi chi nhánh đều mang đến dịch vụ chuyên nghiệp và trải nghiệm nhất quán.",
+    "viewOnMap": "Xem trên bản đồ"
   },
   "Meta": {
     "title": "Công ty TNHH LHF",
@@ -56,15 +57,22 @@
   },
   "Location": {
     "hq": "Trụ sở chính",
+    "hqTitle": "Trụ sở chính LHF",
     "hqAddress": "Aichi-ken, Ichinomiya-shi, Shimamura Uji Kōkōji 105-2, tầng 2",
     "hqPostal": "〒 491-0121",
-    "office": "Văn phòng quản lý",
+
+    "office": "phòng quản lý",
+    "officeTitle": "Văn phòng quản lý LHF ",
     "officeAddress": "Aichi-ken, Ichinomiya-shi, Nagashima-cho 2-chome 9",
     "officePostal": "〒 491-0071",
-    "salon": "Tiệm làm móng",
+
+    "salon": "Làm móng",
+    "salonTitle": "Tiệm làm móng LHF chi nhánh Ichinomiya",
     "salonAddress": "Aichi-ken, Ichinomiya-shi, Sakae 3-chome 5-18 STOCK BLDG tầng 2",
     "salonPostal": "〒 491-0858",
-    "store": "Cửa hàng thực phẩm Việt Nam",
+
+    "store": "Bán lẻ",
+    "storeTitle": "Cửa hàng thực phẩm Việt Nam",
     "storeAddress": "Okayama-ken, Soja-shi, Chuo 1-6 Soja Building tầng 2",
     "storePostal": "〒 719-1131"
   }
