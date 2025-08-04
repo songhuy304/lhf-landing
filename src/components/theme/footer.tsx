@@ -13,6 +13,7 @@ import {
   Twitter,
 } from "lucide-react";
 import Logo from "@/components/ui/logo";
+import { ContactInfo } from "@/data";
 
 export default function Footer() {
   const t = useTranslations("Root");
@@ -97,10 +98,10 @@ export default function Footer() {
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
                 <a
-                  href="mailto:info@lhf.co.jp"
+                  href={`mailto:${ContactInfo.email}`}
                   className="text-gray-600 hover:text-primary transition-colors duration-300"
                 >
-                  info@lhf.co.jp
+                  {ContactInfo.email}
                 </a>
               </li>
 
@@ -110,7 +111,7 @@ export default function Footer() {
                   href="https://lhf.co.jp"
                   className="text-gray-600 hover:text-primary transition-colors duration-300"
                 >
-                  https://lhf.co.jp
+                  {ContactInfo.website}
                 </a>
               </li>
             </ul>

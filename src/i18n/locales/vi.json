@@ -36,7 +36,7 @@
     "companyAddress": "Địa chỉ",
     "companyAddressValue": "Aichi-ken, Ichinomiya-shi, Shimamura Uji Kōkōji 105-2, tầng 2",
     "companyHours": "Giờ làm việc",
-    "companyHoursValue": "Liên hệ: 0586-80-2277",
+    "companyHoursValue": "Liên hệ: ",
     "companyWebsite": "Website",
     "companyWebsiteValue": "lhf.co.jp",
     "monday": "Thứ 2",
@@ -46,10 +46,26 @@
     "closed": "Đóng cửa",
     "termsOfService": "Điều khoản dịch vụ",
     "privacyPolicy": "Chính sách bảo mật",
-    "allRightsReserved": "Tất cả các quyền được bảo lưu"
+    "allRightsReserved": "Tất cả các quyền được bảo lưu",
+    "locationListTitle": "Hệ thống chi nhánh & cửa hàng",
+    "locationListDes": "Khám phá các văn phòng, tiệm nail và cửa hàng bán lẻ của chúng tôi tại nhiều địa điểm khác nhau. Mỗi chi nhánh đều mang đến dịch vụ chuyên nghiệp và trải nghiệm nhất quán."
   },
   "Meta": {
     "title": "Công ty TNHH LHF",
     "description": "Công ty TNHH LHF là công ty cổ phần cung cấp dịch vụ chất lượng cao về nail, giới thiệu nhân lực và bán lẻ."
+  },
+  "Location": {
+    "hq": "Trụ sở chính",
+    "hqAddress": "Aichi-ken, Ichinomiya-shi, Shimamura Uji Kōkōji 105-2, tầng 2",
+    "hqPostal": "〒 491-0121",
+    "office": "Văn phòng quản lý",
+    "officeAddress": "Aichi-ken, Ichinomiya-shi, Nagashima-cho 2-chome 9",
+    "officePostal": "〒 491-0071",
+    "salon": "Tiệm làm móng",
+    "salonAddress": "Aichi-ken, Ichinomiya-shi, Sakae 3-chome 5-18 STOCK BLDG tầng 2",
+    "salonPostal": "〒 491-0858",
+    "store": "Cửa hàng thực phẩm Việt Nam",
+    "storeAddress": "Okayama-ken, Soja-shi, Chuo 1-6 Soja Building tầng 2",
+    "storePostal": "〒 719-1131"
   }
 }

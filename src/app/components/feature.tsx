@@ -30,7 +30,7 @@ export const FeatureSection = () => {
   const router = useRouter();
 
   return (
-    <section id="feature" className="relative overflow-hidden pt-24">
+    <section id="feature" className="relative overflow-hidden py-24">
       <div className="container mx-auto px-4">
         <TitleHeading des={t("featureDes")} subTitle={t("featureSubTitle")}>
           {t("featureTitle")}

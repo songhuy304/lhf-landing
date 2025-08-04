@@ -1,21 +1,21 @@
 import { TitleHeading } from "@/components/title-section";
-import { useTranslations } from "next-intl";
-import Link from "next/link";
+import { ContactInfo } from "@/data";
 import {
+  ArrowRight,
   Award,
-  Clock,
-  Globe,
-  MapPin,
   Building,
   CheckCircle,
-  Info,
-  ArrowRight,
+  Globe,
+  MapPin,
+  Phone,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function BrandStory() {
   const t = useTranslations("HomePage");
   return (
-    <section id="about" className="bg-gray-50 relative overflow-hidden py-24">
+    <section id="Brand" className="bg-gray-50 relative overflow-hidden py-24">
       <div className="container mx-auto px-4">
         <TitleHeading des={t("brandStoryDes")}>LHF</TitleHeading>
 
@@ -74,12 +74,14 @@ export default function BrandStory() {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <Clock className="text-primary h-5 w-5 mt-1 flex-shrink-0" />
+                <Phone className="text-primary h-5 w-5 mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-gray-900">
-                    {t("companyHours")}
+                    {t("companyHoursValue")}
                   </h4>
-                  <p className="text-gray-600">{t("companyHoursValue")}</p>
+                  <p className="text-gray-600">
+                    {t("companyHoursValue")} {ContactInfo.phone}
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -97,7 +99,7 @@ export default function BrandStory() {
                   <h4 className="font-semibold text-gray-900">
                     {t("companyWebsite")}
                   </h4>
-                  <p className="text-gray-600">{t("companyWebsiteValue")}</p>
+                  <p className="text-gray-600">{ContactInfo.website}</p>
                 </div>
               </div>
             </div>

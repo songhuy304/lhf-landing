@@ -5,12 +5,7 @@ import { useTranslations } from "next-intl";
 const HeroSection = () => {
   const t = useTranslations("HomePage");
   return (
-    <section
-      className="min-h-screen relative overflow-hidden flex items-center justify-center bg-cover bg-center"
-      style={{
-        backgroundImage: "url('/hero-section.jpg')",
-      }}
-    >
+    <section className="hero-section min-h-screen relative overflow-hidden flex items-center justify-center">
       <div className="max-w-xl mx-auto">
         <h1
           className="text-5xl font-bold text-center text-shadow-xl"
