@@ -96,6 +96,12 @@
     "ourCompany": "Về chúng tôi",
     "aboutCompanyDes": " LHF Việt Nhật là cầu nối hợp tác giữa Việt Nam và Nhật Bản, chuyên cung cấp các dịch vụ chất lượng trong nhiều lĩnh vực. Chúng tôi hoạt động với phương châm đặt **uy tín – chuyên nghiệp – tận tâm** lên hàng đầu, nhằm mang đến giá trị thiết thực cho khách hàng và đối tác.",
     "getInTouch": "Liên hệ",
+    "placeholderName": "Nhập họ và tên của bạn",
+    "placeholderEmail": "Nhập email của bạn",
+    "placeholderMessage": "Nhập nội dung tin nhắn của bạn",
+    "submitting": "Đang gửi...",
+    "sendMessage": "Gửi tin nhắn",
+    "contactUsDes": "Chúng tôi rất mong nhận được phản hồi từ bạn. Vui lòng điền vào mẫu này.",
     "Vision": {
       "title": "Tầm nhìn",
       "v1-title": "Theo đuổi sự hài lòng",

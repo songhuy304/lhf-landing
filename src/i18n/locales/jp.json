@@ -96,6 +96,12 @@
     "ourCompany": "私たちについて",
     "aboutCompanyDes": "LHFは、ベトナムと日本の協力を促進する架け橋です。高品質なサービスを提供する多岐に渡る分野で活動しています。私たちは、信頼と専門性を重視し、お客様とパートナーに実りある関係を築くことを約束します。",
     "getInTouch": "お問い合わせ",
+    "placeholderName": "お名前を入力してください",
+    "placeholderEmail": "メールアドレスを入力してください",
+    "placeholderMessage": "メッセージを入力してください",
+    "submitting": "送信中...",
+    "sendMessage": "メッセージを送信",
+    "contactUsDes": "ご連絡をお待ちしております。こちらのフォームにご記入ください。",
     "Vision": {
       "title": "ビジョン",
       "v1-title": "満足度の追求",
