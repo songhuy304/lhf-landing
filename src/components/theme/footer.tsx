@@ -127,15 +127,11 @@ export default function Footer() {
                 <span className="font-medium">
                   {homeT("monday")} - {homeT("friday")}:
                 </span>{" "}
-                9:00 - 18:00
+                {ContactInfo.bookingTime}
               </li>
               <li className="text-gray-600">
-                <span className="font-medium">{homeT("saturday")}:</span> 9:00 -
-                17:00
-              </li>
-              <li className="text-gray-600">
-                <span className="font-medium">{homeT("sunday")}:</span>{" "}
-                {homeT("closed")}
+                <span className="font-medium">{homeT("saturday")}:</span>{" "}
+                {ContactInfo.bookingSaturday}
               </li>
             </ul>
           </div>

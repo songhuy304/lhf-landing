@@ -7,4 +7,6 @@ export const ContactInfo = {
   urlInstagram: "https://www.instagram.com/lhf_long/",
   urlYoutube: "https://www.youtube.com/@lhf_long",
   urlLine: "https://line.me/R/ti/p/%40lhf0000",
+  bookingTime: "10:00 - 20:00",
+  bookingSaturday: "9:00 - 17:00",
 };

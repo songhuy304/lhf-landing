@@ -4,34 +4,28 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, Instagram, Smartphone } from "lucide-react";
 import Image from "next/image";
 import BookingImage from "@/styles/images/nail-banner.webp";
+import { TitleHeading } from "@/components/title-section";
+import { useTranslations } from "next-intl";
+import { ContactInfo } from "@/data";
 
 export default function Booking() {
+  const t = useTranslations("NailPage");
+  const commonT = useTranslations("Root");
   return (
     <section className="py-24 bg-gradient-to-b from-white to-green-50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="text-green-800 font-medium tracking-wider">
-              BOOKING
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-4 mb-6">
-              ご予約・お問い合わせ
-            </h2>
-            <p className="text-xl text-gray-600 mb-8">
-              お気軽にお問い合わせください。各種SNSからもご予約を承っております。
-            </p>
-          </div>
+          <TitleHeading des={t("bookingDes")} subTitle={t("bookingSubTitle")}>
+            {t("bookingTitle")}
+          </TitleHeading>
 
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="p-8 md:p-12">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                  ご予約方法
+                  {t("bookingMethod")}
                 </h3>
-                <p className="text-gray-600 mb-8">
-                  下記のいずれかの方法でお気軽にご連絡ください。
-                  24時間以内にお返事いたします。
-                </p>
+                <p className="text-gray-600 mb-8">{t("bookingMethodDes")}</p>
 
                 <div className="space-y-4 mb-8">
                   <Button
@@ -42,7 +36,7 @@ export default function Booking() {
                     }
                   >
                     <MessageCircle className="h-5 w-5" />
-                    Messenger で予約
+                    Messenger
                   </Button>
 
                   <Button
@@ -57,7 +51,7 @@ export default function Booking() {
                     }
                   >
                     <Instagram className="h-5 w-5" />
-                    Instagram で予約
+                    Instagram
                   </Button>
 
                   <Button
@@ -69,16 +63,17 @@ export default function Booking() {
                     }
                   >
                     <Smartphone className="h-5 w-5" />
-                    LINE で予約
+                    LINE
                   </Button>
                 </div>
 
                 <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-gray-900 mb-2">営業時間</h4>
+                  <h4 className="font-semibold text-gray-900 mb-2">
+                    {commonT("workingHours")}
+                  </h4>
                   <p className="text-gray-600 text-sm">
-                    10:00 - 20:00（最終受付19:00）
+                    {commonT("dayWork")}: {ContactInfo.bookingTime}
                   </p>
-                  <p className="text-gray-600 text-sm">定休日：毎週月曜日</p>
                 </div>
               </div>
 

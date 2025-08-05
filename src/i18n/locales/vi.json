@@ -1,7 +1,7 @@
 {
   "Root": {
     "home": "Trang chủ",
-    "about": "Giới thiệu",
+    "about": "Thông tin công ty",
     "contact": "Liên hệ",
     "signIn": "Đăng nhập",
     "signUp": "Đăng ký",
@@ -11,7 +11,9 @@
     "recruitment": "Tuyển dụng",
     "retail": "Bán lẻ",
     "nail": "Dịch vụ làm móng",
-    "companyInfo": "Thông tin công ty"
+    "companyInfo": "Thông tin công ty",
+    "workingHours": "Giờ làm việc",
+    "dayWork": "Thứ 2 - Thứ 6"
   },
   "HomePage": {
     "title-section": "Stablecoins, Reinvented with Real Estate for the hospitality industry",
@@ -75,5 +77,35 @@
     "storeTitle": "Cửa hàng thực phẩm Việt Nam",
     "storeAddress": "Okayama-ken, Soja-shi, Chuo 1-6 Soja Building tầng 2",
     "storePostal": "〒 719-1131"
+  },
+  "NailPage": {
+    "title": "Tận hưởng vẻ đẹp",
+    "galleryTitle": "Bộ sưu tập Nail",
+    "galleryDes": "Chiêm ngưỡng những mẫu nail chất lượng cao chúng tôi đã thực hiện",
+    "nailAlbum": "Bộ sưu tập Nail",
+    "hotTrend": "Sản phẩm hot",
+    "bookingTitle": "Đặt chỗ trực tuyến",
+    "bookingSubTitle": "Đặt lịch",
+    "bookingDes": "Đặt chỗ nhanh chóng và dễ dàng",
+    "bookingMethod": "Phương thức đặt chỗ",
+    "bookingMethodDes": "Vui lòng liên hệ với chúng tôi bằng bất kỳ phương pháp nào dưới đây. Chúng tôi sẽ trả lời trong vòng 24 giờ."
+  },
+  "AboutPage": {
+    "title": "Về chúng tôi",
+    "ourCompanyDes": "Năng động – Hiện đại – Kết nối quốc tế",
+    "ourCompany": "Về chúng tôi",
+    "aboutCompanyDes": " LHF Việt Nhật là cầu nối hợp tác giữa Việt Nam và Nhật Bản, chuyên cung cấp các dịch vụ chất lượng trong nhiều lĩnh vực. Chúng tôi hoạt động với phương châm đặt **uy tín – chuyên nghiệp – tận tâm** lên hàng đầu, nhằm mang đến giá trị thiết thực cho khách hàng và đối tác.",
+    "getInTouch": "Liên hệ",
+    "Vision": {
+      "title": "Tầm nhìn",
+      "v1-title": "Theo đuổi sự hài lòng",
+      "v1-des": "Cung cấp dịch vụ vượt qua mong đợi của cả doanh nghiệp và người tìm việc, hướng tới sự hài lòng tối đa.",
+      "v2-title": "Niềm tin và sự chân thành",
+      "v2-des": "Tương tác với tất cả các bên liên quan bằng sự minh bạch và trung thực, xây dựng mối quan hệ tin cậy vững chắc.",
+      "v3-title": "Đổi mới và tiến bộ",
+      "v3-des": "Không ngừng đổi mới, ứng dụng công nghệ và kiến thức mới nhất để thích ứng nhanh với thay đổi thị trường.",
+      "v4-title": "Đóng góp cho xã hội",
+      "v4-des": "Thông qua việc giới thiệu nhân tài chất lượng cao, góp phần tạo ra cơ hội việc làm và phát triển xã hội bền vững."
+    }
   }
 }
