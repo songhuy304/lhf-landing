@@ -48,7 +48,6 @@ export default function OurCompany() {
             </Text>
 
             <Text>{t("aboutCompanyDes")}</Text>
-
             <div className="relative w-full h-96">
               <Image
                 src={ImageCompany}
@@ -58,10 +57,12 @@ export default function OurCompany() {
               />
 
               <div className="absolute bottom-[-8px] right-0 h-[3.5rem] w-[11rem] bg-white rounded-s-full border-effect pt-2 pl-2">
-                <Button className="rounded-full items-center group w-full">
-                  {t("getInTouch")}
-                  <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-2 transition-all duration-300" />
-                </Button>
+                <a href="contact">
+                  <Button className="rounded-full items-center group w-full">
+                    {t("getInTouch")}
+                    <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-2 transition-all duration-300" />
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

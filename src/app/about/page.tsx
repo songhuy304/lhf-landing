@@ -8,8 +8,8 @@ export default function About() {
     <>
       <HeroSection />
       <OurCompany />
-      <LocationsList />
       <ContactUs />
+      <LocationsList />
     </>
   );
 }

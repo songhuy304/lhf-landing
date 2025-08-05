@@ -8,7 +8,7 @@ export default function LocationsList() {
   const t = useTranslations("HomePage");
   const location = useTranslations("Location");
   return (
-    <section id="Location" className=" relative pt-24">
+    <section id="location" className="relative pt-24">
       <div className="container mx-auto px-4">
         <TitleHeading des={t("locationListDes")}>
           {t("locationListTitle")}
