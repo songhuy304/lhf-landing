@@ -14,6 +14,8 @@ import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
 import type React from "react";
 import InitAos from "@/components/theme/aos";
 import { Metadata } from "next";
+import Loader from "@/components/loader";
+import { Suspense } from "react";
 
 const notoSerif = Noto_Serif_JP({
   subsets: ["latin"],
@@ -61,6 +63,7 @@ export default async function RootLayout({
       <body className="font-serif">
         <NextIntlClientProvider>
           <InitAos />
+          <Loader />
           <Header />
           <main className="min-h-screen pb-16">{children}</main>
           <Footer />
