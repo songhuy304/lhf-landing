@@ -92,7 +92,7 @@ export default function Footer() {
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
                 <span className="text-gray-600">
-                  {homeT("companyHoursValue")}
+                  {homeT("companyHoursValue")}: {ContactInfo.phone}
                 </span>
               </li>
               <li className="flex items-center">

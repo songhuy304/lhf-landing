@@ -13,7 +13,12 @@
     "nail": "Dịch vụ làm móng",
     "companyInfo": "Thông tin công ty",
     "workingHours": "Giờ làm việc",
-    "dayWork": "Thứ 2 - Thứ 6"
+    "dayWork": "Thứ 2 - Thứ 6",
+    "notFound": {
+      "title": "Trang không tồn tại",
+      "description": "Xin lỗi, chúng tôi không tìm thấy trang bạn đang tìm kiếm.",
+      "button": "Trở lại trang chủ"
+    }
   },
   "HomePage": {
     "title-section": "Stablecoins, Reinvented with Real Estate for the hospitality industry",
@@ -113,5 +118,11 @@
       "v4-title": "Đóng góp cho xã hội",
       "v4-des": "Thông qua việc giới thiệu nhân tài chất lượng cao, góp phần tạo ra cơ hội việc làm và phát triển xã hội bền vững."
     }
+  },
+  "RecruitmentPage": {
+    "aboutTitle": "Giới thiệu nhân lực",
+    "aboutSubTitle": "Tuyển dụng",
+    "aboutDes": "Đồng hành cùng doanh nghiệp tìm kiếm nhân lực chất lượng cao.",
+    "aboutContent": "Chúng tôi kết nối nhân tài với cơ hội việc làm chất lượng, đồng hành cùng doanh nghiệp và ứng viên trên hành trình phát triển bền vững."
   }
 }
