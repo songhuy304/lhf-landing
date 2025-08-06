@@ -123,6 +123,15 @@
     "aboutTitle": "Giới thiệu nhân lực",
     "aboutSubTitle": "Tuyển dụng",
     "aboutDes": "Đồng hành cùng doanh nghiệp tìm kiếm nhân lực chất lượng cao.",
-    "aboutContent": "Chúng tôi kết nối nhân tài với cơ hội việc làm chất lượng, đồng hành cùng doanh nghiệp và ứng viên trên hành trình phát triển bền vững."
+    "aboutContent": "Chúng tôi kết nối nhân tài với cơ hội việc làm chất lượng, đồng hành cùng doanh nghiệp và ứng viên trên hành trình phát triển bền vững.",
+    "tab1": "tiếp nhận thực tập sinh kỹ thuật",
+    "tab2": "tuyển dụng cho các kỹ năng cụ thể",
+    "tab3": "Tuyển dụng",
+    "step1-title": "技能実習生の受け入れ",
+    "step1-des": "発行電の組み込み、面接現地オンライン)",
+    "step2-title": "特定のスキルを持つ人材の採用",
+    "step2-des": "特定のスキルを持つ人材の採用は、特定のスキルを持つ人材を採用することです。",
+    "step3-title": "人材紹介",
+    "step3-des": "人材紹介は、人材を紹介することです。"
   }
 }

@@ -18,6 +18,8 @@ interface SliderProps {
   swiperOptions?: SwiperOptions;
   showNavigation?: boolean;
   showPagination?: boolean;
+  prevRef?: React.RefObject<HTMLButtonElement>;
+  nextRef?: React.RefObject<HTMLButtonElement>;
 }
 
 const defaultSwiperOptions: SwiperOptions = {
@@ -32,37 +34,34 @@ const defaultSwiperOptions: SwiperOptions = {
 export interface SliderItemProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 const Carousel = ({
-  title,
   children,
   swiperOptions,
-  showNavigation = true,
   showPagination = false,
+  prevRef,
+  nextRef,
 }: SliderProps) => {
   const paginationId = useId();
   const paginationElClass = `swiper-pagination-${paginationId.replace(
     /:/g,
     ""
   )}`;
-  const prevRef = useRef<HTMLButtonElement | null>(null);
-  const nextRef = useRef<HTMLButtonElement | null>(null);
+  const internalPrevRef = useRef<HTMLButtonElement | null>(null);
+  const internalNextRef = useRef<HTMLButtonElement | null>(null);
+
+  const effectivePrevRef = prevRef || internalPrevRef;
+  const effectiveNextRef = nextRef || internalNextRef;
+  console.log("🚀 ~ Carousel ~ effectiveNextRef:", effectivePrevRef);
 
   const childrenArray = React.Children.toArray(children);
 
   return (
-    <div className="w-full text-white">
-      <div
-        className={cn(
-          "mb-4 flex items-center justify-between",
-          !showNavigation && !title && "mb-0"
-        )}
-      ></div>
-
+    <div className="w-full">
       <Swiper
         modules={[Navigation, Pagination, FreeMode, Autoplay, Grid]}
         watchOverflow={false}
         navigation={{
-          prevEl: prevRef.current,
-          nextEl: nextRef.current,
+          prevEl: effectivePrevRef.current,
+          nextEl: effectiveNextRef.current,
         }}
         pagination={{
           el: `.${paginationElClass}`,
@@ -71,9 +70,9 @@ const Carousel = ({
         onInit={(swiper) => {
           // fix navigation on first render
           //@ts-ignore
-          swiper.params.navigation.prevEl = prevRef.current;
+          swiper.params.navigation.prevEl = effectivePrevRef.current;
           //@ts-ignore
-          swiper.params.navigation.nextEl = nextRef.current;
+          swiper.params.navigation.nextEl = effectiveNextRef.current;
           swiper.navigation.init();
           swiper.navigation.update();
         }}
