@@ -48,6 +48,9 @@ export default function OurCompany() {
             </Text>
 
             <Text>{t("aboutCompanyDes")}</Text>
+            <Text weight={"bold"} className="mt-2">
+              {t("capital")}: {t("capitalAmount")}
+            </Text>
             <div className="relative w-full h-96">
               <Image
                 src={ImageCompany}
@@ -66,10 +69,7 @@ export default function OurCompany() {
               </div>
             </div>
           </div>
-          <div
-            className="flex flex-col gap-4 justify-around"
-            data-aos="fade-left"
-          >
+          <div className="flex flex-col gap-4 " data-aos="fade-left">
             {Vision.map((item) => (
               <div key={item.title} className="space-y-4">
                 <Text

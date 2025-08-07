@@ -107,6 +107,8 @@
     "submitting": "送信中...",
     "sendMessage": "メッセージを送信",
     "contactUsDes": "ご連絡をお待ちしております。こちらのフォームにご記入ください。",
+    "capital": "資本金",
+    "capitalAmount": "5,000,000円",
     "Vision": {
       "title": "ビジョン",
       "v1-title": "満足度の追求",
