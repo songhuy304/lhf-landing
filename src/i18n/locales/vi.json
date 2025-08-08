@@ -98,7 +98,33 @@
     "bookingSubTitle": "Đặt lịch",
     "bookingDes": "Đặt chỗ nhanh chóng và dễ dàng",
     "bookingMethod": "Phương thức đặt chỗ",
-    "bookingMethodDes": "Vui lòng liên hệ với chúng tôi bằng bất kỳ phương pháp nào dưới đây. Chúng tôi sẽ trả lời trong vòng 24 giờ."
+    "bookingMethodDes": "Vui lòng liên hệ với chúng tôi bằng bất kỳ phương pháp nào dưới đây. Chúng tôi sẽ trả lời trong vòng 24 giờ.",
+    "galleryItems": {
+      "elegantFrench": {
+        "title": "Pháp thanh lịch",
+        "description": "Móng kiểu Pháp cổ điển với điểm nhấn tinh tế"
+      },
+      "flowerArt": {
+        "title": "Nghệ thuật hoa",
+        "description": "Tạo nét nữ tính với họa tiết hoa tinh tế"
+      },
+      "gradient": {
+        "title": "Chuyển màu",
+        "description": "Làm nổi bật đầu ngón tay với hiệu ứng chuyển màu đẹp mắt"
+      },
+      "jewelryNail": {
+        "title": "Móng đính đá",
+        "description": "Hoàn thiện sang trọng với đá và ngọc trai"
+      },
+      "simpleOffice": {
+        "title": "Văn phòng đơn giản",
+        "description": "Thiết kế đơn giản và thanh lịch phù hợp cho công việc"
+      },
+      "artNail": {
+        "title": "Móng nghệ thuật",
+        "description": "Thể hiện cá tính với nghệ thuật độc đáo"
+      }
+    }
   },
   "AboutPage": {
     "title": "Về chúng tôi",
@@ -260,5 +286,14 @@
       "spice": "Gia vị",
       "instant": "Thực phẩm ăn liền"
     }
+  },
+  "SocialMedia": {
+    "title": "Tham gia cộng đồng làm móng của chúng tôi",
+    "description": "Nhận các mẫu thiết kế mới nhất, khuyến mãi và mẹo chăm sóc móng!",
+    "followInstagram": "Theo dõi Instagram",
+    "followTwitter": "Theo dõi X",
+    "shareHashtag": "Chia sẻ với #LHF!",
+    "emailPlaceholder": "Nhập địa chỉ email của bạn",
+    "subscribeButton": "Nhận thông tin về nail"
   }
 }

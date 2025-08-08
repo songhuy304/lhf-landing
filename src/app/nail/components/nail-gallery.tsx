@@ -9,133 +9,118 @@ import img4 from "@/styles/images/img7.jpg";
 import img5 from "@/styles/images/img8.jpg";
 import { TitleHeading } from "@/components/title-section";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
 import { Button } from "@/components/ui";
 
 export default function NailGallery() {
   const t = useTranslations("NailPage");
-  const [activeTab, setActiveTab] = useState("completed");
 
   const completedItems = [
     {
-      title: "エレガントフレンチ",
-      description: "クラシックなフレンチネイルに上品なアクセント",
+      id: "elegantFrench",
       image: img1,
     },
     {
-      title: "フラワーアート",
-      description: "繊細な花柄で女性らしさを演出",
+      id: "flowerArt",
       image: img2,
     },
     {
-      title: "グラデーション",
-      description: "美しいグラデーションで指先を華やかに",
+      id: "gradient",
       image: img3,
     },
     {
-      title: "ジュエリーネイル",
-      description: "ストーンやパールで豪華な仕上がり",
+      id: "jewelryNail",
       image: img4,
     },
     {
-      title: "シンプルオフィス",
-      description: "お仕事にも使えるシンプルで上品なデザイン",
+      id: "simpleOffice",
       image: img5,
     },
     {
-      title: "アートネイル",
-      description: "個性的なアートで自分らしさを表現",
+      id: "artNail",
       image: img1,
     },
   ];
 
   const hotTrendItems = [
     {
-      title: "アートネイル",
-      description: "個性的なアートで自分らしさを表現",
+      id: "artNail",
       image: img1,
       isHot: true,
     },
     {
-      title: "アートネイル",
-      description: "個性的なアートで自分らしさを表現",
+      id: "artNail",
       image: img2,
       isHot: true,
     },
     {
-      title: "アートネイル",
-      description: "個性的なアートで自分らしさを表現",
+      id: "artNail",
       image: img3,
       isHot: true,
     },
     {
-      title: "アートネイル",
-      description: "個性的なアートで自分らしさを表現",
+      id: "artNail",
       image: img4,
       isHot: true,
     },
     {
-      title: "アートネイル",
-      description: "個性的なアートで自分らしさを表現",
+      id: "artNail",
       image: img5,
       isHot: true,
     },
   ];
 
-  const galleryItems =
-    activeTab === "completed" ? completedItems : hotTrendItems;
+  const carouselOptions = {
+    spaceBetween: 24,
+    loop: true,
+    speed: 1000,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      320: { slidesPerView: 1, slidesPerGroup: 1 },
+      768: { slidesPerView: 2, slidesPerGroup: 1 },
+      1024: { slidesPerView: 5, slidesPerGroup: 1 },
+    },
+  };
 
   return (
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
         <TitleHeading des={t("galleryDes")}>{t("galleryTitle")}</TitleHeading>
 
-        <div className="flex justify-center mb-8">
-          <div className="inline-flex rounded-md shadow-sm" role="group">
-            <Button
-              variant={activeTab === "completed" ? "default" : "outline"}
-              className={`rounded-r-none ${
-                activeTab === "completed" ? "" : "text-gray-900"
-              }`}
-              onClick={() => setActiveTab("completed")}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-center mb-8">
+            {t("nailAlbum")}
+          </h3>
+          <div className="relative" data-aos="fade-up" data-aos-delay="200">
+            <Carousel
+              showNavigation={true}
+              showPagination={true}
+              swiperOptions={carouselOptions}
             >
-              {t("nailAlbum")}
-            </Button>
-            <Button
-              variant={activeTab === "hottrend" ? "default" : "outline"}
-              className={`rounded-l-none ${
-                activeTab === "hottrend" ? "" : "text-gray-900"
-              }`}
-              onClick={() => setActiveTab("hottrend")}
-            >
-              {t("hotTrend")}
-            </Button>
+              {completedItems.map((item, index) => (
+                <CardItem key={`completed-${item.id}-${index}`} item={item} />
+              ))}
+            </Carousel>
           </div>
         </div>
 
-        <div className="relative" data-aos="fade-up" data-aos-delay="200">
-          <Carousel
-            showNavigation={true}
-            showPagination={true}
-            swiperOptions={{
-              spaceBetween: 24,
-              loop: true,
-              speed: 1000,
-              autoplay: {
-                delay: 3500,
-                disableOnInteraction: false,
-              },
-              breakpoints: {
-                320: { slidesPerView: 1, slidesPerGroup: 1 },
-                768: { slidesPerView: 2, slidesPerGroup: 1 },
-                1024: { slidesPerView: 5, slidesPerGroup: 1 },
-              },
-            }}
-          >
-            {galleryItems.map((item, index) => (
-              <CardItem key={item.title} item={item} />
-            ))}
-          </Carousel>
+        <div className="mt-16">
+          <h3 className="text-2xl font-bold text-center mb-8">
+            {t("hotTrend")}
+          </h3>
+          <div className="relative" data-aos="fade-up" data-aos-delay="200">
+            <Carousel
+              showNavigation={true}
+              showPagination={true}
+              swiperOptions={carouselOptions}
+            >
+              {hotTrendItems.map((item, index) => (
+                <CardItem key={`hottrend-${item.id}-${index}`} item={item} />
+              ))}
+            </Carousel>
+          </div>
         </div>
       </div>
     </section>
@@ -144,31 +129,35 @@ export default function NailGallery() {
 
 interface CardItemProps {
   item: {
-    title: string;
-    description: string;
+    id: string;
     image: any;
     isHot?: boolean;
   };
 }
 
 const CardItem = ({ item }: CardItemProps) => {
+  const t = useTranslations("NailPage");
+  const itemT = useTranslations("NailPage.galleryItems");
+
   return (
     <div className="text-center group">
       <div className="relative aspect-square mb-4 overflow-hidden rounded-lg shadow-lg">
         <Image
           src={item.image}
-          alt={item.title}
+          alt={itemT(`${item.id}.title`)}
           fill
           className="object-cover transition-transform duration-300 group-hover:scale-110"
         />
         {item.isHot && (
           <div className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-            HOT
+            {t("hotTrend")}
           </div>
         )}
       </div>
-      <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
-      <p className="text-gray-600">{item.description}</p>
+      <h3 className="text-xl font-semibold text-gray-800 mb-2">
+        {itemT(`${item.id}.title`)}
+      </h3>
+      <p className="text-gray-600">{itemT(`${item.id}.description`)}</p>
     </div>
   );
 };

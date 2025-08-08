@@ -96,7 +96,33 @@
     "bookingSubTitle": "本",
     "bookingDes": "予約は素早く簡単です",
     "bookingMethod": "ご予約方法",
-    "bookingMethodDes": "下記のいずれかの方法でお気軽にご連絡ください。24時間以内にお返事いたします。"
+    "bookingMethodDes": "下記のいずれかの方法でお気軽にご連絡ください。24時間以内にお返事いたします。",
+    "galleryItems": {
+      "elegantFrench": {
+        "title": "エレガントフレンチ",
+        "description": "クラシックなフレンチネイルに上品なアクセント"
+      },
+      "flowerArt": {
+        "title": "フラワーアート",
+        "description": "繊細な花柄で女性らしさを演出"
+      },
+      "gradient": {
+        "title": "グラデーション",
+        "description": "美しいグラデーションで指先を華やかに"
+      },
+      "jewelryNail": {
+        "title": "ジュエリーネイル",
+        "description": "ストーンやパールで豪華な仕上がり"
+      },
+      "simpleOffice": {
+        "title": "シンプルオフィス",
+        "description": "お仕事にも使えるシンプルで上品なデザイン"
+      },
+      "artNail": {
+        "title": "アートネイル",
+        "description": "個性的なアートで自分らしさを表現"
+      }
+    }
   },
   "AboutPage": {
     "title": "私たちについて",
@@ -258,5 +284,14 @@
       "spice": "調味料",
       "instant": "インスタント食品"
     }
+  },
+  "SocialMedia": {
+    "title": "ネイルコミュニティに参加しよう",
+    "description": "最新デザインやキャンペーン、ネイルケアのヒントをお届けします！",
+    "followInstagram": "Instagramをフォロー",
+    "followTwitter": "Xをフォロー",
+    "shareHashtag": "#LHF でシェアしてください！",
+    "emailPlaceholder": "メールアドレスを入力",
+    "subscribeButton": "ネイル情報を受け取る"
   }
 }
