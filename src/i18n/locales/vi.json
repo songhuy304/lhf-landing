@@ -20,6 +20,7 @@
       "button": "Trở lại trang chủ"
     }
   },
+
   "HomePage": {
     "title-section": "Stablecoins, Reinvented with Real Estate for the hospitality industry",
     "featureTitle": "Dịch Vụ Chính",
@@ -101,7 +102,7 @@
   },
   "AboutPage": {
     "title": "Về chúng tôi",
-    "ourCompanyDes": "Năng động – Hiện đại – Kết nối quốc tế",
+    "ourCompanyDes": "Cầu nối giữa doanh nghiệp và người tài",
     "ourCompany": "Về chúng tôi",
     "aboutCompanyDes": " LHF Việt Nhật là cầu nối hợp tác giữa Việt Nam và Nhật Bản, chuyên cung cấp các dịch vụ chất lượng trong nhiều lĩnh vực. Chúng tôi hoạt động với phương châm đặt **uy tín – chuyên nghiệp – tận tâm** lên hàng đầu, nhằm mang đến giá trị thiết thực cho khách hàng và đối tác.",
     "getInTouch": "Liên hệ",
@@ -119,6 +120,7 @@
     "email": "Email",
     "Vision": {
       "title": "Tầm nhìn",
+      "des": "Chúng tôi mong muốn xây dựng một xã hội nơi mọi người đều có thể mỉm cười và tỏa sáng, đồng thời đề cao lòng trắc ẩn và sự chân thành trong mọi hoạt động.",
       "v1-title": "Theo đuổi sự hài lòng",
       "v1-des": "Cung cấp dịch vụ vượt qua mong đợi của cả doanh nghiệp và người tìm việc, hướng tới sự hài lòng tối đa.",
       "v2-title": "Niềm tin và sự chân thành",
