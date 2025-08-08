@@ -126,14 +126,92 @@
     "aboutSubTitle": "Tuyển dụng",
     "aboutDes": "Đồng hành cùng doanh nghiệp tìm kiếm nhân lực chất lượng cao.",
     "aboutContent": "Chúng tôi kết nối nhân tài với cơ hội việc làm chất lượng, đồng hành cùng doanh nghiệp và ứng viên trên hành trình phát triển bền vững.",
-    "tab1": "tiếp nhận thực tập sinh kỹ thuật",
-    "tab2": "tuyển dụng cho các kỹ năng cụ thể",
-    "tab3": "Tuyển dụng",
-    "step1-title": "技能実習生の受け入れ",
-    "step1-des": "発行電の組み込み、面接現地オンライン)",
-    "step2-title": "特定のスキルを持つ人材の採用",
-    "step2-des": "特定のスキルを持つ人材の採用は、特定のスキルを持つ人材を採用することです。",
-    "step3-title": "人材紹介",
-    "step3-des": "人材紹介は、人材を紹介することです。"
+    "tab1": "Thực tập sinh kỹ năng",
+    "tab2": "Kỹ năng đặc định (trong nước)",
+    "tab3": "Kỹ năng đặc định (nước ngoài)",
+    "tabTitle1": "Quy trình tiếp nhận thực tập sinh kỹ năng",
+    "tabTitle2": "Quy trình tuyển dụng kỹ năng đặc định ① Trường hợp trong nước Nhật",
+    "tabTitle3": "Quy trình tuyển dụng kỹ năng đặc định ② Trường hợp ở nước ngoài",
+    "tabNote": "Mất khoảng 6 tháng để hoàn thành đến bước 6",
+    "language": {
+      "ja": "Tiếng Nhật",
+      "vi": "Tiếng Việt"
+    },
+    "internship": {
+      "step1": "Ứng tuyển, phỏng vấn (trực tiếp hoặc online)",
+      "step2": "Đăng ký và phê duyệt kế hoạch thực tập kỹ năng",
+      "step3": "Đăng ký và cấp giấy chứng nhận tư cách lưu trú",
+      "step4": "Đăng ký và cấp visa tại nước ngoài",
+      "step5": "Nhập cảnh và đào tạo 1 tháng",
+      "step6": "Bắt đầu làm việc tại công ty và thực tập kỹ năng"
+    },
+    "domestic": {
+      "step1": "Người nước ngoài đỗ kỳ thi hoặc hoàn thành khóa thực tập kỹ năng cấp 2",
+      "step2": "Ký hợp đồng lao động với người nước ngoài có kỹ năng đặc định",
+      "step3": "Xây dựng kế hoạch hỗ trợ cho người nước ngoài có kỹ năng đặc định",
+      "step4": "Đăng ký xin thay đổi tư cách lưu trú tại Cục quản lý xuất nhập cảnh địa phương",
+      "step5": "Thay đổi tư cách lưu trú thành 'Kỹ năng đặc định số 1'",
+      "step6": "Bắt đầu làm việc",
+      "note1": "※1 〜Vui lòng thực hiện trước khi đăng ký cấp giấy chứng nhận tư cách lưu trú hoặc đăng ký thay đổi tư cách lưu trú!",
+      "note1_1": "Quy trình thẩm định của cơ quan tiếp nhận",
+      "note1_2": "Khám sức khỏe",
+      "note1_3": "※1 〜Có thể ủy thác một phần thực hiện kế hoạch hỗ trợ người nước ngoài có kỹ năng đặc định cho bên thứ ba, hoặc ủy thác toàn bộ cho cơ quan hỗ trợ đã đăng ký.",
+      "note1_4": "(Trong trường hợp ủy thác một phần, cơ quan tiếp nhận cần đáp ứng các tiêu chuẩn về hệ thống hỗ trợ.)",
+      "note2": "※2〜Các tài liệu đính kèm chính bao gồm",
+      "note2_1": "Bản sao hợp đồng lao động kỹ năng đặc định",
+      "note2_2": "Kế hoạch hỗ trợ người nước ngoài có kỹ năng đặc định",
+      "note2_3": "Tài liệu chứng minh kỹ năng và khả năng tiếng Nhật"
+    },
+    "overseas": {
+      "step1": "Người nước ngoài đỗ kỳ thi hoặc hoàn thành khóa thực tập kỹ năng cấp 2 (đã về nước)",
+      "step2": "Ký hợp đồng lao động với người nước ngoài có kỹ năng đặc định",
+      "step3": "Đăng ký cấp giấy chứng nhận tư cách lưu trú tại Cục quản lý xuất nhập cảnh địa phương",
+      "step4": "Nhận giấy chứng nhận tư cách lưu trú và đăng ký xin visa",
+      "step5": "Nhận visa và nhập cảnh",
+      "step6": "Bắt đầu làm việc",
+      "note1": "※1〜2 Tham khảo trang trước ① (Trường hợp tuyển dụng người nước ngoài đang lưu trú tại Nhật Bản)",
+      "note2": "Khi tuyển dụng người nước ngoài có kỹ năng đặc định, vui lòng lưu ý những điểm sau:",
+      "note2_1": "✓ Không cấm việc đưa ra lời mời trước khi đỗ các kỳ thi.",
+      "note2_2": "✓ Về mối quan hệ trước sau giữa việc đỗ kỳ thi kỹ năng và kỳ thi tiếng Nhật của người nước ngoài có kỹ năng đặc định và việc ký kết hợp đồng lao động kỹ năng đặc định với cơ quan tiếp nhận, về cơ bản, dự kiến sẽ ký kết hợp đồng lao động kỹ năng đặc định với cơ quan tiếp nhận sau khi người nước ngoài có kỹ năng đặc định đỗ các kỳ thi.",
+      "note2_3": "✓ Có thể tham dự kỳ thi sau khi đã ký kết hợp đồng lao động kỹ năng đặc định, nhưng hãy lưu ý rằng nếu không đỗ các kỳ thi, việc tiếp nhận sẽ không được chấp thuận.",
+      "note3": "✓ Về nguyên tắc, đơn đăng ký phải do chính người nước ngoài thực hiện.",
+      "note4": "✓ Có thể ủy thác nếu được Cục trưởng địa phương phê duyệt là người đại diện nộp đơn."
+    },
+    "comparison": {
+      "title": "Bảng so sánh chế độ kỹ năng thực tập và chế độ lao động phát triển",
+      "category": "Hạng mục",
+      "technicalTrainingSystem": "Chế độ kỹ năng thực tập",
+      "developmentLaborSystem": "Chế độ lao động phát triển (quyết định ngày 15/3/2024)",
+      "purpose": "Mục đích",
+      "eligibility": "Phân loại đối tượng tiếp nhận",
+      "transferConditions": "Điều kiện chuyển đổi",
+      "jobChange": "Chuyển việc",
+      "japaneseAbility": "Khả năng tiếng Nhật",
+      "trainingContent": "Nội dung đào tạo (kỳ thi)",
+      "comingCost": "Chi phí đến Nhật",
+      "technicalTraining": {
+        "purpose": "Mục đích là đào tạo kỹ năng cho người lao động nước ngoài, thời gian lưu trú tối đa là 5 năm.",
+        "eligibility": "91 ngành nghề, 167 công việc là đối tượng (tính đến ngày 30/9/2024).",
+        "transferConditions": "Có thể chuyển sang kỹ năng thực tập cấp 2, cấp 3 nếu đạt kỳ thi kỹ năng.",
+        "jobChange": "Về nguyên tắc không thể",
+        "japaneseAbility": "Không có yêu cầu",
+        "trainingContent": "Khi kết thúc cấp 1 sẽ thi kiểm tra kỹ năng. Khi kết thúc cấp 2 phải đạt kỳ thi kỹ năng cấp 3.",
+        "comingCost": "Về nguyên tắc doanh nghiệp không phải chịu chi phí"
+      },
+      "developmentLabor": {
+        "purpose": "Mục đích là đào tạo kỹ năng cho người lao động nước ngoài và bổ sung lực lượng lao động thiếu hụt của Nhật Bản, thời gian lưu trú tối đa là 5 năm.",
+        "eligibility": "Đối tượng là cùng phân loại với kỹ năng đặc định.",
+        "transferConditions": "Yêu cầu khả năng tiếng Nhật, không chỉ kỹ thuật mà còn coi trọng khả năng giao tiếp.",
+        "jobChange": "Có thể chuyển việc theo ý muốn của bản thân trong trường hợp có hoàn cảnh không thể tránh khỏi.",
+        "japaneseAbility": "Kỳ thi năng lực tiếng Nhật N5 (về nguyên tắc)",
+        "trainingContent": "Kết thúc năm thứ 1: A1 (tương đương N5), thi kiểm tra kỹ năng, v.v. Kết thúc năm thứ 3: A2 (tương đương N4), thi kiểm tra kỹ năng cấp 3.",
+        "comingCost": "Doanh nghiệp chịu một phần chi phí (Ví dụ: Trường hợp Việt Nam, chi phí đến Nhật khoảng 3.600 đô la, doanh nghiệp chịu hơn một nửa)."
+      }
+    }
+  },
+  "RetailPage": {
+    "productListTitle": "Sản phẩm bán lẻ",
+    "productSubTitle": "Bán lẻ",
+    "productListDes": "Khám phá những sản phẩm chất lượng cao từ chúng tôi, chúng tôi cung cấp các mặt hàng như nguyên liệu Việt Nam, hoa xà phòng ..."
   }
 }

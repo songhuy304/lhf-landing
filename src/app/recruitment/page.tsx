@@ -1,10 +1,11 @@
 import About from "@/app/recruitment/components/about";
-import HeroSection from "@/app/recruitment/components/hero-section";
+import ComparisonTable from "@/app/recruitment/components/comparison-table";
+
 export default function RecruitmentPage() {
   return (
     <>
-      <HeroSection />
       <About />
+      <ComparisonTable />
     </>
   );
 }

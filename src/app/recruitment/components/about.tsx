@@ -1,30 +1,277 @@
 "use client";
 
-import { Carousel } from "@/components/carousel";
 import { TitleHeading } from "@/components/title-section";
 import { Button, Text } from "@/components/ui";
-import CompanyImage from "@/styles/images/company.jpg";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
-import { useRef, useState } from "react";
-import "swiper/css";
-import "swiper/css/navigation";
+import { useState } from "react";
 
-const steps = [
-  {
-    title: "step1-title",
-    description: "step1-des",
-  },
-  {
-    title: "step2-title",
-    description: "step2-des",
-  },
-  {
-    title: "step3-title",
-    description: "step3-des",
-  },
-];
+export default function About() {
+  const t = useTranslations("RecruitmentPage");
+  const [activeTab, setActiveTab] = useState<
+    "internship" | "domestic" | "overseas"
+  >("internship");
+  const [animationDirection, setAnimationDirection] = useState<
+    "left" | "right"
+  >("right");
+  const [prevTab, setPrevTab] = useState<
+    "internship" | "domestic" | "overseas"
+  >("internship");
+
+  // Xác định hướng animation dựa trên tab trước đó và tab hiện tại
+  const handleTabChange = (tab: "internship" | "domestic" | "overseas") => {
+    setPrevTab(activeTab);
+
+    // Xác định hướng animation
+    const tabOrder = ["internship", "domestic", "overseas"];
+    const prevIndex = tabOrder.indexOf(activeTab);
+    const newIndex = tabOrder.indexOf(tab);
+
+    if (newIndex > prevIndex) {
+      setAnimationDirection("right");
+    } else {
+      setAnimationDirection("left");
+    }
+
+    setActiveTab(tab);
+  };
+
+  const getSteps = () => {
+    switch (activeTab) {
+      case "internship":
+        return [1, 2, 3, 4, 5, 6].map((step) => ({
+          step,
+          icon: getIconForStep(step),
+          title: t(`internship.step${step}`),
+          color: getColorForStep(step),
+        }));
+      case "domestic":
+        return [1, 2, 3, 4, 5, 6].map((step) => ({
+          step,
+          icon: getIconForStep(step),
+          title: t(`domestic.step${step}`),
+          color: getColorForStep(step),
+        }));
+      case "overseas":
+        return [1, 2, 3, 4, 5, 6].map((step) => ({
+          step,
+          icon: getIconForStep(step),
+          title: t(`overseas.step${step}`),
+          color: getColorForStep(step),
+        }));
+      default:
+        return [];
+    }
+  };
+
+  const getIconForStep = (step: number) => {
+    switch (step) {
+      case 1:
+        return "📝"; // Đơn ứng tuyển/phỏng vấn
+      case 2:
+        return "📋"; // Kế hoạch/hợp đồng
+      case 3:
+        return "🏛️"; // Giấy tờ pháp lý
+      case 4:
+        return "🛂"; // Visa/thủ tục
+      case 5:
+        return "✈️"; // Nhập cảnh/đào tạo
+      case 6:
+        return "👨‍💼"; // Bắt đầu làm việc
+      default:
+        return "📌";
+    }
+  };
+
+  const getColorForStep = (step: number) => {
+    switch (step) {
+      case 1:
+        return "bg-amber-500/20";
+      case 2:
+        return "bg-pink-600/20";
+      case 3:
+        return "bg-purple-600/20";
+      case 4:
+        return "bg-cyan-500/20";
+      case 5:
+        return "bg-emerald-500/20";
+      case 6:
+        return "bg-green-600/20";
+      default:
+        return "bg-gray-500/20";
+    }
+  };
+
+  const getTabTitle = () => {
+    switch (activeTab) {
+      case "internship":
+        return t("tabTitle1");
+      case "domestic":
+        return t("tabTitle2");
+      case "overseas":
+        return t("tabTitle3");
+      default:
+        return "";
+    }
+  };
+
+  const getNote = () => {
+    if (activeTab === "internship") {
+      return t("tabNote");
+    }
+    return "";
+  };
+
+  return (
+    <>
+      <section
+        id="about-recruitment"
+        className="relative overflow-hidden py-24"
+      >
+        <div className="max-w-6xl mx-auto px-4">
+          <TitleHeading des={t("aboutDes")}>{t("aboutTitle")}</TitleHeading>
+
+          <div
+            className="mt-10 flex justify-center gap-4 mb-8"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <TabButton
+              isActive={activeTab === "internship"}
+              onClick={() => handleTabChange("internship")}
+            >
+              {t("tab1")}
+            </TabButton>
+            <TabButton
+              isActive={activeTab === "domestic"}
+              onClick={() => handleTabChange("domestic")}
+            >
+              {t("tab2")}
+            </TabButton>
+            <TabButton
+              isActive={activeTab === "overseas"}
+              onClick={() => handleTabChange("overseas")}
+            >
+              {t("tab3")}
+            </TabButton>
+          </div>
+
+          <div
+            className="bg-gray-50 rounded-xl p-8 shadow-sm"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <h3 className="text-2xl font-bold text-center mb-10">
+              {getTabTitle()}
+            </h3>
+
+            <div
+              className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4"
+              data-aos={`fade-${animationDirection}`}
+              data-aos-duration="800"
+            >
+              {getSteps().map((step, index) => (
+                <ProcessStep
+                  key={step.step}
+                  step={step.step}
+                  icon={step.icon}
+                  title={step.title}
+                  color={step.color}
+                  delay={index * 100}
+                />
+              ))}
+            </div>
+
+            {getNote() && (
+              <div
+                className="mt-8 text-center"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div className="inline-block border-2 border-red-500 rounded-lg px-6 py-2 text-lg font-medium">
+                  {getNote()}
+                </div>
+              </div>
+            )}
+
+            {activeTab === "domestic" && (
+              <div
+                className="mt-8 bg-blue-50 p-4 rounded-lg text-sm"
+                data-aos="fade-up"
+              >
+                <div>
+                  <Text weight="bold" className="mb-2">
+                    {t("domestic.note1")}
+                  </Text>
+                  <ul className="list-disc pl-5 space-y-1">
+                    <li>
+                      <Text>{t("domestic.note1_1")}</Text>
+                    </li>
+                    <li>
+                      <Text>{t("domestic.note1_2")}</Text>
+                    </li>
+                  </ul>
+                  <Text weight="bold" className="mt-2 mb-2">
+                    {t("domestic.note1_3")}
+                  </Text>
+                  <Text size="xs" className="block">
+                    {t("domestic.note1_4")}
+                  </Text>
+                  <Text weight="bold" className="mt-2 mb-2">
+                    {t("domestic.note2")}
+                  </Text>
+                  <ul className="list-disc pl-5 space-y-1">
+                    <li>
+                      <Text>{t("domestic.note2_1")}</Text>
+                    </li>
+                    <li>
+                      <Text>{t("domestic.note2_2")}</Text>
+                    </li>
+                    <li>
+                      <Text>{t("domestic.note2_3")}</Text>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            )}
+
+            {activeTab === "overseas" && (
+              <div
+                className="mt-8 bg-blue-50 p-4 rounded-lg text-sm"
+                data-aos="fade-up"
+              >
+                <div>
+                  <Text weight="bold" className="mb-2">
+                    {t("overseas.note1")}
+                  </Text>
+                  <Text weight="bold" className="mt-4 mb-2">
+                    {t("overseas.note2")}
+                  </Text>
+                  <ul className="space-y-1">
+                    <li>
+                      <Text>{t("overseas.note2_1")}</Text>
+                    </li>
+                    <li>
+                      <Text>{t("overseas.note2_2")}</Text>
+                    </li>
+                    <li>
+                      <Text>{t("overseas.note2_3")}</Text>
+                    </li>
+                  </ul>
+                  <Text size="xs" className="mt-2 block">
+                    {t("overseas.note3")}
+                  </Text>
+                  <Text size="xs" className="block">
+                    {t("overseas.note4")}
+                  </Text>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
 
 interface TabButtonProps {
   isActive: boolean;
@@ -44,151 +291,33 @@ const TabButton = ({ isActive, onClick, children }: TabButtonProps) => {
   );
 };
 
-export default function About() {
-  const t = useTranslations("RecruitmentPage");
-  const prevRef = useRef<HTMLButtonElement>(null);
-  const nextRef = useRef<HTMLButtonElement>(null);
-  const [activeTab, setActiveTab] = useState("tab1");
-
+const ProcessStep = ({
+  step,
+  icon,
+  title,
+  color,
+  delay = 0,
+}: {
+  step: number;
+  icon: string;
+  title: string;
+  color: string;
+  delay?: number;
+}) => {
   return (
-    <>
-      <section
-        id="about-recruitment"
-        className="relative overflow-hidden py-24"
+    <div
+      className="flex flex-col items-center mb-8"
+      data-aos="fade-up"
+      data-aos-delay={delay}
+    >
+      <div
+        className={`${color} w-20 h-20 rounded-full flex items-center justify-center text-white text-3xl mb-2 relative`}
       >
-        <div className="max-w-4xl mx-auto px-4">
-          <TitleHeading des={t("aboutDes")}>{t("aboutTitle")}</TitleHeading>
-
-          <div className="flex justify-center mb-8">
-            <div
-              className="inline-flex rounded-md shadow-sm space-x-1"
-              role="group"
-            >
-              <TabButton
-                isActive={activeTab === "tab1"}
-                onClick={() => setActiveTab("tab1")}
-              >
-                {t("tab1")}
-              </TabButton>
-              <TabButton
-                isActive={activeTab === "tab2"}
-                onClick={() => setActiveTab("tab2")}
-              >
-                {t("tab2")}
-              </TabButton>
-              <TabButton
-                isActive={activeTab === "tab3"}
-                onClick={() => setActiveTab("tab3")}
-              >
-                {t("tab3")}
-              </TabButton>
-            </div>
-          </div>
-
-          <div className="flex flex-col md:flex-row gap-8">
-            {/* Image Section */}
-            <div
-              className="w-full md:w-1/2 relative h-[300px]"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-            >
-              <Image
-                src={CompanyImage}
-                alt="Recruitment Process"
-                className="object-cover rounded-lg"
-                fill
-                priority
-              />
-            </div>
-
-            {/* Steps Swiper Section */}
-            <div
-              className="w-full md:w-1/2 relative flex flex-col"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-delay="200"
-            >
-              <Carousel
-                showNavigation={true}
-                showPagination={false}
-                swiperOptions={{
-                  slidesPerView: 1,
-                  spaceBetween: 24,
-                  speed: 1000,
-                }}
-                prevRef={prevRef as any}
-                nextRef={nextRef as any}
-              >
-                {steps.map((step, index) => (
-                  <div key={index} className="space-y-4 flex flex-col">
-                    <Text weight={"bold"} size={"2xl"} trans>
-                      {t(step.title)}
-                    </Text>
-                    <Text trans>{t(step.description)}</Text>
-                  </div>
-                ))}
-              </Carousel>
-
-              <div className="flex mt-auto gap-2">
-                <Button
-                  ref={prevRef}
-                  variant={"outline"}
-                  className="border rounded-full w-10 h-10"
-                >
-                  <ChevronLeft />
-                </Button>
-                <Button
-                  ref={nextRef}
-                  variant={"outline"}
-                  className="border rounded-full w-10 h-10"
-                >
-                  <ChevronRight />
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
+        <span className="text-4xl">{icon}</span>
+      </div>
+      <div className="text-center mt-2 max-w-[200px]">
+        <Text size="sm">{title}</Text>
+      </div>
+    </div>
   );
-}
-
-// <div className="relative">
-//               <p>ádasd</p>
-//               <Swiper
-//                 modules={[Navigation]}
-//                 navigation={{
-//                   prevEl: ".button-prev",
-//                   nextEl: ".button-next",
-//                 }}
-//                 slidesPerView={1}
-//                 className="steps-swiper"
-//               >
-//                 {steps.map((step, index) => (
-//                   <SwiperSlide key={index}>
-//                     <div className="p-8 rounded-lg ">
-//                       <div className="flex items-center gap-4 mb-4">
-//                         <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold">
-//                           {index + 1}
-//                         </div>
-//                         <h3 className="text-xl font-semibold">
-//                           {t(step.title)}
-//                         </h3>
-//                       </div>
-//                       <p className="text-gray-600">{t(step.description)}</p>
-//                     </div>
-//                   </SwiperSlide>
-//                 ))}
-//               </Swiper>
-
-//               {/* Custom Navigation Buttons */}
-//             </div>
-
-//             <div className="flex mt-auto gap-2">
-//               <button className="button-prev border rounded-full p-2">
-//                 <ChevronLeft />
-//               </button>
-//               <button className="button-next border rounded-full p-2">
-//                 <ChevronRight />
-//               </button>
-//             </div>
+};
