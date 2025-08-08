@@ -17,7 +17,6 @@ export default function About() {
     "internship" | "domestic" | "overseas"
   >("internship");
 
-  // Xác định hướng animation dựa trên tab trước đó và tab hiện tại
   const handleTabChange = (tab: "internship" | "domestic" | "overseas") => {
     setPrevTab(activeTab);
 
@@ -66,17 +65,17 @@ export default function About() {
   const getIconForStep = (step: number) => {
     switch (step) {
       case 1:
-        return "📝"; // Đơn ứng tuyển/phỏng vấn
+        return "📝";
       case 2:
-        return "📋"; // Kế hoạch/hợp đồng
+        return "📋";
       case 3:
-        return "🏛️"; // Giấy tờ pháp lý
+        return "🏛️";
       case 4:
-        return "🛂"; // Visa/thủ tục
+        return "🛂";
       case 5:
         return "✈️"; // Nhập cảnh/đào tạo
       case 6:
-        return "👨‍💼"; // Bắt đầu làm việc
+        return "👨‍💼";
       default:
         return "📌";
     }
@@ -131,7 +130,7 @@ export default function About() {
           <TitleHeading des={t("aboutDes")}>{t("aboutTitle")}</TitleHeading>
 
           <div
-            className="mt-10 flex justify-center gap-4 mb-8"
+            className="mt-10 flex justify-center gap-4 mb-8 flex-wrap"
             data-aos="fade-up"
             data-aos-delay="300"
           >

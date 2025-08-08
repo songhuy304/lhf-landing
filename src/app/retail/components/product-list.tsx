@@ -194,12 +194,12 @@ interface CardItemProps {
 const CardItem = ({ item }: CardItemProps) => {
   return (
     <div className="relative flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg w-full">
-      <div className="h-56 relative m-2.5 overflow-hidden text-white rounded-md h-50">
+      <div className="relative m-2.5 overflow-hidden text-white rounded-md aspect-square md:aspect-auto md:h-56">
         <Image
           src={item.image}
           alt="card-image"
           fill
-          className="object-cover"
+          className="object-contain sm:object-cover"
         />
       </div>
       <div className="p-4 flex flex-col">
