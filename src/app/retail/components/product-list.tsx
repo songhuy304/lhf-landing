@@ -1,11 +1,19 @@
 "use client";
 
+import { useState } from "react";
 import { TitleHeading } from "@/components/title-section";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import sp1 from "@/styles/images/retail/sp1.jpg";
-import chinsu from "@/styles/images/retail/chinsu.jpg";
+import sp2 from "@/styles/images/retail/baron-nuong.jpg";
+import sp3 from "@/styles/images/retail/bim-mix-cay.jpg";
+import sp4 from "@/styles/images/retail/tam-thaitu.jpg";
+import sp5 from "@/styles/images/retail/caphe.jpg";
+import sp6 from "@/styles/images/retail/barona-nuong-muoi-ot-vietmart-sieu-thi-viet-nam-tai-nhat-ban-247x247.jpg";
 import { StaticImageData } from "next/image";
+import { Text } from "@/components/ui";
+import ProductSidebar from "./product-sidebar";
+
 // Define product type
 interface Product {
   id: string;
@@ -13,54 +21,132 @@ interface Product {
   image: StaticImageData;
   isHot?: boolean;
   price: number;
+  category?: string;
 }
 
-// Sample products data
+// Define price range type
+interface PriceRange {
+  min: number;
+  max: number;
+}
 
 export default function NailGallery() {
   const t = useTranslations("RetailPage");
 
-  const products: Product[] = [
+  const allProducts: Product[] = [
     {
       id: "1",
-      title: t("sp1"),
+      title: t("productList.sp1"),
       image: sp1,
       price: 20,
       isHot: true,
+      category: "food",
     },
     {
       id: "2",
-      title: t("sp2"),
-      image: chinsu,
+      title: t("productList.sp2"),
+      image: sp2,
       price: 30,
+      category: "food",
     },
     {
       id: "3",
-      title: t("sp3"),
-      image: sp1,
+      title: t("productList.sp3"),
+      image: sp3,
       price: 25,
       isHot: true,
+      category: "snack",
     },
     {
       id: "4",
-      title: t("sp4"),
-      image: sp1,
+      title: t("productList.sp4"),
+      image: sp4,
       price: 30,
+      category: "spice",
     },
     {
       id: "5",
-      title: t("sp5"),
-      image: sp1,
+      title: t("productList.sp5"),
+      image: sp5,
       price: 25,
+      category: "drink",
     },
-
+    {
+      id: "8",
+      title: t("productList.sp2"),
+      image: sp2,
+      price: 30,
+      category: "food",
+    },
     {
       id: "6",
-      title: t("sp6"),
-      image: sp1,
+      title: t("productList.sp6"),
+      image: sp6,
       price: 11,
+      category: "instant",
+    },
+    {
+      id: "7",
+      title: t("productList.sp1"),
+      image: sp1,
+      price: 20,
+      isHot: true,
+      category: "food",
+    },
+    {
+      id: "9",
+      title: t("productList.sp3"),
+      image: sp3,
+      price: 25,
+      isHot: true,
+      category: "snack",
+    },
+    {
+      id: "10",
+      title: t("productList.sp4"),
+      image: sp4,
+      price: 30,
+      category: "spice",
+    },
+    {
+      id: "12",
+      title: t("productList.sp6"),
+      image: sp6,
+      price: 60,
+      category: "instant",
+    },
+    {
+      id: "11",
+      title: t("productList.sp5"),
+      image: sp5,
+      price: 25,
+      category: "drink",
     },
   ];
+
+  // State for filtered products
+  const [products, setProducts] = useState<Product[]>(allProducts);
+
+  // Handle category filter change
+  const handleCategoryChange = (selectedCategories: string[]) => {
+    if (selectedCategories.length === 0) {
+      setProducts(allProducts);
+    } else {
+      const filtered = allProducts.filter(
+        (product) =>
+          product.category && selectedCategories.includes(product.category)
+      );
+      setProducts(filtered);
+    }
+  };
+
+  // Handle price filter change
+  const handlePriceChange = (range: PriceRange) => {
+    const filtered = allProducts.filter(
+      (product) => product.price >= range.min && product.price <= range.max
+    );
+    setProducts(filtered);
+  };
 
   return (
     <section className="pt-24 bg-white">
@@ -69,10 +155,27 @@ export default function NailGallery() {
           {t("productListTitle")}
         </TitleHeading>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-          {products.map((product) => (
-            <CardItem key={product.id} item={product} />
-          ))}
+        <div className="flex flex-col lg:flex-row gap-8">
+          {/* Sidebar */}
+          <div className="w-full lg:w-1/4">
+            <ProductSidebar
+              onCategoryChange={handleCategoryChange}
+              onPriceChange={handlePriceChange}
+            />
+          </div>
+
+          {/* Product Grid */}
+          <div className="w-full lg:w-3/4">
+            <div
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              {products.map((product) => (
+                <CardItem key={product.id} item={product} />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -89,28 +192,22 @@ interface CardItemProps {
 }
 
 const CardItem = ({ item }: CardItemProps) => {
-  const commonT = useTranslations("NailPage");
-
   return (
-    <div className="text-center group">
-      <div className="relative w-full h-64 mb-4 overflow-hidden shadow-lg rounded-lg">
+    <div className="relative flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg w-full">
+      <div className="h-56 relative m-2.5 overflow-hidden text-white rounded-md h-50">
         <Image
           src={item.image}
-          alt={item.title}
+          alt="card-image"
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
-          className="object-cover transition-transform duration-300 group-hover:scale-110"
+          className="object-cover"
         />
-        {item.isHot && (
-          <div className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-            {commonT("hotTrend")}
-          </div>
-        )}
       </div>
-      <p className="text-primary font-medium text-lg text-left">
-        ￥{item.price.toLocaleString("ja-JP")}
-      </p>
-      <h3 className="mt-1 text-sm text-left">{item.title}</h3>
+      <div className="p-4 flex flex-col">
+        <Text className="text-lg text-primary font-semibold">
+          ￥{item.price}
+        </Text>
+        <Text className="text-sm">{item.title}</Text>
+      </div>
     </div>
   );
 };

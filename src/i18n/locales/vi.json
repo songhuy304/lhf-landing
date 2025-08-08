@@ -212,6 +212,25 @@
   "RetailPage": {
     "productListTitle": "Sản phẩm bán lẻ",
     "productSubTitle": "Bán lẻ",
-    "productListDes": "Khám phá những sản phẩm chất lượng cao từ chúng tôi, chúng tôi cung cấp các mặt hàng như nguyên liệu Việt Nam, hoa xà phòng ..."
+    "productListDes": "Khám phá những sản phẩm chất lượng cao từ chúng tôi, chúng tôi cung cấp các mặt hàng như nguyên liệu Việt Nam, hoa xà phòng ...",
+    "productList": {
+      "sp1": "TH True Milk vị dâu 300ml",
+      "sp2": "Barona xốt thịt nướng sả",
+      "sp3": "Bim bim MIX cay",
+      "sp4": "Tam Thái Tử Nhất Ca (500ml)",
+      "sp5": "Cà phê Vinacafe",
+      "sp6": "Barona nướng muối ớt"
+    },
+    "filters": {
+      "categories": "Danh mục sản phẩm",
+      "priceRange": "Khoảng giá"
+    },
+    "categories": {
+      "food": "Thực phẩm",
+      "drink": "Đồ uống",
+      "snack": "Đồ ăn vặt",
+      "spice": "Gia vị",
+      "instant": "Thực phẩm ăn liền"
+    }
   }
 }

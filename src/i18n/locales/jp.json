@@ -210,8 +210,27 @@
     }
   },
   "RetailPage": {
-    "productListTitle": "小売品一覧",
+    "productListTitle": "小売商品",
     "productSubTitle": "小売",
-    "productListDes": "ベトナムの食材、石鹸の花などのアイテムを提供する当社の高品質製品をご覧ください。"
+    "productListDes": "当社の高品質な商品をご覧ください。ベトナム食材、石鹸の花などの商品を取り揃えています...",
+    "productList": {
+      "sp1": "TH True Milk イチゴ味 300ml",
+      "sp2": "Barona レモングラス焼肉ソース",
+      "sp3": "Bim bim MIX スパイシー",
+      "sp4": "Tam Thai Tu Nhat Ca (500ml)",
+      "sp5": "Vinacafeコーヒー",
+      "sp6": "Barona 塩唐辛子焼き"
+    },
+    "filters": {
+      "categories": "商品カテゴリー",
+      "priceRange": "価格帯"
+    },
+    "categories": {
+      "food": "食品",
+      "drink": "飲料",
+      "snack": "スナック",
+      "spice": "調味料",
+      "instant": "インスタント食品"
+    }
   }
 }
