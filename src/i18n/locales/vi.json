@@ -60,15 +60,19 @@
   },
   "Meta": {
     "title": "Công ty TNHH LHF",
-    "description": "Công ty TNHH LHF là công ty cổ phần cung cấp dịch vụ chất lượng cao về nail, giới thiệu nhân lực và bán lẻ."
+    "nameCompany": "Tên công ty",
+    "description": "Công ty TNHH LHF là công ty cổ phần cung cấp dịch vụ chất lượng cao về nail, giới thiệu nhân lực và bán lẻ.",
+    "boardOfDirectors": "Ban lãnh đạo"
   },
   "Location": {
+    "branch": "Chi nhánh",
+
     "hq": "Trụ sở chính",
     "hqTitle": "Trụ sở chính LHF",
     "hqAddress": "Aichi-ken, Ichinomiya-shi, Shimamura Uji Kōkōji 105-2, tầng 2",
     "hqPostal": "〒 491-0121",
 
-    "office": "phòng quản lý",
+    "office": "Phòng quản lý",
     "officeTitle": "Văn phòng quản lý LHF ",
     "officeAddress": "Aichi-ken, Ichinomiya-shi, Nagashima-cho 2-chome 9",
     "officePostal": "〒 491-0071",
@@ -108,7 +112,11 @@
     "sendMessage": "Gửi tin nhắn",
     "contactUsDes": "Chúng tôi rất mong nhận được phản hồi từ bạn. Vui lòng điền vào mẫu này.",
     "capital": "Vốn điều lệ",
-    "capitalAmount": "5,000,000 Yên",
+    "capitalAmount": "5.000.000 Yên",
+    "CompanyTitle": "Công ty",
+    "infoTitle": "Thông tin liên hệ",
+    "phone": "Điện thoại",
+    "email": "Email",
     "Vision": {
       "title": "Tầm nhìn",
       "v1-title": "Theo đuổi sự hài lòng",
@@ -119,6 +127,24 @@
       "v3-des": "Không ngừng đổi mới, ứng dụng công nghệ và kiến thức mới nhất để thích ứng nhanh với thay đổi thị trường.",
       "v4-title": "Đóng góp cho xã hội",
       "v4-des": "Thông qua việc giới thiệu nhân tài chất lượng cao, góp phần tạo ra cơ hội việc làm và phát triển xã hội bền vững."
+    },
+    "business": {
+      "title": "Kinh doanh",
+      "bus1": "Nghiên cứu giới thiệu nguồn nhân lực trong nước/nước ngoài",
+      "bus2": "Dịch vụ biên dịch/phiên dịch (Nhật Bản, Việt Nam, Indonesia)",
+      "bus3": "Tiệm làm đẹp",
+      "bus4": "Bán lẻ (nguyên liệu Việt Nam, hoa xà phòng)"
+    },
+    "registrationNumber": {
+      "title": "Số đăng ký",
+      "reg1": "Số hóa đơn: T9180001158191",
+      "reg2": "Tổ chức hỗ trợ đăng ký: 24 To-009784",
+      "reg3": "Cơ quan việc làm trả lương: 23-you 302885"
+    },
+    "memberOrganizations": {
+      "title": "Tổ chức thành viên",
+      "org1": "Hiệp hội doanh nghiệp vừa và nhỏ tỉnh Aichi (Hiệp hội doanh nghiệp trẻ Owari Kita)",
+      "org2": "Anh ấy cũng đang tích cực tham gia vào Seikeijuku!"
     }
   },
   "RecruitmentPage": {

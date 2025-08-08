@@ -10,22 +10,22 @@ import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
-import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
+import { Noto_Sans_JP, Hind } from "next/font/google";
 import type React from "react";
 import InitAos from "@/components/theme/aos";
 import { Metadata } from "next";
 import Loader from "@/components/loader";
-import { Suspense } from "react";
-
-const notoSerif = Noto_Serif_JP({
-  subsets: ["latin"],
-  variable: "--font-serif",
-  display: "swap",
-});
 
 const notoSans = Noto_Sans_JP({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-sans-jp",
+  display: "swap",
+});
+
+const hind = Hind({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-hind",
   display: "swap",
 });
 
@@ -93,10 +93,10 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className={`${notoSerif.variable} ${notoSans.variable}`}
+      className={`${notoSans.variable} ${hind.variable}`}
       suppressHydrationWarning
     >
-      <body className="font-serif">
+      <body className="font-sans">
         <NextIntlClientProvider>
           <InitAos />
           <Loader />
