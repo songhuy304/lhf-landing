@@ -2,6 +2,14 @@
 
 import { TitleHeading } from "@/components/title-section";
 import { useTranslations } from "next-intl";
+import {
+  Table,
+  TableHeader,
+  TableBody,
+  TableRow,
+  TableHead,
+  TableCell,
+} from "@/components/ui/table";
 
 interface ComparisonRow {
   id: number;
@@ -68,35 +76,26 @@ export default function ComparisonTable() {
           data-aos="fade-up"
           data-aos-delay="300"
         >
-          <table className="min-w-full bg-white border border-gray-200">
-            <thead>
-              <tr className="bg-gray-800 text-white">
-                <th className="py-3 px-4 border text-center w-[10%]">No</th>
-                <th className="py-3 px-4 border text-center w-[20%]">
-                  {t("comparison.category")}
-                </th>
-                <th className="py-3 px-4 border text-center w-[35%]">
-                  {t("comparison.technicalTrainingSystem")}
-                </th>
-                <th className="py-3 px-4 border text-center w-[35%]">
-                  {t("comparison.developmentLaborSystem")}
-                </th>
-              </tr>
-            </thead>
-            <tbody>
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead>No</TableHead>
+                <TableHead>{t("comparison.category")}</TableHead>
+                <TableHead>{t("comparison.technicalTrainingSystem")}</TableHead>
+                <TableHead>{t("comparison.developmentLaborSystem")}</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
               {comparisonData.map((row) => (
-                <tr
-                  key={row.id}
-                  className={row.id % 2 === 0 ? "bg-gray-100" : ""}
-                >
-                  <td className="py-3 px-4 border text-center">{row.id}</td>
-                  <td className="py-3 px-4 border">{row.category}</td>
-                  <td className="py-3 px-4 border">{row.technicalTraining}</td>
-                  <td className="py-3 px-4 border">{row.developmentLabor}</td>
-                </tr>
+                <TableRow key={row.id}>
+                  <TableCell className="text-center">{row.id}</TableCell>
+                  <TableCell>{row.category}</TableCell>
+                  <TableCell>{row.technicalTraining}</TableCell>
+                  <TableCell>{row.developmentLabor}</TableCell>
+                </TableRow>
               ))}
-            </tbody>
-          </table>
+            </TableBody>
+          </Table>
         </div>
       </div>
     </section>
