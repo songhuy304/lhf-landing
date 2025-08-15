@@ -66,15 +66,6 @@ export default function Booking() {
                     LINE
                   </Button>
                 </div>
-
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-gray-900 mb-2">
-                    {commonT("workingHours")}
-                  </h4>
-                  <p className="text-gray-600 text-sm">
-                    {commonT("dayWork")}: {ContactInfo.bookingTime}
-                  </p>
-                </div>
               </div>
 
               <div className="relative">

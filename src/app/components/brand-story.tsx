@@ -14,6 +14,8 @@ import Link from "next/link";
 
 export default function BrandStory() {
   const t = useTranslations("HomePage");
+  const metaT = useTranslations("Meta");
+  const locationT = useTranslations("Location");
   return (
     <section id="Brand" className="bg-gray-50 relative overflow-hidden py-24">
       <div className="container mx-auto px-4">
@@ -27,8 +29,7 @@ export default function BrandStory() {
           >
             <div className="flex items-center gap-2 mb-6">
               <h3 className="text-2xl font-bold text-gray-900">
-                {t("brandStoryHeading")}{" "}
-                <span className="text-primary">{t("brandStoryHeading2")}</span>
+                {t("brandStoryHeading")}
               </h3>
             </div>
 
@@ -71,19 +72,21 @@ export default function BrandStory() {
                 <Building className="text-primary h-5 w-5 mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-gray-900">
-                    {t("companyName")}
+                    {metaT("nameCompany")}
                   </h4>
-                  <p className="text-gray-600">{t("companyNameValue")}</p>
+                  <p className="text-gray-600">{metaT("title")}</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Phone className="text-primary h-5 w-5 mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-gray-900">
-                    {t("companyHoursValue")}
+                    {t("contactInfo")}
                   </h4>
                   <p className="text-gray-600">
-                    {t("companyHoursValue")} {ContactInfo.phone}
+                    {t("phoneNumber")}: {ContactInfo.phone}
+                    <br />
+                    {t("emailAddress")}: {ContactInfo.email}
                   </p>
                 </div>
               </div>
@@ -93,7 +96,11 @@ export default function BrandStory() {
                   <h4 className="font-semibold text-gray-900">
                     {t("companyAddress")}
                   </h4>
-                  <p className="text-gray-600">{t("companyAddressValue")}</p>
+                  <p className="text-gray-600">
+                    {locationT("officePostal")}
+                    <br />
+                    {locationT("officeAddress")}
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-3">

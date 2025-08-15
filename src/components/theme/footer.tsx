@@ -10,7 +10,7 @@ import {
   Mail,
   MapPin,
   Phone,
-  Twitter,
+  MessageCircle,
 } from "lucide-react";
 import Logo from "@/components/ui/logo";
 import { ContactInfo } from "@/data";
@@ -28,9 +28,9 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: <Facebook className="h-5 w-5" />, href: "https://facebook.com" },
-    { icon: <Instagram className="h-5 w-5" />, href: "https://instagram.com" },
-    { icon: <Twitter className="h-5 w-5" />, href: "https://twitter.com" },
+    { icon: <Instagram className="h-5 w-5" />, href: ContactInfo.urlInstagram },
+    { icon: <Facebook className="h-5 w-5" />, href: ContactInfo.urlFacebook },
+    { icon: <MessageCircle className="h-5 w-5" />, href: ContactInfo.urlLine },
   ];
 
   return (
@@ -113,25 +113,6 @@ export default function Footer() {
                 >
                   {ContactInfo.website}
                 </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Giờ làm việc */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6">
-              {homeT("companyHours")}
-            </h3>
-            <ul className="space-y-2">
-              <li className="text-gray-600">
-                <span className="font-medium">
-                  {homeT("monday")} - {homeT("friday")}:
-                </span>{" "}
-                {ContactInfo.bookingTime}
-              </li>
-              <li className="text-gray-600">
-                <span className="font-medium">{homeT("saturday")}:</span>{" "}
-                {ContactInfo.bookingSaturday}
               </li>
             </ul>
           </div>

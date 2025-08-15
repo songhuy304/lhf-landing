@@ -1,11 +1,18 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Banner from "@/styles/images/home-page/banner-home.png";
 
 const HeroSection = () => {
   const t = useTranslations("HomePage");
   return (
-    <section className="hero-section min-h-screen relative overflow-hidden flex items-center justify-center">
+    <section
+      className="min-h-screen relative overflow-hidden flex items-center justify-center"
+      style={{
+        backgroundImage: `url(${Banner.src})`,
+        backgroundSize: "cover",
+      }}
+    >
       <div className="max-w-xl mx-auto">
         <h1
           className="text-5xl font-bold text-center text-shadow-xl"

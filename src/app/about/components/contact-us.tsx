@@ -107,7 +107,7 @@ export default function ContactUs() {
           {/* Google Map */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden h-[300px] md:h-[450px] w-full md:w-2/3">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3253162668473!2d106.69941021471854!3d10.78081369231386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4670702e31%3A0xa5777fb3a5d0cc72!2sNguy%E1%BB%85n%20Hu%E1%BB%87%20Walking%20Street!5e0!3m2!1sen!2s!4v1653825753874!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.1140384262486!2d136.7954053!3d35.1763455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003a0c1b8f65555%3A0x2d9d5f0a8c5d4c1b!2s2-ch%C5%8Dme-9%20Nagashimach%C5%8D%2C%20Ichinomiya%2C%20Aichi%20491-0071%2C%20Japan!5e0!3m2!1sen!2s!4v1653825753874!5m2!1sen!2s"
               width="100%"
               height="100%"
               style={{ border: 0 }}

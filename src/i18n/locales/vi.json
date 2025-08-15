@@ -31,13 +31,13 @@
     "recruitment": "Giới thiệu nhân lực",
     "retail": "Bán lẻ",
     "brandStoryTitle": "Cầu nối giữa doanh nghiệp và người tài",
-    "brandStoryDes": "Năng động – Hiện đại – Kết nối quốc tế",
-    "brandStoryHeading": "Hiện thực hóa chất lượng dịch vụ bằng tay nghề và",
+    "brandStoryDes": "Công ty TNHH LHF",
+    "brandStoryHeading": "Cầu nối giữa doanh nghiệp và người tài",
     "brandStoryHeading2": "sự tận tâm",
-    "brandStoryContent": "Với đội ngũ giàu kinh nghiệm và chuyên môn cao, chúng tôi cung cấp đa dạng dịch vụ từ chăm sóc sắc đẹp, giới thiệu nhân lực quốc tế, đến biên – phiên dịch chuyên nghiệp. Từng dịch vụ đều được thực hiện với sự kỹ lưỡng, cập nhật xu hướng mới và cam kết mang lại trải nghiệm tối ưu cho khách hàng.",
-    "brandStoryPoint1": "Đội ngũ nhân sự có chứng chỉ chuyên môn",
-    "brandStoryPoint2": "Quy trình vệ sinh và vận hành được quản lý nghiêm ngặt",
-    "brandStoryPoint3": "Hệ thống đặt lịch và hỗ trợ linh hoạt, chu đáo",
+    "brandStoryContent": "Với vai trò là cầu nối giữa các công ty và người tài, chúng tôi cam kết thúc đẩy sự phát triển của doanh nghiệp, kết nối đúng người với đúng công việc và cung cấp cho người tài cơ hội phát triển sự nghiệp và trải nghiệm làm việc trọn vẹn.",
+    "brandStoryPoint1": "Đội ngũ chuyên nghiệp với kiến thức chuyên môn cao",
+    "brandStoryPoint2": "Quy trình kết nối hiệu quả và đáng tin cậy",
+    "brandStoryPoint3": "Hỗ trợ tận tình với dịch vụ cá nhân hóa",
     "companyInfoTitle": "Thông tin công ty",
     "companyName": "Tên công ty",
     "companyNameValue": "Công ty cổ phần LHF",
@@ -45,6 +45,9 @@
     "companyAddressValue": "Aichi-ken, Ichinomiya-shi, Shimamura Uji Kōkōji 105-2, tầng 2",
     "companyHours": "Giờ làm việc",
     "companyHoursValue": "Liên hệ: ",
+    "contactInfo": "Để được giải đáp thắc mắc:",
+    "phoneNumber": "Điện thoại",
+    "emailAddress": "Email",
     "companyWebsite": "Website",
     "companyWebsiteValue": "lhf.co.jp",
     "monday": "Thứ 2",
@@ -63,30 +66,31 @@
     "title": "Công ty TNHH LHF",
     "nameCompany": "Tên công ty",
     "description": "Công ty TNHH LHF là công ty cổ phần cung cấp dịch vụ chất lượng cao về nail, giới thiệu nhân lực và bán lẻ.",
-    "boardOfDirectors": "Ban lãnh đạo"
+    "boardOfDirectors": "Tiêu biểu",
+    "nameBoardofDirector": "TRAN VAN LONG (チャン　ヴァン　ロン)"
   },
   "Location": {
-    "branch": "Chi nhánh",
+    "branch": "Vị trí",
 
     "hq": "Trụ sở chính",
-    "hqTitle": "Trụ sở chính LHF",
-    "hqAddress": "Aichi-ken, Ichinomiya-shi, Shimamura Uji Kōkōji 105-2, tầng 2",
-    "hqPostal": "〒 491-0121",
+    "tagHQ": "Trụ sở chính",
+    "hqAddress": "Tầng 2, 105-2 Shimo-rokoji, Shimamura, Thành phố Ichinomiya, Tỉnh Aichi",
+    "hqPostal": "Mã bưu điện 491-0121",
 
-    "office": "Phòng quản lý",
-    "officeTitle": "Văn phòng quản lý LHF ",
-    "officeAddress": "Aichi-ken, Ichinomiya-shi, Nagashima-cho 2-chome 9",
-    "officePostal": "〒 491-0071",
+    "office": "Văn phòng hành chính",
+    "tagOffice": "Văn phòng Hành chính",
+    "officeAddress": "2-9 Nagashimacho, Thành phố Ichinomiya, Tỉnh Aichi",
+    "officePostal": "Mã bưu điện 491-0071",
 
-    "salon": "Làm móng",
-    "salonTitle": "Tiệm làm móng LHF chi nhánh Ichinomiya",
-    "salonAddress": "Aichi-ken, Ichinomiya-shi, Sakae 3-chome 5-18 STOCK BLDG tầng 2",
-    "salonPostal": "〒 491-0858",
+    "salon": "Tiệm Ichinomiya",
+    "tagSalon": "Tiệm làm móng Ichinomiya",
+    "salonAddress": "Tầng 2, Tòa nhà Stock, 5-18 Sakae 3-chome, Thành phố Ichinomiya, Tỉnh Aichi",
+    "salonPostal": "Mã bưu điện 491-0858",
 
-    "store": "Bán lẻ",
-    "storeTitle": "Cửa hàng thực phẩm Việt Nam",
-    "storeAddress": "Okayama-ken, Soja-shi, Chuo 1-6 Soja Building tầng 2",
-    "storePostal": "〒 719-1131"
+    "store": "Cửa hàng tạp hóa Việt Nam",
+    "tagStore": "Cửa hàng tạp hóa Việt Nam",
+    "storeAddress": "Tầng 2, Tòa nhà Soja, 1-6 Chuo, Thành phố Soja, Tỉnh Okayama",
+    "storePostal": "Mã bưu điện 719-1131"
   },
   "NailPage": {
     "title": "Tận hưởng vẻ đẹp",
@@ -142,37 +146,39 @@
     "capitalAmount": "5.000.000 Yên",
     "CompanyTitle": "Công ty",
     "infoTitle": "Thông tin liên hệ",
-    "phone": "Điện thoại",
-    "email": "Email",
+    "phone": "Số điện thoại",
+    "fax": "Số fax",
+    "website": "Trang web",
+    "email": "Địa chỉ email",
     "Vision": {
       "title": "Tầm nhìn",
       "des": "Chúng tôi mong muốn xây dựng một xã hội nơi mọi người đều có thể mỉm cười và tỏa sáng, đồng thời đề cao lòng trắc ẩn và sự chân thành trong mọi hoạt động.",
       "v1-title": "Theo đuổi sự hài lòng",
-      "v1-des": "Cung cấp dịch vụ vượt qua mong đợi của cả doanh nghiệp và người tìm việc, hướng tới sự hài lòng tối đa.",
-      "v2-title": "Niềm tin và sự chân thành",
-      "v2-des": "Tương tác với tất cả các bên liên quan bằng sự minh bạch và trung thực, xây dựng mối quan hệ tin cậy vững chắc.",
+      "v1-des": "Chúng tôi nỗ lực cung cấp các dịch vụ vượt quá mong đợi của cả công ty và người tìm việc, hướng đến mức độ hài lòng cao nhất.",
+      "v2-title": "Niềm tin và Chính trực",
+      "v2-des": "Chúng tôi đối xử với tất cả các bên liên quan bằng sự minh bạch và trung thực, xây dựng mối quan hệ tin cậy bền chặt.",
       "v3-title": "Đổi mới và tiến bộ",
-      "v3-des": "Không ngừng đổi mới, ứng dụng công nghệ và kiến thức mới nhất để thích ứng nhanh với thay đổi thị trường.",
+      "v3-des": "Chúng tôi không ngừng theo đuổi sự đổi mới và tận dụng công nghệ và kiến thức mới nhất để nhanh chóng thích ứng với những thay đổi của thị trường.",
       "v4-title": "Đóng góp cho xã hội",
-      "v4-des": "Thông qua việc giới thiệu nhân tài chất lượng cao, góp phần tạo ra cơ hội việc làm và phát triển xã hội bền vững."
+      "v4-des": "Chúng tôi đóng góp vào việc tạo ra các cơ hội việc làm và sự phát triển bền vững của xã hội thông qua các dịch vụ tuyển dụng chất lượng cao."
     },
     "business": {
       "title": "Kinh doanh",
-      "bus1": "Nghiên cứu giới thiệu nguồn nhân lực trong nước/nước ngoài",
-      "bus2": "Dịch vụ biên dịch/phiên dịch (Nhật Bản, Việt Nam, Indonesia)",
-      "bus3": "Tiệm làm đẹp",
-      "bus4": "Bán lẻ (nguyên liệu Việt Nam, hoa xà phòng)"
+      "bus1": "Tuyển dụng Nhân sự trong nước/quốc tế",
+      "bus2": "Dịch vụ Biên phiên dịch (Tiếng Nhật, Tiếng Việt, Tiếng Indonesia)",
+      "bus3": "Salon",
+      "bus4": "Bán lẻ (Thực phẩm Việt Nam, Hoa xà phòng)"
     },
     "registrationNumber": {
       "title": "Số đăng ký",
       "reg1": "Số hóa đơn: T9180001158191",
-      "reg2": "Tổ chức hỗ trợ đăng ký: 24 To-009784",
-      "reg3": "Cơ quan việc làm trả lương: 23-you 302885"
+      "reg2": "Cơ quan hỗ trợ đã đăng ký: 24-009784",
+      "reg3": "Cơ quan việc làm có trả lương: 23-Yu 302885"
     },
     "memberOrganizations": {
       "title": "Tổ chức thành viên",
-      "org1": "Hiệp hội doanh nghiệp vừa và nhỏ tỉnh Aichi (Hiệp hội doanh nghiệp trẻ Owari Kita)",
-      "org2": "Anh ấy cũng đang tích cực tham gia vào Seikeijuku!"
+      "org1": "Hiệp hội Doanh nghiệp vừa và nhỏ tỉnh Aichi (Owari Kita Seido)",
+      "org2": "Tích cực tham gia chương trình Seikeijuku!"
     }
   },
   "RecruitmentPage": {

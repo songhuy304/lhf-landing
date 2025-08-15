@@ -15,10 +15,10 @@ export default function Header() {
 
   const menuItems = [
     { href: "/", label: "home" },
-    { href: "/nail", label: "nail" },
-    { href: "/recruitment", label: "recruitment" },
-    { href: "/retail", label: "retail" },
     { href: "/about", label: "about" },
+    { href: "/recruitment", label: "recruitment" },
+    { href: "/nail", label: "nail" },
+    { href: "/retail", label: "retail" },
   ];
 
   useEffect(() => {

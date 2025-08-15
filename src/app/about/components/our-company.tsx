@@ -9,15 +9,30 @@ export default function OurCompany() {
 
   const companyData = [
     { label: tMeta("nameCompany"), content: tMeta("title") },
-    { label: tMeta("boardOfDirectors"), content: "TRẦN VĂN LONG" },
-    { label: tLocation("hq"), content: tLocation("hqAddress") },
+    { label: tMeta("boardOfDirectors"), content: tMeta("nameBoardofDirector") },
+    {
+      label: tLocation("hq"),
+      content: `${tLocation("hqPostal")}\n${tLocation("hqAddress")}`,
+    },
     {
       label: tLocation("branch"),
       content: (
         <>
-          [{tLocation("office")}]: {tLocation("officeAddress")}
-          <br />[{tLocation("salon")}]: {tLocation("salonAddress")}
-          <br />[{tLocation("store")}]: {tLocation("storeAddress")}
+          [{tLocation("hq")}] {tLocation("hqPostal")}
+          <br />
+          {tLocation("hqAddress")}
+          <br />
+          <br />[{tLocation("office")}] {tLocation("officePostal")}
+          <br />
+          {tLocation("officeAddress")}
+          <br />
+          <br />[{tLocation("salon")}] {tLocation("salonPostal")}
+          <br />
+          {tLocation("salonAddress")}
+          <br />
+          <br />[{tLocation("store")}] {tLocation("storePostal")}
+          <br />
+          {tLocation("storeAddress")}
         </>
       ),
     },
@@ -26,6 +41,10 @@ export default function OurCompany() {
       content: (
         <>
           {t("phone")}: {ContactInfo.phone}
+          <br />
+          {t("fax")}: {ContactInfo.fax}
+          <br />
+          {t("website")}: {ContactInfo.website}
           <br />
           {t("email")}: {ContactInfo.email}
         </>

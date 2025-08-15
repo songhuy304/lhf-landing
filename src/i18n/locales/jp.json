@@ -30,13 +30,13 @@
     "recruitment": "人材紹介",
     "retail": "小売",
     "brandStoryTitle": "企業と人材を繋ぐ架け橋",
-    "brandStoryDes": "ダイナミック – モダン – グローバルコネクション",
-    "brandStoryHeading": "技術によって支えられたサービス品質の実現 —",
+    "brandStoryDes": "カブシキガイシャLHF",
+    "brandStoryHeading": "企業と優秀な人材を結ぶかけ橋",
     "brandStoryHeading2": "献身",
-    "brandStoryContent": "経験豊富で高度な専門知識を持つチームにより、美容ケアから国際人材紹介、専門的な翻訳・通訳まで多様なサービスを提供しています。各サービスは細心の注意を払って実施され、最新のトレンドを取り入れ、お客様に最適な体験を提供することをお約束します。",
-    "brandStoryPoint1": "専門資格を持つスタッフチーム",
-    "brandStoryPoint2": "厳格に管理された衛生・運営プロセス",
-    "brandStoryPoint3": "柔軟で丁寧な予約・サポートシステム",
+    "brandStoryContent": "企業と優秀な人材を結ぶかけ橋として、当社は企業の成長を促進し、適材適所の人材マッチングを実現するとともに、優秀な人材にはキャリアの発展と充実した職務経験を提供することに全力を尽くしています。",
+    "brandStoryPoint1": "高度な専門知識を持つプロフェッショナルチーム",
+    "brandStoryPoint2": "効率的かつ信頼性の高いマッチングプロセス",
+    "brandStoryPoint3": "個別対応に優れたサポート体制",
     "companyInfoTitle": "会社情報",
     "companyName": "会社名",
     "companyNameValue": "LHF株式会社",
@@ -44,6 +44,9 @@
     "companyAddressValue": "愛知県一宮市島村氏江向寺105-2、2階",
     "companyHours": "営業時間",
     "companyHoursValue": "お問い合わせ: ",
+    "contactInfo": "お問い合わせ",
+    "phoneNumber": "電話番号",
+    "emailAddress": "メールアドレス",
     "companyWebsite": "ウェブサイト",
     "companyWebsiteValue": "lhf.co.jp",
     "monday": "月曜日",
@@ -62,28 +65,31 @@
     "title": "株式会社LHF",
     "nameCompany": "会社名",
     "description": "LHF株式会社は、美容ケア、人材紹介、小売の分野で高品質なサービスを提供しています。",
-    "boardOfDirectors": "取締役会"
+    "boardOfDirectors": "代表者",
+    "nameBoardofDirector": "TRAN VAN LONG (チャン　ヴァン　ロン)",
+    "tenCompany": "株式会社LHF"
   },
   "Location": {
-    "branch": "支社",
+    "branch": "所在地",
+
     "hq": "本社",
-    "hqTitle": "LHF 本社",
+    "tagHQ": "本社",
     "hqAddress": "愛知県一宮市島村字下老光寺 105-2 2階",
     "hqPostal": "〒 491-0121",
 
-    "office": "一宮オフィス",
-    "officeTitle": "LHF 一宮オフィス",
-    "officeAddress": "愛知県一宮市長島町2丁目9番地",
+    "office": "管理事務所",
+    "tagOffice": "管理事務所",
+    "officeAddress": "愛知県一宮市長島町 2 丁目 9 番地",
     "officePostal": "〒 491-0071",
 
-    "salon": "ネイル",
-    "salonTitle": "LHF 一宮ネイルサロン",
-    "salonAddress": "愛知県一宮市栄3丁目5-18 STOCK BLDG 2階",
+    "salon": "一宮サロン",
+    "tagSalon": "一宮ネイルサロン",
+    "salonAddress": "愛知県一宮市栄3丁目5−18 STOCK BLDG 2階",
     "salonPostal": "〒 491-0858",
 
-    "store": "小売",
-    "storeTitle": "ベトナム食品店",
-    "storeAddress": "岡山県総社市中央1-6 総社ビル2階",
+    "store": "ベトナム食材店 ",
+    "tagStore": "ベトナム食品店",
+    "storeAddress": "岡山県総社市中央1-6総社ビル2階",
     "storePostal": "〒 719-1131"
   },
   "NailPage": {
@@ -141,36 +147,38 @@
     "CompanyTitle": "会社",
     "infoTitle": "連絡先情報",
     "phone": "電話番号",
-    "email": "電子メール",
+    "fax": "FAX番号",
+    "website": "ホームページ",
+    "email": "メールアドレス",
     "Vision": {
       "title": "ビジョン",
       "des": "私たちは、あらゆる活動において思いやりと誠実さを大切にしながら、誰もが笑顔で輝ける社会を築きたいと考えています。",
-      "v1-title": "満足度の追求",
-      "v1-des": "企業と求職者の期待を超えるサービスを提供し、最高の満足度を目指します。",
-      "v2-title": "信頼と誠実さ",
-      "v2-des": "透明性と正直さをもってすべての関係者と関わり、堅固な信頼関係を構築します。",
+      "v1-title": "満足の追求",
+      "v1-des": "私たちは、企業と求職者の双方の期待を超えるサービスを提供し、最高の満足を追求します。",
+      "v2-title": "信頼と誠実",
+      "v2-des": "私たちは、透明性と正直さを持って全ての関係者と接し、強固な信頼関係を築きます。",
       "v3-title": "革新と進歩",
-      "v3-des": "絶え間ない革新を追求し、最新の技術と知識を応用して市場の変化に迅速に対応します。",
-      "v4-title": "社会への貢献",
-      "v4-des": "高品質な人材の紹介を通じて、雇用機会の創出と社会の持続可能な発展に貢献します。"
+      "v3-des": "私たちは、常に革新を追求し、最新の技術と知識を活用して市場の変化に迅速に対応します。",
+      "v4-title": "社会貢献",
+      "v4-des": "私たちは、高品質な人材紹介を通じて、雇用機会の創出と社会の持続可能な発展に貢献します。"
     },
     "business": {
       "title": "事業内容",
-      "bus1": "国内外の人材紹介サービス",
-      "bus2": "翻訳・通訳サービス（日本、ベトナム、インドネシア）",
-      "bus3": "ビューティーサロン",
+      "bus1": "国内/国外の人財紹介事業",
+      "bus2": "翻訳/通訳サービス（日本語、ベトナム語、インドネシア語）",
+      "bus3": "サロン",
       "bus4": "小売（ベトナム食材、ソープフラワー）"
     },
     "registrationNumber": {
       "title": "登録番号",
-      "reg1": "請求書番号: T9180001158191",
-      "reg2": "登録支援機関: 24 To-009784",
-      "reg3": "有料職業紹介事業: 23-you 302885"
+      "reg1": "インボイス番号: T9180001158191",
+      "reg2": "登録支援機関: 24登－009784",
+      "reg3": "有料職業紹介: 23ーユー302885"
     },
     "memberOrganizations": {
       "title": "加盟団体",
-      "org1": "愛知県中小企業団体（尾張北部若手経営者協会）",
-      "org2": "彼は積極的に政経塾にも参加しています！"
+      "org1": "愛知県中小企業同友会（尾張北青同）",
+      "org2": "青経塾にも積極的に参加中！"
     }
   },
   "RecruitmentPage": {
