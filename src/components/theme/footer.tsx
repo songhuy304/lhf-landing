@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import Logo from "@/components/ui/logo";
 import { ContactInfo } from "@/data";
+import { FacebookIcon, InstagramIcon, LineIcon } from "../ui";
 
 export default function Footer() {
   const t = useTranslations("Root");
@@ -28,9 +29,18 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: <Instagram className="h-5 w-5" />, href: ContactInfo.urlInstagram },
-    { icon: <Facebook className="h-5 w-5" />, href: ContactInfo.urlFacebook },
-    { icon: <MessageCircle className="h-5 w-5" />, href: ContactInfo.urlLine },
+    {
+      icon: <InstagramIcon className="h-5 w-5" />,
+      href: ContactInfo.urlInstagram,
+    },
+    {
+      icon: <FacebookIcon className="h-5 w-5" />,
+      href: ContactInfo.urlFacebook,
+    },
+    {
+      icon: <LineIcon className="h-5 w-5 text-primary" />,
+      href: ContactInfo.urlLine,
+    },
   ];
 
   return (
@@ -62,18 +72,40 @@ export default function Footer() {
 
           {/* Menu liên kết */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">{t("companyInfo")}</h3>
+            <h3 className="text-lg font-semibold mb-6">{t("home")}</h3>
             <ul className="space-y-3">
-              {menuItems.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="text-gray-600 hover:text-primary transition-colors duration-300"
-                  >
-                    {t(item.label)}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link
+                  href="/about"
+                  className="text-gray-600 hover:text-primary transition-colors duration-300"
+                >
+                  {t("about")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/recruitment"
+                  className="text-gray-600 hover:text-primary transition-colors duration-300"
+                >
+                  {t("recruitment")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/nail"
+                  className="text-gray-600 hover:text-primary transition-colors duration-300"
+                >
+                  {t("nail")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/retail"
+                  className="text-gray-600 hover:text-primary transition-colors duration-300"
+                >
+                  {t("retail")}
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -92,7 +124,7 @@ export default function Footer() {
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
                 <span className="text-gray-600">
-                  {homeT("companyHoursValue")}: {ContactInfo.phone}
+                  {homeT("contactInfo")}: {ContactInfo.phone}
                 </span>
               </li>
               <li className="flex items-center">

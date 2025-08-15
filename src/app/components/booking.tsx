@@ -1,12 +1,13 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { MessageCircle, Instagram, Smartphone } from "lucide-react";
-import Image from "next/image";
-import BookingImage from "@/styles/images/nail-banner.webp";
 import { TitleHeading } from "@/components/title-section";
-import { useTranslations } from "next-intl";
+import { Button } from "@/components/ui/button";
+import BookingImage from "@/styles/images/nail-page/logo_hyu.jpg";
+import { MessageCircle } from "lucide-react";
+import { FacebookIcon, InstagramIcon, LineIcon } from "@/components/ui/icon";
 import { ContactInfo } from "@/data";
+import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function Booking() {
   const t = useTranslations("NailPage");
@@ -30,39 +31,34 @@ export default function Booking() {
                 <div className="space-y-4 mb-8">
                   <Button
                     size="lg"
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center gap-3"
+                    className="w-full bg-[#1877F2] hover:bg-[#1877F2]/90 text-white flex items-center justify-center gap-3"
                     onClick={() =>
-                      window.open("https://m.me/your-page", "_blank")
+                      window.open(ContactInfo.facebookUrl, "_blank")
                     }
                   >
-                    <MessageCircle className="h-5 w-5" />
-                    Messenger
+                    <FacebookIcon size={20} />
+                    Facebook
                   </Button>
 
                   <Button
                     size="lg"
                     variant="outline"
-                    className="w-full border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white flex items-center justify-center gap-3 bg-transparent"
+                    className="w-full border-[#E1306C] text-[#E1306C] hover:bg-[#E1306C] hover:text-white flex items-center justify-center gap-3 bg-transparent"
                     onClick={() =>
-                      window.open(
-                        "https://instagram.com/your-account",
-                        "_blank"
-                      )
+                      window.open(ContactInfo.instagramUrl, "_blank")
                     }
                   >
-                    <Instagram className="h-5 w-5" />
+                    <InstagramIcon size={20} />
                     Instagram
                   </Button>
 
                   <Button
                     size="lg"
                     variant="outline"
-                    className="w-full border-green-500 text-green-500 hover:bg-green-500 hover:text-white flex items-center justify-center gap-3 bg-transparent"
-                    onClick={() =>
-                      window.open("https://line.me/ti/p/your-line-id", "_blank")
-                    }
+                    className="w-full border-[#06C755] text-[#06C755] hover:bg-[#06C755] hover:text-white flex items-center justify-center gap-3 bg-transparent"
+                    onClick={() => window.open(ContactInfo.lineUrl, "_blank")}
                   >
-                    <Smartphone className="h-5 w-5" />
+                    <LineIcon size={20} className="fill-current" />
                     LINE
                   </Button>
                 </div>
@@ -76,7 +72,7 @@ export default function Booking() {
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-black/10" />
-                <div className="absolute top-4 right-4 bg-green-600 text-white font-bold py-2 px-4 rounded-full text-sm">
+                <div className="absolute top-4 right-4 bg-primary text-white font-bold py-2 px-4 rounded-full text-sm">
                   24時間受付
                 </div>
               </div>

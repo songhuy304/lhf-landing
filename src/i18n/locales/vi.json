@@ -103,6 +103,21 @@
     "bookingDes": "Đặt chỗ nhanh chóng và dễ dàng",
     "bookingMethod": "Phương thức đặt chỗ",
     "bookingMethodDes": "Vui lòng liên hệ với chúng tôi bằng bất kỳ phương pháp nào dưới đây. Chúng tôi sẽ trả lời trong vòng 24 giờ.",
+    "menuTitle": "Bảng giá dịch vụ nail",
+    "priceList": "Bảng giá dịch vụ",
+    "promotions": {
+      "title": "✨Ưu đãi dịch vụ tại Hiyu Beauty✨",
+      "subtitle": "Chúng tôi mang đến những đặc quyền hấp dẫn dành riêng cho bạn",
+      "specialOffer": "Ưu đãi đặc biệt",
+      "service": "Ưu đãi dịch vụ tại Hiyu Beauty",
+      "nextBooking": "Đặt lịch cho lần sau ngay trong ngày đến cửa hàng, được giảm 5% cho lần sau!",
+      "pointCard": "Có thẻ tích điểm! (Tích lũy để nhận ưu đãi♪)",
+      "drinks": "Nhiều loại đồ uống phong phú☕🍹",
+      "repair": "Sửa chữa miễn phí trong vòng 7 ngày sau khi làm dịch vụ!",
+      "birthday": "Giảm 10% trong tháng sinh nhật!",
+      "review": "Giảm 500 yên trong ngày khi đăng đánh giá trên Hot Pepper!",
+      "student": "Sinh viên được giảm 5%"
+    },
     "galleryItems": {
       "elegantFrench": {
         "title": "Pháp thanh lịch",
@@ -192,51 +207,6 @@
     "tabTitle1": "Quy trình tiếp nhận thực tập sinh kỹ năng",
     "tabTitle2": "Quy trình tuyển dụng kỹ năng đặc định ① Trường hợp trong nước Nhật",
     "tabTitle3": "Quy trình tuyển dụng kỹ năng đặc định ② Trường hợp ở nước ngoài",
-    "tabNote": "Mất khoảng 6 tháng để hoàn thành đến bước 6",
-    "language": {
-      "ja": "Tiếng Nhật",
-      "vi": "Tiếng Việt"
-    },
-    "internship": {
-      "step1": "Ứng tuyển, phỏng vấn (trực tiếp hoặc online)",
-      "step2": "Đăng ký và phê duyệt kế hoạch thực tập kỹ năng",
-      "step3": "Đăng ký và cấp giấy chứng nhận tư cách lưu trú",
-      "step4": "Đăng ký và cấp visa tại nước ngoài",
-      "step5": "Nhập cảnh và đào tạo 1 tháng",
-      "step6": "Bắt đầu làm việc tại công ty và thực tập kỹ năng"
-    },
-    "domestic": {
-      "step1": "Người nước ngoài đỗ kỳ thi hoặc hoàn thành khóa thực tập kỹ năng cấp 2",
-      "step2": "Ký hợp đồng lao động với người nước ngoài có kỹ năng đặc định",
-      "step3": "Xây dựng kế hoạch hỗ trợ cho người nước ngoài có kỹ năng đặc định",
-      "step4": "Đăng ký xin thay đổi tư cách lưu trú tại Cục quản lý xuất nhập cảnh địa phương",
-      "step5": "Thay đổi tư cách lưu trú thành 'Kỹ năng đặc định số 1'",
-      "step6": "Bắt đầu làm việc",
-      "note1": "※1 〜Vui lòng thực hiện trước khi đăng ký cấp giấy chứng nhận tư cách lưu trú hoặc đăng ký thay đổi tư cách lưu trú!",
-      "note1_1": "Quy trình thẩm định của cơ quan tiếp nhận",
-      "note1_2": "Khám sức khỏe",
-      "note1_3": "※1 〜Có thể ủy thác một phần thực hiện kế hoạch hỗ trợ người nước ngoài có kỹ năng đặc định cho bên thứ ba, hoặc ủy thác toàn bộ cho cơ quan hỗ trợ đã đăng ký.",
-      "note1_4": "(Trong trường hợp ủy thác một phần, cơ quan tiếp nhận cần đáp ứng các tiêu chuẩn về hệ thống hỗ trợ.)",
-      "note2": "※2〜Các tài liệu đính kèm chính bao gồm",
-      "note2_1": "Bản sao hợp đồng lao động kỹ năng đặc định",
-      "note2_2": "Kế hoạch hỗ trợ người nước ngoài có kỹ năng đặc định",
-      "note2_3": "Tài liệu chứng minh kỹ năng và khả năng tiếng Nhật"
-    },
-    "overseas": {
-      "step1": "Người nước ngoài đỗ kỳ thi hoặc hoàn thành khóa thực tập kỹ năng cấp 2 (đã về nước)",
-      "step2": "Ký hợp đồng lao động với người nước ngoài có kỹ năng đặc định",
-      "step3": "Đăng ký cấp giấy chứng nhận tư cách lưu trú tại Cục quản lý xuất nhập cảnh địa phương",
-      "step4": "Nhận giấy chứng nhận tư cách lưu trú và đăng ký xin visa",
-      "step5": "Nhận visa và nhập cảnh",
-      "step6": "Bắt đầu làm việc",
-      "note1": "※1〜2 Tham khảo trang trước ① (Trường hợp tuyển dụng người nước ngoài đang lưu trú tại Nhật Bản)",
-      "note2": "Khi tuyển dụng người nước ngoài có kỹ năng đặc định, vui lòng lưu ý những điểm sau:",
-      "note2_1": "✓ Không cấm việc đưa ra lời mời trước khi đỗ các kỳ thi.",
-      "note2_2": "✓ Về mối quan hệ trước sau giữa việc đỗ kỳ thi kỹ năng và kỳ thi tiếng Nhật của người nước ngoài có kỹ năng đặc định và việc ký kết hợp đồng lao động kỹ năng đặc định với cơ quan tiếp nhận, về cơ bản, dự kiến sẽ ký kết hợp đồng lao động kỹ năng đặc định với cơ quan tiếp nhận sau khi người nước ngoài có kỹ năng đặc định đỗ các kỳ thi.",
-      "note2_3": "✓ Có thể tham dự kỳ thi sau khi đã ký kết hợp đồng lao động kỹ năng đặc định, nhưng hãy lưu ý rằng nếu không đỗ các kỳ thi, việc tiếp nhận sẽ không được chấp thuận.",
-      "note3": "✓ Về nguyên tắc, đơn đăng ký phải do chính người nước ngoài thực hiện.",
-      "note4": "✓ Có thể ủy thác nếu được Cục trưởng địa phương phê duyệt là người đại diện nộp đơn."
-    },
     "comparison": {
       "title": "Bảng so sánh chế độ kỹ năng thực tập và chế độ lao động phát triển",
       "category": "Hạng mục",
@@ -296,10 +266,8 @@
   "SocialMedia": {
     "title": "Tham gia cộng đồng làm móng của chúng tôi",
     "description": "Nhận các mẫu thiết kế mới nhất, khuyến mãi và mẹo chăm sóc móng!",
-    "followInstagram": "Theo dõi Instagram",
-    "followTwitter": "Theo dõi X",
-    "shareHashtag": "Chia sẻ với #LHF!",
-    "emailPlaceholder": "Nhập địa chỉ email của bạn",
-    "subscribeButton": "Nhận thông tin về nail"
+    "followInstagram": "Instagram",
+    "followFacebook": "Facebook",
+    "followLine": "LINE"
   }
 }

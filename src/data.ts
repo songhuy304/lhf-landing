@@ -9,4 +9,7 @@ export const ContactInfo = {
   urlLine: "https://line.me/R/ti/p/%40lhf0000",
   bookingTime: "10:00 - 20:00",
   bookingSaturday: "9:00 - 17:00",
+  lineUrl: "https://line.me/ti/p/uwf-6hp9BO",
+  instagramUrl: "https://www.instagram.com/hiyu.beauty/",
+  facebookUrl: "https://www.facebook.com/hiyubeauty",
 };

@@ -10,22 +10,23 @@ import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
-import { Noto_Sans_JP, Hind } from "next/font/google";
+import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
 import type React from "react";
 import InitAos from "@/components/theme/aos";
 import { Metadata } from "next";
 import Loader from "@/components/loader";
+import { Suspense } from "react";
+import { FloatingSocialButtons } from "@/components/ui";
 
-const notoSans = Noto_Sans_JP({
+const notoSerif = Noto_Serif_JP({
   subsets: ["latin"],
-  variable: "--font-sans-jp",
+  variable: "--font-serif",
   display: "swap",
 });
 
-const hind = Hind({
+const notoSans = Noto_Sans_JP({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-hind",
+  variable: "--font-sans",
   display: "swap",
 });
 
@@ -93,16 +94,17 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className={`${notoSans.variable} ${hind.variable}`}
+      className={`${notoSerif.variable} ${notoSans.variable}`}
       suppressHydrationWarning
     >
-      <body className="font-sans">
+      <body className="font-serif">
         <NextIntlClientProvider>
           <InitAos />
           <Loader />
           <Header />
           <main className="min-h-screen pb-16">{children}</main>
           <Footer />
+          <FloatingSocialButtons />
         </NextIntlClientProvider>
       </body>
     </html>

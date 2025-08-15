@@ -1,7 +1,8 @@
 "use client";
-import { Instagram, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { FacebookIcon, InstagramIcon, LineIcon } from "@/components/ui/icon";
 import { useTranslations } from "next-intl";
+import { ContactInfo } from "@/data";
 
 export default function SocialMedia() {
   const t = useTranslations("SocialMedia");
@@ -13,24 +14,31 @@ export default function SocialMedia() {
           {t("title")}
         </h2>
         <p className="text-xl text-gray-600 mb-8">{t("description")}</p>
-        <div className="flex justify-center gap-4 mb-8">
-          <Button variant="outline" className="flex items-center gap-2">
-            <Instagram />
+        <div className="flex justify-center gap-4 flex-wrap">
+          <Button
+            variant="outline"
+            className="flex items-center gap-2 hover:bg-primary/10 hover:text-primary transition-colors"
+            onClick={() => window.open(ContactInfo.instagramUrl, "_blank")}
+          >
+            <InstagramIcon size={20} />
             {t("followInstagram")}
           </Button>
-          <Button variant="outline" className="flex items-center gap-2">
-            <Twitter />
-            {t("followTwitter")}
+          <Button
+            variant="outline"
+            className="flex items-center gap-2 hover:bg-primary/10 hover:text-primary transition-colors"
+            onClick={() => window.open(ContactInfo.facebookUrl, "_blank")}
+          >
+            <FacebookIcon size={20} />
+            {t("followFacebook")}
           </Button>
-        </div>
-        <p className="text-gray-600 mb-4">{t("shareHashtag")}</p>
-        <div className="max-w-2xl mx-auto">
-          <input
-            type="email"
-            placeholder={t("emailPlaceholder")}
-            className="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
-          />
-          <Button className="w-full">{t("subscribeButton")}</Button>
+          <Button
+            variant="outline"
+            className="flex items-center gap-2 hover:bg-primary/10 hover:text-primary transition-colors"
+            onClick={() => window.open(ContactInfo.lineUrl, "_blank")}
+          >
+            <LineIcon size={20} className="fill-current" />
+            {t("followLine")}
+          </Button>
         </div>
       </div>
     </section>

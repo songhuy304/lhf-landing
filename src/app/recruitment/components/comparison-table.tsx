@@ -11,6 +11,8 @@ import {
   TableCell,
 } from "@/components/ui/table";
 
+import ImageComparison from "@/styles/images/recruitment/compare.png";
+
 interface ComparisonRow {
   id: number;
   category: string;
@@ -70,6 +72,17 @@ export default function ComparisonTable() {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <TitleHeading>{t("comparison.title")}</TitleHeading>
+
+        {/* Thêm hình ảnh so sánh */}
+        <div className="flex justify-center mb-8">
+          <img
+            src={ImageComparison.src}
+            alt={t("comparison.title")}
+            className="max-w-full aspect-[10/4] h-auto rounded-lg shadow-lg"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          />
+        </div>
 
         <div
           className="overflow-x-auto"
