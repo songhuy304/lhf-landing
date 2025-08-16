@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/table";
 
 import ImageComparison from "@/styles/images/recruitment/compare.png";
+import Image from "next/image";
 
 interface ComparisonRow {
   id: number;
@@ -75,12 +76,16 @@ export default function ComparisonTable() {
 
         {/* Thêm hình ảnh so sánh */}
         <div className="flex justify-center mb-8">
-          <img
-            src={ImageComparison.src}
+          <Image
+            src={ImageComparison}
             alt={t("comparison.title")}
             className="max-w-full aspect-[10/4] h-auto rounded-lg shadow-lg"
             data-aos="fade-up"
+            width={1000}
+            height={1000}
             data-aos-delay="200"
+            loading="lazy"
+            placeholder="blur"
           />
         </div>
 

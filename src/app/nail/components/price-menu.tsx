@@ -61,6 +61,8 @@ const PriceMenu = () => {
                     alt="Nail Menu Price List"
                     width={1000}
                     height={800}
+                    loading="lazy"
+                    placeholder="blur"
                     className="w-full h-auto object-contain rounded-lg"
                   />
                 </div>

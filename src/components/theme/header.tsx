@@ -60,6 +60,7 @@ export default function Header() {
               variant="ghost"
               className="md:hidden absolute top-6 right-6 text-gray-800"
               onClick={() => setIsMenuOpen(false)}
+              aria-label="Close menu"
             >
               <X className="h-6 w-6" />
             </Button>
@@ -68,20 +69,25 @@ export default function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-primary hover:text-primary/80 transition-colors duration-300 font-medium"
+                  className={`${
+                    isMenuOpen ? "text-gray-800" : "text-primary"
+                  } hover:text-primary transition-colors duration-300 font-medium`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {t(item.label)}
                 </Link>
               ))}
 
-              <LanguageSwitcher />
+              <LanguageSwitcher
+                className={`${isMenuOpen ? "text-gray-800" : "text-primary"}`}
+              />
             </div>
           </nav>
 
           <button
             className="md:hidden text-gray-800"
             onClick={() => setIsMenuOpen(true)}
+            aria-label="Open menu"
           >
             <Menu className="h-6 w-6" />
           </button>

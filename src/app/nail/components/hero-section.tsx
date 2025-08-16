@@ -1,9 +1,6 @@
-import { useTranslations } from "next-intl";
-import React from "react";
-import Banner from "@/styles/images/nail-page/nail-section.jpg";
+import Banner from "@/styles/images/nail-page/nail-section.webp";
 
 const HeroSection = () => {
-  const t = useTranslations("NailPage");
   return (
     <section
       className="md:min-h-screen min-h-96"

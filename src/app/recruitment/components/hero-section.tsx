@@ -1,4 +1,4 @@
-import ImageBanner from "@/styles/images/recruitment/banner-re.png";
+import ImageBanner from "@/styles/images/recruitment/banner-re.webp";
 
 const HeroSection = () => {
   return (

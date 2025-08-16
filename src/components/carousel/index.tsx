@@ -1,14 +1,10 @@
-import {
-  Autoplay,
-  FreeMode,
-  Navigation,
-  Pagination,
-  Grid,
-} from "swiper/modules";
+// Import only the modules we need to reduce bundle size
+import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SwiperOptions } from "swiper/types";
 
-import { cn } from "@/lib/utils";
+// Lazy load additional modules only when needed
+
 import React, { ReactNode, useId, useRef } from "react";
 
 interface SliderProps {
@@ -50,14 +46,13 @@ const Carousel = ({
 
   const effectivePrevRef = prevRef || internalPrevRef;
   const effectiveNextRef = nextRef || internalNextRef;
-  console.log("🚀 ~ Carousel ~ effectiveNextRef:", effectivePrevRef);
 
   const childrenArray = React.Children.toArray(children);
 
   return (
     <div className="w-full">
       <Swiper
-        modules={[Navigation, Pagination, FreeMode, Autoplay, Grid]}
+        modules={[Navigation, Pagination]}
         watchOverflow={false}
         navigation={{
           prevEl: effectivePrevRef.current,

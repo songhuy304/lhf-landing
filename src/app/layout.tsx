@@ -1,33 +1,29 @@
-import Header from "@/components/theme/header";
 import Footer from "@/components/theme/footer";
+import Header from "@/components/theme/header";
 import "@/styles/globals.css";
 import "aos/dist/aos.css";
 // @ts-ignore
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/grid";
-import "swiper/css/pagination";
-import "swiper/css/free-mode";
+import Loader from "@/components/loader";
+import InitAos from "@/components/theme/aos";
+import { FloatingSocialButtons } from "@/components/ui";
+import { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
 import type React from "react";
-import InitAos from "@/components/theme/aos";
-import { Metadata } from "next";
-import Loader from "@/components/loader";
-import { Suspense } from "react";
-import { FloatingSocialButtons } from "@/components/ui";
 
 const notoSerif = Noto_Serif_JP({
   subsets: ["latin"],
   variable: "--font-serif",
   display: "swap",
+  preload: true,
 });
 
 const notoSans = Noto_Sans_JP({
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
+  preload: true,
 });
 
 export async function generateMetadata(): Promise<Metadata> {

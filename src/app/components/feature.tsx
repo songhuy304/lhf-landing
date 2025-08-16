@@ -53,6 +53,8 @@ export const FeatureSection = () => {
                   src={item.img}
                   alt={item.title}
                   width={1000}
+                  loading="lazy"
+                  placeholder="blur"
                   height={1000}
                   className="h-full w-full object-cover group-hover:scale-105 transition-all duration-300"
                 />

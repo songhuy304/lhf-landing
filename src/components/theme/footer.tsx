@@ -32,14 +32,17 @@ export default function Footer() {
     {
       icon: <InstagramIcon className="h-5 w-5" />,
       href: ContactInfo.urlInstagram,
+      ariaLabel: "Instagram",
     },
     {
       icon: <FacebookIcon className="h-5 w-5" />,
       href: ContactInfo.urlFacebook,
+      ariaLabel: "Facebook",
     },
     {
       icon: <LineIcon className="h-5 w-5 text-primary" />,
       href: ContactInfo.urlLine,
+      ariaLabel: "Line",
     },
   ];
 
@@ -56,17 +59,20 @@ export default function Footer() {
               {homeT("brandStoryDes")}
             </p>
             <div className="flex space-x-4 mt-6">
-              {socialLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.href}
-                  className="bg-primary/10 hover:bg-primary/20 p-2 rounded-full text-primary transition-colors duration-300"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {link.icon}
-                </a>
-              ))}
+              {socialLinks.map((link, index) => {
+                return (
+                  <a
+                    key={index}
+                    href={link.href}
+                    className="bg-primary/10 hover:bg-primary/20 p-2 rounded-full text-primary transition-colors duration-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={link.ariaLabel}
+                  >
+                    {link.icon}
+                  </a>
+                );
+              })}
             </div>
           </div>
 
@@ -162,6 +168,7 @@ export default function Footer() {
                   <a
                     href="#"
                     className="text-gray-500 hover:text-primary text-sm"
+                    aria-label={homeT("termsOfService")}
                   >
                     {homeT("termsOfService")}
                   </a>
@@ -170,6 +177,7 @@ export default function Footer() {
                   <a
                     href="#"
                     className="text-gray-500 hover:text-primary text-sm"
+                    aria-label={homeT("privacyPolicy")}
                   >
                     {homeT("privacyPolicy")}
                   </a>

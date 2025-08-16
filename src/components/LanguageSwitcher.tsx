@@ -6,8 +6,13 @@ import { LanguagesIcon } from "lucide-react";
 import { useLocale } from "next-intl";
 import { startTransition } from "react";
 import { Button } from "@/components/ui";
+import { cn } from "@/lib/utils";
 
-export default function LanguageSwitcher() {
+interface LanguageSwitcherProps {
+  className?: string;
+}
+
+export default function LanguageSwitcher({ className }: LanguageSwitcherProps) {
   const locale = useLocale();
 
   const handleChangeLanguage = (newLocale: string) => {
@@ -21,8 +26,11 @@ export default function LanguageSwitcher() {
     <Button
       variant="ghost"
       size="icon"
-      className="text-primary"
-      onClick={() => handleChangeLanguage(locale === "jp" ? "vi" : "jp")}
+      className={cn("text-primary", className)}
+      onClick={() => handleChangeLanguage(locale === "ja" ? "vi" : "ja")}
+      aria-label={
+        locale === "ja" ? "Chuyển sang tiếng Việt" : "日本語に切り替える"
+      }
     >
       <LanguagesIcon />
     </Button>

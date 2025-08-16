@@ -16,8 +16,12 @@ export const FloatingSocialButtons = ({
   const [isNailPage, setIsNailPage] = useState(false);
 
   useEffect(() => {
-    setIsNailPage(pathname.includes("/nail"));
-  }, [pathname]);
+    // Memoize the check to avoid unnecessary re-renders
+    const isNail = pathname.includes("/nail");
+    if (isNail !== isNailPage) {
+      setIsNailPage(isNail);
+    }
+  }, [pathname, isNailPage]);
 
   return (
     <div

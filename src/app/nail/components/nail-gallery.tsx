@@ -175,6 +175,8 @@ const CardItem = ({ item }: CardItemProps) => {
           src={item.image}
           alt={itemT(`${item.id}.title`)}
           fill
+          loading="lazy"
+          placeholder="blur"
           className="object-cover transition-transform duration-300 group-hover:scale-110"
         />
         {item.isHot && (

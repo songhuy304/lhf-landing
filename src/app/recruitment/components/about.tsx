@@ -1,17 +1,17 @@
 "use client";
 
-import { TitleHeading } from "@/components/title-section";
-import { Button, Text } from "@/components/ui";
-import { useTranslations } from "next-intl";
-import { useState } from "react";
 import { TabTransition } from "@/components/animation/tab-animation";
+import { TitleHeading } from "@/components/title-section";
+import { Button } from "@/components/ui";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useState } from "react";
 
 // Import hình ảnh
+import { cn } from "@/lib/utils";
 import step1Image from "@/styles/images/recruitment/step1.png";
 import step2Image from "@/styles/images/recruitment/step2.png";
 import step3Image from "@/styles/images/recruitment/step3.png";
-import { cn } from "@/lib/utils";
 
 export default function About() {
   const t = useTranslations("RecruitmentPage");
@@ -21,26 +21,6 @@ export default function About() {
 
   const handleTabChange = (tab: "internship" | "domestic" | "overseas") => {
     setActiveTab(tab);
-  };
-
-  const getTabTitle = () => {
-    switch (activeTab) {
-      case "internship":
-        return t("tabTitle1");
-      case "domestic":
-        return t("tabTitle2");
-      case "overseas":
-        return t("tabTitle3");
-      default:
-        return "";
-    }
-  };
-
-  const getNote = () => {
-    if (activeTab === "internship") {
-      return t("tabNote");
-    }
-    return "";
   };
 
   return (
@@ -86,6 +66,8 @@ export default function About() {
                       src={step1Image}
                       alt="step1"
                       fill
+                      loading="lazy"
+                      placeholder="blur"
                       className="object-cover"
                     />
                   </div>
