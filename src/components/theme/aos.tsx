@@ -4,7 +4,9 @@ import { useEffect } from "react";
 
 const InitAos = () => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
   }, []);
   return null;
 };
