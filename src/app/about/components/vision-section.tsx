@@ -38,8 +38,6 @@ const VisionSection = () => {
             <div
               key={index}
               className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow"
-              data-aos="fade-up"
-              data-aos-delay={index * 100}
             >
               <div className="flex flex-col items-start text-left">
                 <div className="flex items-center gap-3 mb-3">
