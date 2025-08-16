@@ -45,9 +45,10 @@ export async function generateMetadata(): Promise<Metadata> {
         ja: "/ja",
       },
     },
-    keywords: ["LHF"],
+    keywords: ["LHF", "Công ty TNHH LHF", "株式会社LHF", "nail", "サロン"],
     authors: [{ name: "LHF" }],
-    creator: "LHF",
+    creator: t("title"),
+    publisher: t("title"),
     openGraph: {
       type: "website",
       locale: "ja",
@@ -68,7 +69,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      creator: "@LHF",
+      creator: t("title"),
     },
     robots: {
       index: true,
