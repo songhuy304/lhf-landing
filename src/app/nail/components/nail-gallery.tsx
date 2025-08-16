@@ -93,7 +93,7 @@ export default function NailGallery() {
               isActive={activeTab === "completed"}
               onClick={() => handleTabChange("completed")}
             >
-              {t("nailAlbum")}
+              {t("customerWorks")}
             </TabButton>
             <TabButton
               isActive={activeTab === "hottrend"}
@@ -107,7 +107,7 @@ export default function NailGallery() {
             <TabTransition activeTab={activeTab}>
               <div>
                 {activeTab === "completed" && (
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
                     {completedItems.map((item, index) => (
                       <CardItem
                         key={`completed-${item.id}-${index}`}

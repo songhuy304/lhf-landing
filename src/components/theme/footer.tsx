@@ -1,31 +1,22 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
-import { useTranslations } from "next-intl";
-import {
-  Facebook,
-  Globe,
-  Instagram,
-  Mail,
-  MapPin,
-  Phone,
-  MessageCircle,
-} from "lucide-react";
 import Logo from "@/components/ui/logo";
 import { ContactInfo } from "@/data";
+import { Globe, Mail, MapPin, Phone } from "lucide-react";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
 import { FacebookIcon, InstagramIcon, LineIcon } from "../ui";
 
 export default function Footer() {
   const t = useTranslations("Root");
   const homeT = useTranslations("HomePage");
+  const metaT = useTranslations("Meta");
 
   const menuItems = [
-    { href: "/", label: "home" },
-    { href: "/recruitment", label: "recruitment" },
-    { href: "/retail", label: "retail" },
-    { href: "/nail", label: "nail" },
     { href: "/about", label: "about" },
+    { href: "/recruitment", label: "recruitment" },
+    { href: "/nail", label: "nail" },
+    { href: "/retail", label: "retail" },
   ];
 
   const socialLinks = [
@@ -56,7 +47,9 @@ export default function Footer() {
               <Logo />
             </Link>
             <p className="text-gray-600 mt-4 max-w-xs">
-              {homeT("brandStoryDes")}
+              {metaT("title")}
+              <br />
+              {metaT("SNSDes")}
             </p>
             <div className="flex space-x-4 mt-6">
               {socialLinks.map((link, index) => {
@@ -80,38 +73,16 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-6">{t("home")}</h3>
             <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/about"
-                  className="text-gray-600 hover:text-primary transition-colors duration-300"
-                >
-                  {t("about")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/recruitment"
-                  className="text-gray-600 hover:text-primary transition-colors duration-300"
-                >
-                  {t("recruitment")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/nail"
-                  className="text-gray-600 hover:text-primary transition-colors duration-300"
-                >
-                  {t("nail")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/retail"
-                  className="text-gray-600 hover:text-primary transition-colors duration-300"
-                >
-                  {t("retail")}
-                </Link>
-              </li>
+              {menuItems.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    href={item.href}
+                    className="text-gray-600 hover:text-primary transition-colors duration-300"
+                  >
+                    {t(item.label)}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 

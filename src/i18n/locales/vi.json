@@ -64,6 +64,7 @@
   },
   "Meta": {
     "title": "Công ty TNHH LHF",
+    "SNSDes": "Thông tin đăng bài trên SNS",
     "nameCompany": "Tên công ty",
     "description": "Công ty TNHH LHF là công ty cổ phần cung cấp dịch vụ chất lượng cao về nail, giới thiệu nhân lực và bán lẻ.",
     "boardOfDirectors": "Tiêu biểu",
@@ -97,6 +98,7 @@
     "galleryTitle": "Bộ sưu tập Nail",
     "galleryDes": "Chiêm ngưỡng những mẫu nail chất lượng cao chúng tôi đã thực hiện",
     "nailAlbum": "Bộ sưu tập Nail",
+    "customerWorks": "Mẫu nail khách đã làm",
     "hotTrend": "Sản phẩm hot",
     "bookingTitle": "Đặt chỗ trực tuyến",
     "bookingSubTitle": "Đặt lịch",
