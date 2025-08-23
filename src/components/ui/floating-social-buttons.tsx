@@ -73,7 +73,7 @@ export const FloatingSocialButtons = ({
             href={ContactInfo.hotpepperUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-12 h-12 rounded-full hover:bg-white/200 shadow-lg transition-colors"
+            className="flex items-center justify-center w-12 h-12 rounded-full hover:bg-white/200 shadow-lg transition-colors bg-[#9f1547]"
             aria-label="Instagram"
           >
             <HotPepperIcon size={24} />
