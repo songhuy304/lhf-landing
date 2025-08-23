@@ -1,16 +1,19 @@
 import Banner from "@/styles/images/nail-page/nail-section.webp";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section
-      className="md:min-h-screen min-h-96"
-      style={{
-        backgroundImage: `url(${Banner.src})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    ></section>
+    <div className="relative">
+      {/* Background fixed */}
+      <div className="fixed top-0 left-0 w-full h-screen -z-10">
+        <Image
+          src={Banner.src}
+          alt="Nail Service Banner"
+          fill
+          className="w-full h-full object-cover"
+        />
+      </div>
+    </div>
   );
 };
 

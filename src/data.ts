@@ -3,13 +3,11 @@ export const ContactInfo = {
   fax: "0586-52-7627",
   website: "lhf.co.jp",
   email: "long.lhf@gmail.com",
-  urlFacebook: "https://www.facebook.com/profile.php?id=100063805004843",
-  urlInstagram: "https://www.instagram.com/lhf_long/",
-  urlYoutube: "https://www.youtube.com/@lhf_long",
-  urlLine: "https://line.me/R/ti/p/%40lhf0000",
   bookingTime: "10:00 - 20:00",
   bookingSaturday: "9:00 - 17:00",
   lineUrl: "https://line.me/ti/p/uwf-6hp9BO",
   instagramUrl: "https://www.instagram.com/hiyu.beauty/",
   facebookUrl: "https://www.facebook.com/hiyubeauty",
+  hotpepperUrl:
+    "https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000773424&ch=1&vos=cpshbkprocap0140516003",
 };

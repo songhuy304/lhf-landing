@@ -11,10 +11,6 @@ export default function OurCompany() {
     { label: tMeta("nameCompany"), content: tMeta("title") },
     { label: tMeta("boardOfDirectors"), content: tMeta("nameBoardofDirector") },
     {
-      label: tLocation("hq"),
-      content: `${tLocation("hqPostal")}\n${tLocation("hqAddress")}`,
-    },
-    {
       label: tLocation("branch"),
       content: (
         <>

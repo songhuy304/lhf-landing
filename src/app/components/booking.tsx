@@ -2,10 +2,9 @@
 
 import { TitleHeading } from "@/components/title-section";
 import { Button } from "@/components/ui/button";
-import BookingImage from "@/styles/images/nail-page/logo_hyu.jpg";
-import { MessageCircle } from "lucide-react";
-import { FacebookIcon, InstagramIcon, LineIcon } from "@/components/ui/icon";
+import { FacebookIcon, HotPepperIcon, LineIcon } from "@/components/ui/icon";
 import { ContactInfo } from "@/data";
+import BookingImage from "@/styles/images/nail-page/logo_hyu.jpg";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
@@ -13,7 +12,7 @@ export default function Booking() {
   const t = useTranslations("NailPage");
   const commonT = useTranslations("Root");
   return (
-    <section className="py-24 bg-gradient-to-b from-white to-green-50">
+    <section className="py-24">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <TitleHeading des={t("bookingDes")} subTitle={t("bookingSubTitle")}>
@@ -45,11 +44,11 @@ export default function Booking() {
                     variant="outline"
                     className="w-full border-[#E1306C] text-[#E1306C] hover:bg-[#E1306C] hover:text-white flex items-center justify-center gap-3 bg-transparent"
                     onClick={() =>
-                      window.open(ContactInfo.instagramUrl, "_blank")
+                      window.open(ContactInfo.hotpepperUrl, "_blank")
                     }
                   >
-                    <InstagramIcon size={20} />
-                    Instagram
+                    <HotPepperIcon size={20} />
+                    Hot Pepper Beauty
                   </Button>
 
                   <Button

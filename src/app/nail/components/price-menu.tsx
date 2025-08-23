@@ -1,13 +1,16 @@
-import React from "react";
-import { useTranslations } from "next-intl";
-import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
-import { Sparkles, Gift } from "lucide-react";
-import MenuImage from "@/styles/images/nail-page/bg_menu_nails.jpg";
+import MenuJP from "@/styles/images/nail-page/menu-jp.png";
+import MenuVN from "@/styles/images/nail-page/menu-vi.png";
+import { Sparkles } from "lucide-react";
+import { useTranslations, useLocale } from "next-intl";
+import Image from "next/image";
 
 const PriceMenu = () => {
   const t = useTranslations("NailPage");
   const promoT = useTranslations("NailPage.promotions");
+  const locale = useLocale();
+
+  const MenuImage = locale === "vi" ? MenuVN : MenuJP;
 
   const promotions = [
     { icon: "📅", text: promoT("nextBooking") },
@@ -20,8 +23,8 @@ const PriceMenu = () => {
   ];
 
   return (
-    <div className="w-full py-16">
-      <div className="max-w-6xl mx-auto px-4">
+    <div className="w-full py-24">
+      <div className="max-w-7xl mx-auto px-4">
         <div
           className="flex flex-col items-center mb-10"
           data-aos="fade-up"
@@ -48,7 +51,7 @@ const PriceMenu = () => {
             data-aos-delay="300"
           >
             <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-xl overflow-hidden border border-primary/20">
-              <div className="bg-gradient-to-r from-primary/80 to-primary py-4 px-6">
+              <div className="bg-primary py-4 px-6">
                 <h3 className="text-white font-semibold text-xl flex items-center">
                   {t("priceList")}
                 </h3>
@@ -78,7 +81,7 @@ const PriceMenu = () => {
             data-aos-delay="300"
           >
             <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-xl overflow-hidden border border-primary/20 h-full">
-              <div className="bg-gradient-to-r from-primary/80 to-primary py-4 px-6">
+              <div className="bg-primary py-4 px-6">
                 <h3 className="text-white font-semibold text-lg text-center">
                   {promoT("title")}
                 </h3>

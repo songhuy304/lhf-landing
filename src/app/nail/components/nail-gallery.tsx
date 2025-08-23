@@ -79,9 +79,11 @@ export default function NailGallery() {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24">
       <div className="container mx-auto px-4">
-        <TitleHeading des={t("galleryDes")}>{t("galleryTitle")}</TitleHeading>
+        <TitleHeading des={t("galleryDes")} classNameDes="text-black">
+          {t("galleryTitle")}
+        </TitleHeading>
 
         <div className="mt-10">
           <div
@@ -169,8 +171,8 @@ const CardItem = ({ item }: CardItemProps) => {
   const itemT = useTranslations("NailPage.galleryItems");
 
   return (
-    <div className="text-center group">
-      <div className="relative aspect-square mb-4 overflow-hidden rounded-lg shadow-lg">
+    <div className="text-center group bg-white rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-300">
+      <div className="relative aspect-square mb-4 overflow-hidden rounded-lg shadow-md">
         <Image
           src={item.image}
           alt={itemT(`${item.id}.title`)}

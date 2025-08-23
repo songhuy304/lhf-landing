@@ -203,12 +203,143 @@
     "aboutSubTitle": "Tuyển dụng",
     "aboutDes": "Đồng hành cùng doanh nghiệp tìm kiếm nhân lực chất lượng cao.",
     "aboutContent": "Chúng tôi kết nối nhân tài với cơ hội việc làm chất lượng, đồng hành cùng doanh nghiệp và ứng viên trên hành trình phát triển bền vững.",
+    "countryCharacteristics": {
+      "title": "Đặc điểm theo quốc gia",
+      "subtitle": "Tìm hiểu văn hóa và đặc điểm của từng quốc gia",
+      "vietnam": {
+        "name": "VIỆT NAM",
+        "nameJa": "ベトナム",
+        "diligence": "Chăm chỉ và linh hoạt",
+        "diligenceDesc": "Người Việt Nam chăm chỉ và linh hoạt, có khả năng thích ứng cao với môi trường và công việc mới",
+        "familyOrientation": "Định hướng gia đình",
+        "familyOrientationDesc": "Văn hóa coi trọng gia đình và cộng đồng, cân bằng giữa công việc và cuộc sống gia đình",
+        "respect": "Tôn trọng và lịch sự",
+        "respectDesc": "Tôn trọng và lịch sự với cấp trên và người lớn tuổi được đánh giá cao, lịch sự là đặc điểm trong giao tiếp",
+        "habits": "Thói quen",
+        "habitsDesc": "Người Việt Nam thích tạo ra nhiều tiếng ồn, đôi khi có thể gây rắc rối trong cuộc sống ký túc xá do tiếng ồn",
+        "communication": "Phong cách giao tiếp",
+        "communicationDesc": "Tính cách chung lịch sự và nhẹ nhàng, lịch sự là yêu cầu trong giao tiếp. Công ty thực hiện các biện pháp chủ động dựa trên kinh nghiệm để giải quyết và loại bỏ vấn đề"
+      },
+      "indonesia": {
+        "name": "INDONESIA",
+        "nameJa": "インドネシア",
+        "friendliness": "Thân thiện và hợp tác",
+        "friendlinessDesc": "Người Indonesia thân thiện, dễ gần và coi trọng làm việc nhóm, nhấn mạnh tính hợp tác",
+        "religion": "Tôn giáo và truyền thống",
+        "religionDesc": "Hồi giáo là tôn giáo chính, các sự kiện tôn giáo và truyền thống ăn sâu vào cuộc sống hàng ngày",
+        "patience": "Kiên nhẫn và bền bỉ",
+        "patienceDesc": "Tính cách kiên nhẫn và bền bỉ khi đối mặt với khó khăn, nỗ lực giải quyết vấn đề",
+        "habits": "Thói quen",
+        "habitsDesc": "Tính cách chậm rãi, không bị ràng buộc bởi thời gian, không quen bị giận dữ ở nơi công cộng",
+        "communication": "Phong cách giao tiếp",
+        "communicationDesc": "Tính cách thân thiện và hướng ngoại, cần sự thích ứng trong phong cách giao tiếp. Công ty thông báo trước các lưu ý cho khách hàng và yêu cầu hợp tác ở cấp độ hiện trường"
+      }
+    },
     "tab1": "Thực tập sinh kỹ năng",
     "tab2": "Kỹ năng đặc định (trong nước)",
     "tab3": "Kỹ năng đặc định (nước ngoài)",
     "tabTitle1": "Quy trình tiếp nhận thực tập sinh kỹ năng",
     "tabTitle2": "Quy trình tuyển dụng kỹ năng đặc định ① Trường hợp trong nước Nhật",
     "tabTitle3": "Quy trình tuyển dụng kỹ năng đặc định ② Trường hợp ở nước ngoài",
+    "internship": {
+      "title": "Quy trình thực tập sinh kỹ năng",
+      "steps": {
+        "step1": {
+          "title": "Nộp hồ sơ & Phỏng vấn",
+          "description": "Ứng viên nộp hồ sơ và tham gia phỏng vấn trực tiếp hoặc online"
+        },
+        "step2": {
+          "title": "Kế hoạch thực tập",
+          "description": "Xây dựng kế hoạch thực tập chi tiết và mục tiêu đào tạo"
+        },
+        "step3": {
+          "title": "Chứng nhận & Đào tạo",
+          "description": "Hoàn thành chứng chỉ và tham gia khóa đào tạo chuyên sâu"
+        },
+        "step4": {
+          "title": "Xin visa & Giấy phép",
+          "description": "Hỗ trợ hoàn thiện hồ sơ xin visa và các giấy phép cần thiết"
+        },
+        "step5": {
+          "title": "Nhập cảnh & Đào tạo",
+          "description": "Nhập cảnh và tham gia khóa đào tạo 1 tháng về ngôn ngữ"
+        },
+        "step6": {
+          "title": "Bắt đầu thực tập",
+          "description": "Thực tập sinh được phân công đến công ty và bắt đầu chương trình"
+        }
+      },
+      "note": "Toàn bộ quy trình từ bước 1 đến bước 6 kéo dài khoảng 6 tháng",
+      "duration": "6 tháng"
+    },
+    "domestic": {
+      "title": "Quy trình tuyển dụng trong nước",
+      "steps": {
+        "step1": {
+          "title": "Thi tuyển & Đào tạo",
+          "description": "Ứng viên tham gia kỳ thi tuyển chọn hoặc hoàn thành khóa đào tạo cấp độ 2"
+        },
+        "step2": {
+          "title": "Ký hợp đồng",
+          "description": "Ký kết hợp đồng tuyển dụng với người lao động nước ngoài có kỹ năng đặc định"
+        },
+        "step3": {
+          "title": "Xác định kế hoạch",
+          "description": "Xây dựng kế hoạch hỗ trợ cho người lao động nước ngoài có kỹ năng đặc định"
+        },
+        "step4": {
+          "title": "Đổi tư cách lưu trú",
+          "description": "Nộp đơn xin thay đổi tư cách lưu trú tại cục quản lý xuất nhập cảnh địa phương"
+        },
+        "step5": {
+          "title": "Chuyển đổi visa",
+          "description": "Chuyển đổi tư cách lưu trú sang 'Kỹ năng đặc định số 1' để làm việc hợp pháp"
+        },
+        "step6": {
+          "title": "Bắt đầu làm việc",
+          "description": "Người lao động bắt đầu làm việc chính thức tại công ty với tư cách kỹ năng đặc định"
+        }
+      },
+      "notes": [
+        "Đơn xin phải do người nước ngoài trực tiếp nộp.",
+        "Có thể được phê duyệt nếu là người đứng đầu địa phương và đáp ứng các yêu cầu."
+      ]
+    },
+    "overseas": {
+      "title": "Quy trình tuyển dụng từ nước ngoài",
+      "steps": {
+        "step1": {
+          "title": "Thi tuyển & Đào tạo",
+          "description": "Ứng viên nước ngoài tham gia kỳ thi tuyển chọn hoặc hoàn thành khóa đào tạo cấp độ 2"
+        },
+        "step2": {
+          "title": "Ký hợp đồng",
+          "description": "Ký kết hợp đồng tuyển dụng với người lao động nước ngoài có kỹ năng đặc định"
+        },
+        "step3": {
+          "title": "Nộp hồ sơ chứng nhận",
+          "description": "Nộp đơn xin cấp giấy chứng nhận tư cách lưu trú tại cục quản lý xuất nhập cảnh"
+        },
+        "step4": {
+          "title": "Nhận giấy chứng nhận",
+          "description": "Nhận giấy chứng nhận tư cách lưu trú và nộp đơn xin cấp thị thực (visa)"
+        },
+        "step5": {
+          "title": "Nhận visa & Nhập cảnh",
+          "description": "Nhận thị thực (visa) và nhập cảnh vào Nhật Bản để bắt đầu công việc"
+        },
+        "step6": {
+          "title": "Bắt đầu làm việc",
+          "description": "Người lao động bắt đầu làm việc chính thức tại công ty với tư cách kỹ năng đặc định"
+        }
+      },
+      "notes": [
+        "Không cấm việc đưa ra quyết định trước khi thi đỗ các kỳ thi.",
+        "Về nguyên tắc, người nước ngoài phải đỗ kỳ thi kỹ năng đặc định trước khi ký hợp đồng.",
+        "Có thể thi sau khi ký hợp đồng, nhưng nếu không đỗ sẽ không được chấp nhận nhập cảnh."
+      ]
+    },
+    "importantNotes": "Lưu ý quan trọng:",
     "comparison": {
       "title": "Bảng so sánh chế độ kỹ năng thực tập và chế độ lao động phát triển",
       "category": "Hạng mục",
@@ -270,6 +401,7 @@
     "description": "Nhận các mẫu thiết kế mới nhất, khuyến mãi và mẹo chăm sóc móng!",
     "followInstagram": "Instagram",
     "followFacebook": "Facebook",
-    "followLine": "LINE"
+    "followLine": "LINE",
+    "followHotpepper": "Hot Pepper Beauty"
   }
 }

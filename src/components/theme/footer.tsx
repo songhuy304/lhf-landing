@@ -5,12 +5,13 @@ import { ContactInfo } from "@/data";
 import { Globe, Mail, MapPin, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { FacebookIcon, InstagramIcon, LineIcon } from "../ui";
+import { FacebookIcon, HotPepperIcon, LineIcon } from "../ui";
 
 export default function Footer() {
   const t = useTranslations("Root");
   const homeT = useTranslations("HomePage");
   const metaT = useTranslations("Meta");
+  const locationT = useTranslations("Location");
 
   const menuItems = [
     { href: "/about", label: "about" },
@@ -21,18 +22,18 @@ export default function Footer() {
 
   const socialLinks = [
     {
-      icon: <InstagramIcon className="h-5 w-5" />,
-      href: ContactInfo.urlInstagram,
-      ariaLabel: "Instagram",
+      icon: <HotPepperIcon className="h-5 w-5" />,
+      href: ContactInfo.hotpepperUrl,
+      ariaLabel: "Hot Pepper Beauty",
     },
     {
       icon: <FacebookIcon className="h-5 w-5" />,
-      href: ContactInfo.urlFacebook,
+      href: ContactInfo.facebookUrl,
       ariaLabel: "Facebook",
     },
     {
       icon: <LineIcon className="h-5 w-5 text-primary" />,
-      href: ContactInfo.urlLine,
+      href: ContactInfo.lineUrl,
       ariaLabel: "Line",
     },
   ];
@@ -95,7 +96,7 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
                 <span className="text-gray-600">
-                  {homeT("companyAddressValue")}
+                  {locationT("officeAddress")}
                 </span>
               </li>
               <li className="flex items-center">

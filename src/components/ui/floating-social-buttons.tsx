@@ -1,8 +1,8 @@
 "use client";
 
-import { usePathname } from "next/navigation";
-import { FacebookIcon, InstagramIcon, LineIcon } from "@/components/ui/icon";
+import { FacebookIcon, HotPepperIcon, LineIcon } from "@/components/ui/icon";
 import { ContactInfo } from "@/data";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 interface FloatingSocialButtonsProps {
@@ -70,13 +70,13 @@ export const FloatingSocialButtons = ({
             <LineIcon size={24} className="fill-white" />
           </a>
           <a
-            href={ContactInfo.instagramUrl}
+            href={ContactInfo.hotpepperUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-12 h-12 rounded-full bg-pink-600 text-white shadow-lg hover:bg-pink-700 transition-colors"
+            className="flex items-center justify-center w-12 h-12 rounded-full hover:bg-white/200 shadow-lg transition-colors"
             aria-label="Instagram"
           >
-            <InstagramIcon size={24} />
+            <HotPepperIcon size={24} />
           </a>
           <a
             href="https://www.tiktok.com/"

@@ -5,10 +5,12 @@ import { Button, Input, Textarea } from "@/components/ui";
 import { useState } from "react";
 import { Mail, Phone } from "lucide-react";
 import { ContactInfo } from "@/data";
+import { useLocale } from "next-intl";
 
 export default function ContactUs() {
   const t = useTranslations("AboutPage");
   const homeT = useTranslations("HomePage");
+  const locale = useLocale();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -40,6 +42,8 @@ export default function ContactUs() {
     setFormData({ name: "", email: "", message: "" });
     alert("Gửi thông tin thành công!");
   };
+
+  // Create Google Maps URL with appropriate language
 
   return (
     <section id="contact" className="relative overflow-hidden py-12 md:py-24">
@@ -105,12 +109,11 @@ export default function ContactUs() {
           </div>
 
           {/* Google Map */}
-          <div className="bg-white rounded-lg shadow-md overflow-hidden h-[300px] md:h-[450px] w-full md:w-2/3">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden h-[300px] md:h-auto w-full md:w-2/3">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.1140384262486!2d136.7954053!3d35.1763455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003a0c1b8f65555%3A0x2d9d5f0a8c5d4c1b!2s2-ch%C5%8Dme-9%20Nagashimach%C5%8D%2C%20Ichinomiya%2C%20Aichi%20491-0071%2C%20Japan!5e0!3m2!1sen!2s!4v1653825753874!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.434818946459!2d136.80432657624627!3d35.32002244973104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003a7479939977b%3A0x172f178d957673cd!2z5pel5pys44CB44CSNDkxLTAwNzEg5oSb55-l55yM5LiA5a6u5biC6ZW35bO255S677yS5LiB55uu77yZIOODquODvOODgOODvOOCr-ODqeODs-ODhO-8me-8kw!5e0!3m2!1sja!2sus!4v1755917950582!5m2!1sja!2sus"
               width="100%"
               height="100%"
-              style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
