@@ -48,7 +48,7 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       type: "website",
       locale: "ja",
-      url: "https://your-domain.com",
+      url: "https://www.lhf.vn",
       title: t("title"),
       description: t("description"),
       siteName: t("title"),
