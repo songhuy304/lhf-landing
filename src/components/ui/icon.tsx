@@ -86,6 +86,7 @@ export const HotPepperIcon: React.FC<IconProps> = ({
       height={size}
       viewBox="0 0 50 50"
       fill="none"
+      className={className}
     >
       <rect width="50" height="50" fill="url(#pattern0_2024_2)" />
       <defs>

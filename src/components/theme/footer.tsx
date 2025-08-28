@@ -5,7 +5,11 @@ import { ContactInfo } from "@/data";
 import { Globe, Mail, MapPin, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { FacebookIcon, HotPepperIcon, LineIcon } from "../ui";
+import {
+  SocialButton,
+  SocialButtonsGroup,
+  SocialPlatform,
+} from "../ui/social-buttons";
 
 export default function Footer() {
   const t = useTranslations("Root");
@@ -18,24 +22,6 @@ export default function Footer() {
     { href: "/recruitment", label: "recruitment" },
     { href: "/nail", label: "nail" },
     { href: "/retail", label: "retail" },
-  ];
-
-  const socialLinks = [
-    {
-      icon: <HotPepperIcon className="h-5 w-5" />,
-      href: ContactInfo.hotpepperUrl,
-      ariaLabel: "Hot Pepper Beauty",
-    },
-    {
-      icon: <FacebookIcon className="h-5 w-5" />,
-      href: ContactInfo.facebookUrl,
-      ariaLabel: "Facebook",
-    },
-    {
-      icon: <LineIcon className="h-5 w-5 text-primary" />,
-      href: ContactInfo.lineUrl,
-      ariaLabel: "Line",
-    },
   ];
 
   return (
@@ -53,20 +39,9 @@ export default function Footer() {
               {metaT("SNSDes")}
             </p>
             <div className="flex space-x-4 mt-6">
-              {socialLinks.map((link, index) => {
-                return (
-                  <a
-                    key={index}
-                    href={link.href}
-                    className="bg-primary/10 hover:bg-primary/20 p-2 rounded-full text-primary transition-colors duration-300"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={link.ariaLabel}
-                  >
-                    {link.icon}
-                  </a>
-                );
-              })}
+              <SocialButton platform="hotpepper" size="sm" />
+              <SocialButton platform="facebook" size="sm" />
+              <SocialButton platform="instagram" size="sm" />
             </div>
           </div>
 

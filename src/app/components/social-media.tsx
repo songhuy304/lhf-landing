@@ -2,6 +2,7 @@
 import { TitleHeading } from "@/components/title-section";
 import { Button } from "@/components/ui/button";
 import { FacebookIcon, HotPepperIcon, LineIcon } from "@/components/ui/icon";
+import { SocialButton } from "@/components/ui/social-buttons";
 import { ContactInfo } from "@/data";
 import { useTranslations } from "next-intl";
 
@@ -15,30 +16,9 @@ export default function SocialMedia() {
           {t("title")}
         </TitleHeading>
         <div className="flex justify-center gap-4 flex-wrap">
-          <Button
-            variant="outline"
-            className="flex items-center gap-2 hover:bg-primary/10 hover:text-primary transition-colors"
-            onClick={() => window.open(ContactInfo.hotpepperUrl, "_blank")}
-          >
-            <HotPepperIcon size={20} />
-            {t("followHotpepper")}
-          </Button>
-          <Button
-            variant="outline"
-            className="flex items-center gap-2 hover:bg-primary/10 hover:text-primary transition-colors"
-            onClick={() => window.open(ContactInfo.facebookUrl, "_blank")}
-          >
-            <FacebookIcon size={20} />
-            {t("followFacebook")}
-          </Button>
-          <Button
-            variant="outline"
-            className="flex items-center gap-2 hover:bg-primary/10 hover:text-primary transition-colors"
-            onClick={() => window.open(ContactInfo.lineUrl, "_blank")}
-          >
-            <LineIcon size={20} className="fill-current" />
-            {t("followLine")}
-          </Button>
+          <SocialButton platform="hotpepper" size="md" />
+          <SocialButton platform="facebook" size="md" />
+          <SocialButton platform="instagram" size="md" />
         </div>
       </div>
     </section>

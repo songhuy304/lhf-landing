@@ -2,7 +2,12 @@
 
 import { TitleHeading } from "@/components/title-section";
 import { Button } from "@/components/ui/button";
-import { FacebookIcon, HotPepperIcon, LineIcon } from "@/components/ui/icon";
+import {
+  FacebookIcon,
+  HotPepperIcon,
+  InstagramIcon,
+  LineIcon,
+} from "@/components/ui/icon";
 import { ContactInfo } from "@/data";
 import BookingImage from "@/styles/images/nail-page/logo_hyu.jpg";
 import { useTranslations } from "next-intl";
@@ -41,8 +46,7 @@ export default function Booking() {
 
                   <Button
                     size="lg"
-                    variant="outline"
-                    className="w-full border-[#E1306C] text-[#E1306C] hover:bg-[#E1306C] hover:text-white flex items-center justify-center gap-3 bg-transparent"
+                    className="w-full bg-[#9f1547] hover:bg-[#9f1547]/90 text-white flex items-center justify-center gap-3"
                     onClick={() =>
                       window.open(ContactInfo.hotpepperUrl, "_blank")
                     }
@@ -54,11 +58,13 @@ export default function Booking() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="w-full border-[#06C755] text-[#06C755] hover:bg-[#06C755] hover:text-white flex items-center justify-center gap-3 bg-transparent"
-                    onClick={() => window.open(ContactInfo.lineUrl, "_blank")}
+                    className="w-full border-pink-400 text-pink-400 hover:bg-pink-500 hover:border-pink-500 hover:text-white flex items-center justify-center gap-3 bg-transparent"
+                    onClick={() =>
+                      window.open(ContactInfo.instagramUrl, "_blank")
+                    }
                   >
-                    <LineIcon size={20} className="fill-current" />
-                    LINE
+                    <InstagramIcon size={20} />
+                    Instagram
                   </Button>
                 </div>
               </div>
