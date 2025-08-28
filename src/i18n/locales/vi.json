@@ -25,7 +25,7 @@
     "title-section": "Stablecoins, Reinvented with Real Estate for the hospitality industry",
     "featureTitle": "Dịch Vụ Chính",
     "featureSubTitle": "Dịch Vụ Chuyên Nghiệp",
-    "featureDes": "Chúng tôi cung cấp dịch vụ chất lượng cao về nail, giới thiệu nhân lực và bán lẻ để đáp ứng nhu cầu đa dạng của bạn.",
+    "featureDes": "Chúng tôi cung cấp các dịch vụ chất lượng cao trong lĩnh vực tuyển dụng, làm móng và bán thực phẩm để đáp ứng nhiều nhu cầu khác nhau.",
     "readMore": "Xem thêm",
     "nail": "Làm móng",
     "recruitment": "Giới thiệu nhân lực",
@@ -85,7 +85,7 @@
 
     "salon": "Tiệm Ichinomiya",
     "tagSalon": "Tiệm làm móng Ichinomiya",
-    "salonAddress": "Tầng 2, Tòa nhà Stock, 5-18 Sakae 3-chome, Thành phố Ichinomiya, Tỉnh Aichi",
+    "salonAddress": "Tầng 2, Tòa nhà STORK, 5-18 Sakae 3-chome, Thành phố Ichinomiya, Tỉnh Aichi",
     "salonPostal": "Mã bưu điện 491-0858",
 
     "store": "Cửa hàng tạp hóa Việt Nam",
@@ -161,7 +161,7 @@
     "contactUsDes": "Chúng tôi rất mong nhận được phản hồi từ bạn. Vui lòng điền vào mẫu này.",
     "capital": "Vốn điều lệ",
     "capitalAmount": "5.000.000 Yên",
-    "CompanyTitle": "Công ty",
+    "CompanyTitle": "Thông tin công ty",
     "infoTitle": "Thông tin liên hệ",
     "phone": "Số điện thoại",
     "fax": "Số fax",
@@ -184,7 +184,7 @@
       "bus1": "Tuyển dụng Nhân sự trong nước/quốc tế",
       "bus2": "Dịch vụ Biên phiên dịch (Tiếng Nhật, Tiếng Việt, Tiếng Indonesia)",
       "bus3": "Salon",
-      "bus4": "Bán lẻ (Thực phẩm Việt Nam, Hoa xà phòng)"
+      "bus4": "Bán lẻ"
     },
     "registrationNumber": {
       "title": "Số đăng ký",

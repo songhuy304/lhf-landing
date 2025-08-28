@@ -3,9 +3,9 @@
 import { TabTransition } from "@/components/animation/tab-animation";
 import { TitleHeading } from "@/components/title-section";
 import { Button } from "@/components/ui";
+import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
-import { cn } from "@/lib/utils";
 
 interface ProcessStep {
   id: number;

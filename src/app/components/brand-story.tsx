@@ -1,4 +1,3 @@
-import { TitleHeading } from "@/components/title-section";
 import { ContactInfo } from "@/data";
 import {
   ArrowRight,
@@ -10,6 +9,7 @@ import {
   Phone,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function BrandStory() {
@@ -19,7 +19,23 @@ export default function BrandStory() {
   return (
     <section id="Brand" className="bg-gray-50 relative overflow-hidden py-24">
       <div className="container mx-auto px-4">
-        <TitleHeading des={t("brandStoryDes")}>LHF</TitleHeading>
+        {/* <TitleHeading
+          classNameDes="flex justify-center"
+          des={<Logo className="w-40 h-20 object-cover" />}
+        >
+          LHF
+        </TitleHeading> */}
+
+        <div className="flex justify-center mb-8 md:mb-16">
+          <Image
+            src="/logo.svg"
+            alt="logo"
+            width={300}
+            height={200}
+            fetchPriority="high"
+            className="w-48 h-auto sm:w-64 md:w-80 lg:w-96 max-w-full object-contain"
+          />
+        </div>
 
         <div className="flex md:flex-row flex-col">
           {/* Overview Section */}

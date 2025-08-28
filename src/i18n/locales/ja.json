@@ -9,7 +9,7 @@
     "Logout": "ログアウト",
     "close": "閉じる",
     "recruitment": "人材紹介",
-    "retail": "小売",
+    "retail": "食品販売",
     "nail": "ネイル",
     "companyInfo": "会社情報",
     "workingHours": "営業時間",
@@ -24,11 +24,11 @@
     "title-section": "ホスピタリティ業界向けの不動産でステーブルコインを再発明",
     "featureTitle": "主なサービス",
     "featureSubTitle": "プロフェッショナルサービス",
-    "featureDes": "ネイル、人材紹介、小売の分野で高品質なサービスを提供し、多様なニーズにお応えします。",
+    "featureDes": "人材紹介、ネイル、食品販売で高品質なサービスを提供し、多様なニーズにお応えします。",
     "readMore": "詳細を見る",
     "nail": "ネイル",
     "recruitment": "人材紹介",
-    "retail": "小売",
+    "retail": "食品販売",
     "brandStoryTitle": "企業と人材を繋ぐ架け橋",
     "brandStoryDes": "カブシキガイシャLHF",
     "brandStoryHeading": "企業と優秀な人材を結ぶかけ橋",
@@ -39,7 +39,7 @@
     "brandStoryPoint3": "個別対応に優れたサポート体制",
     "companyInfoTitle": "会社情報",
     "companyName": "会社名",
-    "companyNameValue": "LHF株式会社",
+    "companyNameValue": "株式会社LHF",
     "companyAddress": "住所",
     "companyAddressValue": "愛知県一宮市島村氏江向寺105-2、2階",
     "companyHours": "営業時間",
@@ -65,7 +65,7 @@
     "title": "株式会社LHF",
     "SNSDes": "SNS掲載情報",
     "nameCompany": "会社名",
-    "description": "LHF株式会社は、美容ケア、人材紹介、小売の分野で高品質なサービスを提供しています。",
+    "description": "株式会社LHFは、ネイル、人材紹介、食品販売の分野で高品質なサービスを提供しています。",
     "boardOfDirectors": "代表者",
     "nameBoardofDirector": "TRAN VAN LONG (チャン　ヴァン　ロン)",
     "tenCompany": "株式会社LHF"
@@ -85,7 +85,7 @@
 
     "salon": "一宮サロン",
     "tagSalon": "一宮ネイルサロン",
-    "salonAddress": "愛知県一宮市栄3丁目5−18 STOCK BLDG 2階",
+    "salonAddress": "愛知県一宮市栄3丁目5−18 STORK BLDG 2階",
     "salonPostal": "〒 491-0858",
 
     "store": "ベトナム食材店 ",
@@ -161,7 +161,7 @@
     "contactUsDes": "ご連絡をお待ちしております。こちらのフォームにご記入ください。",
     "capital": "資本金",
     "capitalAmount": "5.000.000円",
-    "CompanyTitle": "会社",
+    "CompanyTitle": "会社情報",
     "infoTitle": "連絡先情報",
     "phone": "電話番号",
     "fax": "FAX番号",
@@ -184,7 +184,7 @@
       "bus1": "国内/国外の人財紹介事業",
       "bus2": "翻訳/通訳サービス（日本語、ベトナム語、インドネシア語）",
       "bus3": "サロン",
-      "bus4": "小売（ベトナム食材、ソープフラワー）"
+      "bus4": "食品販売"
     },
     "registrationNumber": {
       "title": "登録番号",
@@ -373,8 +373,8 @@
     }
   },
   "RetailPage": {
-    "productListTitle": "小売商品",
-    "productSubTitle": "小売",
+    "productListTitle": "食品販売商品",
+    "productSubTitle": "食品販売",
     "productListDes": "当社の高品質な商品をご覧ください。ベトナム食材、石鹸の花などの商品を取り揃えています...",
     "productList": {
       "sp1": "TH True Milk イチゴ味 300ml",

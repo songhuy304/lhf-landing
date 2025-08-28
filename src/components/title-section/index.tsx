@@ -4,7 +4,7 @@ import React, { ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
-  des?: string;
+  des?: string | ReactNode;
   subTitle?: string;
   className?: string;
   classNameTitle?: string;
