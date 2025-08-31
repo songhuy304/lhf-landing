@@ -297,7 +297,7 @@ export default function About() {
           <h4 className={`font-bold ${step.color.text} text-lg min-h-14`}>
             {step.title}
           </h4>
-          <p className="text-sm text-gray-200 mt-2 px-2 leading-relaxed">
+          <p className="text-sm text-gray-600 mt-2 px-2 leading-relaxed">
             {step.description}
           </p>
         </div>
@@ -374,12 +374,12 @@ export default function About() {
           <div
             data-aos="fade-up"
             data-aos-delay="400"
-            className="rounded-lg p-8 mt-8"
+            className="rounded-lg p-8 mt-8 bg-gray-50"
           >
             <TabTransition activeTab={activeTab}>
               {activeTab === "internship" && (
                 <div className="space-y-10">
-                  <h3 className="text-2xl font-bold text-center mb-10 text-white">
+                  <h3 className="text-2xl font-bold text-center mb-10 text-black">
                     {processData.internship.title}
                   </h3>
 
@@ -399,7 +399,7 @@ export default function About() {
 
               {activeTab === "domestic" && (
                 <div className="space-y-10">
-                  <h3 className="text-2xl text-white font-bold text-center mb-10">
+                  <h3 className="text-2xl text-black font-bold text-center mb-10">
                     {processData.domestic.title}
                   </h3>
 
@@ -420,7 +420,7 @@ export default function About() {
 
               {activeTab === "overseas" && (
                 <div className="space-y-10">
-                  <h3 className="text-2xl text-white font-bold text-center mb-10">
+                  <h3 className="text-2xl text-black font-bold text-center mb-10">
                     {processData.overseas.title}
                   </h3>
 

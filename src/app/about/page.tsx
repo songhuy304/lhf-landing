@@ -1,8 +1,8 @@
 import OurCompany from "@/app/about/components/our-company";
-import HeroSection from "./components/hero-section";
 import LocationsList from "@/app/components/location-list";
 import ContactUs from "./components/contact-us";
 import VisionSection from "./components/vision-section";
+import HeroSection from "@/app/recruitment/components/hero-section";
 
 export default function About() {
   return (

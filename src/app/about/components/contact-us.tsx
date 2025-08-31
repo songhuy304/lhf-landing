@@ -1,11 +1,10 @@
 "use client";
 import { TitleHeading } from "@/components/title-section";
-import { useTranslations } from "next-intl";
 import { Button, Input, Textarea } from "@/components/ui";
-import { useState } from "react";
-import { Mail, Phone } from "lucide-react";
 import { ContactInfo } from "@/data";
-import { useLocale } from "next-intl";
+import { Mail, Phone } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
+import { useState } from "react";
 
 export default function ContactUs() {
   const t = useTranslations("AboutPage");
@@ -48,9 +47,11 @@ export default function ContactUs() {
   return (
     <section id="contact" className="relative overflow-hidden py-12 md:py-24">
       <div className="container mx-auto px-4">
-        <TitleHeading des={t("contactUsDes")}>{t("getInTouch")}</TitleHeading>
+        <TitleHeading classNameDes="text-white" des={t("contactUsDes")}>
+          {t("getInTouch")}
+        </TitleHeading>
 
-        <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8 bg-gray-50 rounded-lg p-4">
           <div className="bg-gray-50 p-6 md:p-8 rounded-lg w-full md:w-1/3 border">
             <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
               <Input

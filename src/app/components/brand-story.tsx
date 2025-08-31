@@ -1,3 +1,4 @@
+import { TitleHeading } from "@/components/title-section";
 import { ContactInfo } from "@/data";
 import {
   ArrowRight,
@@ -17,27 +18,22 @@ export default function BrandStory() {
   const metaT = useTranslations("Meta");
   const locationT = useTranslations("Location");
   return (
-    <section id="Brand" className="bg-gray-50 relative overflow-hidden py-24">
+    <section id="Brand" className="relative overflow-hidden py-24">
       <div className="container mx-auto px-4">
-        {/* <TitleHeading
-          classNameDes="flex justify-center"
-          des={<Logo className="w-40 h-20 object-cover" />}
-        >
-          LHF
-        </TitleHeading> */}
+        <TitleHeading classNameDes="flex justify-center">LHF</TitleHeading>
 
         <div className="flex justify-center mb-8 md:mb-16">
           <Image
             src="/logo.svg"
             alt="logo"
-            width={300}
+            width={270}
             height={200}
             fetchPriority="high"
-            className="w-48 h-auto sm:w-64 md:w-80 lg:w-96 max-w-full object-contain"
+            className="w-48 h-auto sm:w-64 lg:w-80 max-w-full object-contain"
           />
         </div>
 
-        <div className="flex md:flex-row flex-col">
+        <div className="flex md:flex-row flex-col bg-gray-50 rounded-lg p-4">
           {/* Overview Section */}
           <div
             className="mb-8 md:mb-0 w-full md:w-1/2 md:pr-12"

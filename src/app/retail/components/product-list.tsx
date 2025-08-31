@@ -149,8 +149,8 @@ export default function NailGallery() {
   };
 
   return (
-    <section className="pt-24 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="py-24">
+      <div className="container mx-auto px-4 bg-gray-50 rounded-lg p-4">
         <TitleHeading subTitle={t("productSubTitle")} des={t("productListDes")}>
           {t("productListTitle")}
         </TitleHeading>

@@ -9,15 +9,8 @@ import { FloatingSocialButtons } from "@/components/ui";
 import { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
-import { Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
+import { Noto_Sans_JP } from "next/font/google";
 import type React from "react";
-
-const notoSerif = Noto_Serif_JP({
-  subsets: ["latin"],
-  variable: "--font-serif",
-  display: "swap",
-  preload: true,
-});
 
 const notoSans = Noto_Sans_JP({
   subsets: ["latin"],
@@ -91,10 +84,10 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className={`${notoSerif.variable} ${notoSans.variable}`}
+      className={`${notoSans.variable}`}
       suppressHydrationWarning
     >
-      <body className="font-serif">
+      <body className="font-sans">
         <NextIntlClientProvider>
           <InitAos />
           <Loader />

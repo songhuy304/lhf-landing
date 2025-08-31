@@ -1,6 +1,7 @@
 import { TitleHeading } from "@/components/title-section";
 import { Button } from "@/components/ui";
 import Chip from "@/components/ui/chip";
+import { ContactInfo } from "@/data";
 import { MapPin } from "lucide-react";
 import { useTranslations } from "next-intl";
 
@@ -10,7 +11,7 @@ export default function LocationsList() {
   return (
     <section id="location" className="relative pt-24">
       <div className="container mx-auto px-4">
-        <TitleHeading des={t("locationListDes")}>
+        <TitleHeading classNameDes="text-white" des={t("locationListDes")}>
           {t("locationListTitle")}
         </TitleHeading>
 
@@ -23,33 +24,25 @@ export default function LocationsList() {
             type={location("tagHQ")}
             title={location("hqAddress")}
             postalCode={location("hqPostal")}
-            mapUrl={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-              location("hqAddress")
-            )}`}
+            mapUrl={ContactInfo.mapUrlHQ}
           />
           <LocationItem
             type={location("tagOffice")}
             title={location("officeAddress")}
             postalCode={location("officePostal")}
-            mapUrl={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-              location("officeAddress")
-            )}`}
+            mapUrl={ContactInfo.mapUrlOffice}
           />
           <LocationItem
             type={location("tagSalon")}
             title={location("salonAddress")}
             postalCode={location("salonPostal")}
-            mapUrl={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-              location("salonAddress")
-            )}`}
+            mapUrl={ContactInfo.mapUrlSalon}
           />
           <LocationItem
             type={location("tagStore")}
             title={location("storeAddress")}
             postalCode={location("storePostal")}
-            mapUrl={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-              location("storeAddress")
-            )}`}
+            mapUrl={ContactInfo.mapUrlStore}
           />
         </div>
       </div>

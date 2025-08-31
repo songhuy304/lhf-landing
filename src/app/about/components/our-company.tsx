@@ -83,17 +83,14 @@ export default function OurCompany() {
   ];
 
   return (
-    <section
-      id="company"
-      className="relative overflow-hidden py-24 bg-navy-900"
-    >
+    <section id="company" className="relative overflow-hidden py-24">
       <div className="container mx-auto px-4">
-        <TitleHeading des={t("ourCompanyDes")}>
+        <TitleHeading classNameDes="text-white" des={t("ourCompanyDes")}>
           {t("CompanyTitle")}
         </TitleHeading>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="overflow-x-auto">
+        <div className=" bg-gray-50 rounded-lg p-4">
+          <div className="overflow-x-auto max-w-4xl mx-auto">
             <table className="w-full border-collapse">
               <tbody>
                 {companyData.map((item, index) => (

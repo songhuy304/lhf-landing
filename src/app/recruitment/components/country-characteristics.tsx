@@ -50,8 +50,8 @@ export default function CountryCharacteristics() {
   };
 
   const indonesiaData: CountryData = {
-    name: t("vietnam.name"),
-    nameJa: t("vietnam.nameJa"),
+    name: t("indonesia.name"),
+    nameJa: t("indonesia.nameJa"),
     countryCode: "ID",
     characteristics: [
       {
@@ -94,10 +94,10 @@ export default function CountryCharacteristics() {
           />
         </div>
         <div className="space-y-3">
-          <h3 className="text-3xl font-bold text-white tracking-wide">
+          <h3 className="text-3xl font-bold text-black tracking-wide">
             {country.name}
           </h3>
-          <p className="text-xl text-gray-300 font-serif">{country.nameJa}</p>
+          <p className="text-xl text-gray-700 font-serif">{country.nameJa}</p>
         </div>
       </div>
 
@@ -113,7 +113,7 @@ export default function CountryCharacteristics() {
               <h4 className="font-bold text-orange-400 mb-3 text-lg leading-tight">
                 {item.title}
               </h4>
-              <p className="text-gray-200 text-base leading-relaxed">
+              <p className="text-gray-600 text-base leading-relaxed">
                 {item.description}
               </p>
             </div>
@@ -129,7 +129,7 @@ export default function CountryCharacteristics() {
         <TitleHeading>{t("title")}</TitleHeading>
 
         <div
-          className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto bg-gray-50 rounded-lg p-4"
           data-aos="fade-up"
           data-aos-delay="300"
         >

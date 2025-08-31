@@ -15,11 +15,14 @@ const TitleHeading: React.FC<Props> = ({
   children,
   des,
   subTitle,
+  className,
   classNameTitle,
   classNameDes,
 }) => {
   return (
-    <div className="max-w-xl mx-auto text-center mb-8 md:mb-16">
+    <div
+      className={cn("max-w-xl mx-auto text-center mb-8 md:mb-16", className)}
+    >
       {subTitle && <Chip data-aos="fade-up" label={subTitle} />}
       <h2
         className={cn(

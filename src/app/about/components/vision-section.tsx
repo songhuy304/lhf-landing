@@ -29,9 +29,11 @@ const VisionSection = () => {
   ];
 
   return (
-    <section id="vision" className="relative overflow-hidden py-24 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <TitleHeading des={t("des")}>{t("title")}</TitleHeading>
+    <section id="vision" className="relative overflow-hidden py-24 ">
+      <div className="container mx-auto px-4 ">
+        <TitleHeading classNameDes="text-white" des={t("des")}>
+          {t("title")}
+        </TitleHeading>
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
           {visionItems.map((item, index) => (

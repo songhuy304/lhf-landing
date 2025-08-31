@@ -10,4 +10,9 @@ export const ContactInfo = {
   facebookUrl: "https://www.facebook.com/hiyubeauty",
   hotpepperUrl:
     "https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000773424&ch=1&vos=cpshbkprocap0140516003",
+
+  mapUrlHQ: "https://maps.app.goo.gl/UTiE2V2E8JqnSUZR7",
+  mapUrlOffice: "https://maps.app.goo.gl/qdwzDKM8XBYQGL297",
+  mapUrlSalon: "https://maps.app.goo.gl/nByhVEtMCC2F6MN86",
+  mapUrlStore: "https://maps.app.goo.gl/jrE8WKDSMZkh3WQB7",
 };

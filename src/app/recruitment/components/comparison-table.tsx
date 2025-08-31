@@ -1,18 +1,15 @@
 "use client";
 
 import { TitleHeading } from "@/components/title-section";
-import { useTranslations } from "next-intl";
 import {
   Table,
-  TableHeader,
   TableBody,
-  TableRow,
-  TableHead,
   TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
 } from "@/components/ui/table";
-
-import ImageComparison from "@/styles/images/recruitment/compare.png";
-import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 interface ComparisonRow {
   id: number;
@@ -72,13 +69,11 @@ export default function ComparisonTable() {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
-        <TitleHeading>{t("comparison.title")}</TitleHeading>
+        <TitleHeading className="max-w-2xl">
+          {t("comparison.title")}
+        </TitleHeading>
 
-        <div
-          className="overflow-x-auto"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
+        <div data-aos="fade-up" data-aos-delay="300">
           <Table>
             <TableHeader>
               <TableRow>
@@ -91,10 +86,18 @@ export default function ComparisonTable() {
             <TableBody>
               {comparisonData.map((row) => (
                 <TableRow key={row.id}>
-                  <TableCell className="text-center">{row.id}</TableCell>
-                  <TableCell>{row.category}</TableCell>
-                  <TableCell>{row.technicalTraining}</TableCell>
-                  <TableCell>{row.developmentLabor}</TableCell>
+                  <TableCell className="text-center whitespace-normal break-words">
+                    {row.id}
+                  </TableCell>
+                  <TableCell className="whitespace-normal break-words">
+                    {row.category}
+                  </TableCell>
+                  <TableCell className="whitespace-normal break-words">
+                    {row.technicalTraining}
+                  </TableCell>
+                  <TableCell className="whitespace-normal break-words">
+                    {row.developmentLabor}
+                  </TableCell>
                 </TableRow>
               ))}
             </TableBody>

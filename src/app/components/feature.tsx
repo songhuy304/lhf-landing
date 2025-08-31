@@ -32,7 +32,9 @@ export const FeatureSection = () => {
   return (
     <section id="feature" className="relative overflow-hidden py-24">
       <div className="container mx-auto px-4">
-        <TitleHeading des={t("featureDes")}>{t("featureTitle")}</TitleHeading>
+        <TitleHeading des={t("featureDes")} classNameDes="text-white">
+          {t("featureTitle")}
+        </TitleHeading>
         <div
           className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 overflow-visible relative z-0"
           data-aos="fade-up"

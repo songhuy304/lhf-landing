@@ -10,19 +10,11 @@ function Table({
 }: React.ComponentProps<"table"> & { isLoading?: boolean }) {
   return (
     <div className="relative w-full bg-white rounded-lg p-3">
-      <div
-        data-slot="table-container"
-        className="relative w-full overflow-x-auto"
-      >
-        {isLoading && (
-          <div className="absolute inset-0 flex items-center justify-center bg-muted/50">
-            <Loader className="animate-spin text-muted-foreground" />
-          </div>
-        )}
+      <div data-slot="table-container" className="relative w-full">
         <table
           data-slot="table"
           className={cn(
-            "w-max min-w-full table-auto caption-bottom text-sm",
+            "min-w-full table-fixed caption-bottom text-sm border-collapse",
             className
           )}
           {...props}
@@ -31,7 +23,6 @@ function Table({
     </div>
   );
 }
-
 function TableHeader({ className, ...props }: React.ComponentProps<"thead">) {
   return (
     <thead
