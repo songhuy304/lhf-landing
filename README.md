@@ -1,6 +1,6 @@
 # LHF - Website
 
-Website chính thức của Công ty TNHH LHF (株式会社 LHF), chuyên về dịch vụ nail, bán lẻ và tuyển dụng.
+Website chính thức của Công ty TNHH LHF (株式会社 LHF), chuyên về dịch vụ nail, bán lẻ và tuyển dụng..
 
 ## Tính năng
 
