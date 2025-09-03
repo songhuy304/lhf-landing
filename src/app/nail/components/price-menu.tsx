@@ -4,6 +4,7 @@ import MenuVN from "@/styles/images/nail-page/menu-vi.png";
 import { Sparkles } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
+import logoHiyu from "@/styles/images/nail-page/logo_hyu_nobg.png";
 
 const PriceMenu = () => {
   const t = useTranslations("NailPage");
@@ -37,10 +38,13 @@ const PriceMenu = () => {
             <Sparkles className="h-4 w-4 mr-1.5" />
             {t("menuTitle")}
           </Badge>
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-3">
-            HIYU Beauty
-          </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary/70 to-primary rounded-full mb-4"></div>
+          <Image
+            src={logoHiyu}
+            alt="logoHiyu"
+            width={200}
+            height={80}
+            className="object-contain my-2"
+          />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -17,6 +17,7 @@ const notoSans = Noto_Sans_JP({
   variable: "--font-sans",
   display: "swap",
   preload: true,
+  weight: "400",
 });
 
 export async function generateMetadata(): Promise<Metadata> {
