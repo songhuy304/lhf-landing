@@ -9,15 +9,17 @@ import { FloatingSocialButtons } from "@/components/ui";
 import { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
-import { Noto_Sans_JP } from "next/font/google";
+import localFont from "next/font/local";
 import type React from "react";
 
-const notoSans = Noto_Sans_JP({
-  subsets: ["latin"],
+const notoSans = localFont({
+  src: [
+    { path: "../../public/font/font-1.woff2", weight: "400", style: "normal" },
+    { path: "../../public/font/font-1.woff", weight: "400", style: "normal" },
+  ],
   variable: "--font-sans",
   display: "swap",
   preload: true,
-  weight: "400",
 });
 
 export async function generateMetadata(): Promise<Metadata> {
