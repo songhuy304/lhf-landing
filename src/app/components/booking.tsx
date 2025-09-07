@@ -6,7 +6,6 @@ import {
   FacebookIcon,
   HotPepperIcon,
   InstagramIcon,
-  LineIcon,
 } from "@/components/ui/icon";
 import { ContactInfo } from "@/data";
 import BookingImage from "@/styles/images/nail-page/logo_hyu.jpg";
@@ -15,7 +14,6 @@ import Image from "next/image";
 
 export default function Booking() {
   const t = useTranslations("NailPage");
-  const commonT = useTranslations("Root");
   return (
     <section className="py-24">
       <div className="container mx-auto px-4">
