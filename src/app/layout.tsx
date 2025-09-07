@@ -9,14 +9,15 @@ import { FloatingSocialButtons } from "@/components/ui";
 import { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
-import { Noto_Sans_JP } from "next/font/google";
+import { Sawarabi_Mincho } from "next/font/google";
 import type React from "react";
 
-const notoSans = Noto_Sans_JP({
+const sawarabiMincho = Sawarabi_Mincho({
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
   preload: true,
+  weight: ["400"],
 });
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -84,7 +85,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className={`${notoSans.variable}`}
+      className={`${sawarabiMincho.variable}`}
       suppressHydrationWarning
     >
       <body className="font-sans">

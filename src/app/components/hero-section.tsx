@@ -22,8 +22,7 @@ const HeroSection = () => {
       </div>
       <div className="max-w-xl mx-auto relative z-10 p-4">
         <h1 className="text-5xl font-bold text-center">
-          <span className="text-primary">LHF</span>
-          <span className="text-white"> - {t("brandStoryTitle")}</span>
+          <span className="text-white">{t("brandStoryTitle")}</span>
         </h1>
       </div>
     </section>
